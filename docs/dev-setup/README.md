@@ -111,7 +111,7 @@ The `::: note` is part of the code syntax. `asset` indicates that "This is a req
 ```markdown
 Figure Example Goes Here
 
-![Image Caption & Alt Text](./assets/img-flowmeter/flowmeter-both-final.png)
+![Image Caption & Alt Text](./assets/img/git/gitnotes-1-vuebook-github-link.png)
 
 -   Skip a line after the image to center figure and caption.
 -   The img filepath is relative to this markdown file `setup-flowmeters.md`
@@ -121,7 +121,7 @@ Figure Example Goes Here
 ::: note That Markdown Code renders as
 Figure Example Goes Here
 
-![Image Caption & Alt Text](./assets/img-flowmeter/flowmeter-both-final.png)
+![Image Caption & Alt Text](./assets/img/git/gitnotes-1-vuebook-github-link.png)
 
 -   Skip a line after the image to center figure and caption.
 -   The img filepath is relative to this markdown file `setup-flowmeters.md`
