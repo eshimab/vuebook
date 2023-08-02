@@ -15,10 +15,6 @@
 /docs/.vuepress/.temp/
 # VuePress Build Distribution
 /docs/.vuepress/dist/
-<<<<<<< HEAD
 # oversized assets
 /oversized-assets/
-=======
-
->>>>>>> d9b6ea89f995c4cc42eb485466464a13880432ad
 *.DS_Store
