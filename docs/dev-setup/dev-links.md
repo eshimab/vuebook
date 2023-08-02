@@ -1,5 +1,6 @@
 ---
 title: Useful Links
+icon: link
 ---
 
 ## Markdown Info
@@ -18,6 +19,43 @@ title: Useful Links
 
 - title:
   link:
+
+---
+
+### Icons with FontAwesome
+
+-   [FontAwesome Free](https://fontawesome.com/search?q=hole&o=r&m=free)
+    -   <HopeIcon icon="bore-hole"/> `bore-hole` 
+    -   `wand-magic-sparkles`
+    -   `arrows-to-dot`
+    -   `bahai`
+    -   `bowling-ball`
+    -   `certificate`
+    -   `empire`
+    -   `glass-water-droplet`
+    -   `cret-down`
+    -   `faucet-drip`
+    -   `vials`
+    -   `flask-vial`
+    -   `bottle-droplet`
+    -   `lines-leaning`
+    -   `draw-polygon`
+    -   `grip-lines-verticals`
+    -   `sliders`
+    -   `land-mine-on`
+    -   `paper-plane`
+    -   `person-falling-burst`
+    -   `plane`
+        -   `plane-up`
+        -   `plane-departure`
+        -   `plane-arrival`
+        -   `plane-slash`
+        -   `plane-lock`
+        -   `plane-circle-xmark`
+        -   `plane-circle-check`
+        -   `plane-circle-exclamation`
+    -   `star-of-life`
+    -   `signal`
 
 ---
 

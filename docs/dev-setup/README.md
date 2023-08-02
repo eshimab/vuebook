@@ -1,5 +1,6 @@
 ---
 title: Edit Files with GitHub
+icon: pencil
 ---
 
 
@@ -114,7 +115,7 @@ Figure Example Goes Here
 ![Image Caption & Alt Text](./assets/img/git/gitnotes-1-vuebook-github-link.png)
 
 -   Skip a line after the image to center figure and caption.
--   The img filepath is relative to this markdown file `setup-flowmeters.md`
+-   The img filepath is relative to this markdown file `flight-begin-meters.md`
 ```
 :::
 
@@ -124,7 +125,7 @@ Figure Example Goes Here
 ![Image Caption & Alt Text](./assets/img/git/gitnotes-1-vuebook-github-link.png)
 
 -   Skip a line after the image to center figure and caption.
--   The img filepath is relative to this markdown file `setup-flowmeters.md`
+-   The img filepath is relative to this markdown file `flight-begin-meters.md`
 :::
 
 ---

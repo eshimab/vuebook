@@ -1,5 +1,6 @@
 ---
 title: Sortware 2 - Basics
+icon: computer
 ---
 
 

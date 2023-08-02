@@ -92,12 +92,12 @@ highlights:
       - title: Lab Prep
         icon: clipboard-check
         details: Gather Supplies
-        link: "/influx-flight/flight-begin/setup-lab"
+        link: "/influx-flight/flight-begin/flight-begin-activate"
       # Instrument Power
       - title: Instrument Power
         icon: clipboard-check
         details: Turn on Instrument
-        link: "/influx-flight/flight-begin/setup-power"
+        link: "/influx-flight/flight-begin/flight-begin-boot"
       # Software Startup
       - title: Software Startup
         details: Flowmeters and Sortware Basics
@@ -108,7 +108,7 @@ highlights:
       - title: Fluidcs - Sheath and Nozzle
         icon: clipboard-check
         details: Sortware etc.
-        link: "/influx-flight/flight-fluidics/flight-fluidics-nozzle"
+        link: "/influx-flight/flight-fluidics/flight-fluidics-assy"
       # Basic Operations
       - title: Sample Basics
         details: Sample running basics
@@ -123,12 +123,12 @@ highlights:
       # Coarse "Beer" Laser Alignment
       - title: Coarse "Beer" Laser Alignment
         details: Fire the lasers.
-        link: "/influx-flight/flight-optics/flight-align-coarse"
+        link: "/influx-flight/flight-optics/flight-optics-coarse"
         icon: clipboard-check
       # Final "Bead" Laser Alignment
       - title: Final "Bead" Laser Alignment
         details: Fire the lasers.
-        link: "/influx-flight/flight-optics/flight-align-final"
+        link: "/influx-flight/flight-optics/flight-optics-final"
         icon: clipboard-check
       # ----------- flight-sorties
       # Sorting Prep

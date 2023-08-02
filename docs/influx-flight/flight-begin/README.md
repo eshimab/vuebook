@@ -1,6 +1,6 @@
 ---
 title: Lab and Instrument Startup
-icon: book
+icon: flask
 ---
 
 

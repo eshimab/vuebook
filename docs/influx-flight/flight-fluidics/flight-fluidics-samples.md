@@ -1,5 +1,6 @@
 ---
 title: Running Samples
+icon: vial-circle-check
 ---
 
 

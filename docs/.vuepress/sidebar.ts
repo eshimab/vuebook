@@ -30,40 +30,40 @@ export default sidebar({
           text: "Lab and Instrument Startup",
           prefix: "flight-begin/",
           link: "flight-begin/README",
-          icon: "book",
+          icon: "play",
           // beg children.flight-begin
           children: [
             //
-            "setup-oracle",
+            "flight-begin-oracle",
             // {
               // text: "The Oracle",
-              // link: "setup-oracle",
-            // }, // end setup-oracle
+              // link: "flight-begin-oracle",
+            // }, // end flight-begin-oracle
             //
             //
-            "setup-lab",
+            "flight-begin-activate",
             // {
               // text: "Lab Prep",
-              // link: "setup-lab",
-            // }, // end setup-lab
+              // link: "flight-begin-activate",
+            // }, // end flight-begin-activate
             //
-            "setup-power",
+            "flight-begin-boot",
             // {
               // text: "System Power",
-              // link: "setup-power",
-            // }, // end setup-power
+              // link: "flight-begin-boot",
+            // }, // end flight-begin-boot
             //
-            "setup-flowmeters",
+            "flight-begin-meters",
             // {
               // text: "Software flowmeters",
-              // link: "setup-flowmeters",
-            // }, // end setup-flowmeters
+              // link: "flight-begin-meters",
+            // }, // end flight-begin-meters
             //
-            "setup-sortwareConnect",
+            "flight-begin-sortware",
             // {
               // text: "Setup sortwareConnect",
-              // link: "setup-sortwareConnect",
-            // }, // end setup-sortwareConnect
+              // link: "flight-begin-sortware",
+            // }, // end flight-begin-sortware
             //
           ], // end children.flight-begin
           //
@@ -74,27 +74,34 @@ export default sidebar({
           text: "Setup Fluidics",
           prefix: "flight-fluidics/",
           link: "flight-fluidics/README",
-          icon: "book",
+          icon: "faucet-drip",
           // beg children.flight-fluidics
           children: [
-            "flight-fluidics-nozzle",
+            //
+            "flight-fluidics-activate",
+            // {
+            // text: "Fluidics Pre-Flight",
+            // link: "flight-fluidics-activate",
+            // }, // end flight-fluidics-activate
+            //
+            "flight-fluidics-assy",
             // {
               // text: "Sheath and Nozzle",
-              // link: "flight-fluidics-nozzle",
-            // }, // end flight-fluidics-nozzle
+              // link: "flight-fluidics-assy",
+            // }, // end flight-fluidics-assy
             //
-            "flight-fluidics-streamdrain",
-            // {
-              // text: "Sheath and Nozzle",
-              // link: "flight-fluidics-nozzle",
-            // }, // end flight-fluidics-nozzle
+            "flight-fluidics-drain",
+              // {
+              // text: "Stream Drain",
+              // link: "flight-fluidics-drain",
+              // }, // end flight-fluidics-drain
             //
-            // ------- beg: flight-fluidics-streamfocus
-            "flight-fluidics-streamfocus",
+            // ------- beg: flight-fluidics-pinholes
+            "flight-fluidics-pinholes",
             // {
               // text: "Visual Alignment",
-              // link: "flight-fluidics-streamfocus",
-            // }, // end flight-fluidics-streamfocus
+              // link: "flight-fluidics-pinholes",
+            // }, // end flight-fluidics-pinholes
             //
             // flight-fluidics-samples
             "flight-fluidics-samples",
@@ -118,24 +125,24 @@ export default sidebar({
           text: "Setup Optics",
           prefix: "flight-optics/",
           link: "flight-optics/README",
-          icon: "book",
+          icon: "burst",
           // beg children.flight-optics
           children: [
             //
-            // ------- beg: flight-align-method
-            "flight-align-method",
+            // ------- beg: flight-optics-activate
+            "flight-optics-activate",
             //
-            "flight-align-coarse",
+            "flight-optics-coarse",
             // {
               // text: "Coarse Alignment",
-              // link: "flight-align-coarse",
-            // }, // end flight-align-coarse
+              // link: "flight-optics-coarse",
+            // }, // end flight-optics-coarse
             //
-            "flight-align-final",
+            "flight-optics-final",
             // {
               // text: "Final Alignment",
-              // link: "flight-align-final",
-            // }, // end flight-align-final
+              // link: "flight-optics-final",
+            // }, // end flight-optics-final
           ], // end children.flight-optics
         }, // end flight-optics
         //
@@ -144,15 +151,15 @@ export default sidebar({
           text: "Sort Settings",
           prefix: "flight-sorties/",
           link: "flight-sorties/README",
-          icon: "book",
+          icon: "droplet",
           // beg children.flight-sorties
           children: [
             //
-            "flight-sortie-checklist",
+            "flight-sortie-activate",
               // {
               // text: "Sorting Prep",
-              // link: "flight-sortie-checklist",
-              // }, // end flight-sortie-checklist
+              // link: "flight-sortie-activate",
+              // }, // end flight-sortie-activate
             //
             "flight-sortie-configsw",
               // {

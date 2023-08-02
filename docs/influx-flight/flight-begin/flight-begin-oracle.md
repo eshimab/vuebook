@@ -1,8 +1,7 @@
 ---
 title: The Oracle
+icon: hat-wizard
 ---
-
-
 
 
 ::: note “The Magic 8 Ball.”
@@ -25,3 +24,4 @@ Always consult the Magic 8 Ball before attempting the operate the InFlux.
  Maybe try again tomorrow.
 
 :::
+

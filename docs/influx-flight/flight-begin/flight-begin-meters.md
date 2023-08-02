@@ -1,5 +1,6 @@
 ---
-title: Flowmeters with Sensor Viewer
+title: Flowmeters
+icon: water
 ---
 
 

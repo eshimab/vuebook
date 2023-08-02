@@ -1,5 +1,6 @@
 ---
 title: Drop Charge and Deflection
+icon: lines-leaning
 ---
 
 ## Goals

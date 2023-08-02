@@ -1,5 +1,6 @@
 ---
 title: Frequency kHz
+icon: wave-square
 ---
 
 

@@ -1,3 +1,4 @@
 ---
-title: Drop Delay Calibration Slides
+title: Calibration Slides
+icon: microscope
 ---

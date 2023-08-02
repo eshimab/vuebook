@@ -1,5 +1,6 @@
 ---
 title: Coarse "Beer" Alignment
+icon: beer-mug-empty
 ---
 
 

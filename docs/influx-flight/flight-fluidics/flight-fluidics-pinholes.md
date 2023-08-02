@@ -1,5 +1,6 @@
 ---
-title: Visual Alignment
+title: Pinhole Alignment
+icon: ellipsis-vertical
 ---
 
 

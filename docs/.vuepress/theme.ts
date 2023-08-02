@@ -16,10 +16,10 @@ export default hopeTheme({
   iconAssets: "fontawesome-with-brands", // end iconAssets
   // iconAssets: "iconfont", // end iconAssets
   // iconAssets: [
-    // "fontawesome-with-brands",
-    // "iconfont", 
-    // "iconify", 
-    // "fontawesome", 
+  //   "fontawesome-with-brands",
+  //   "iconfont", 
+  //   // "iconify", 
+  //   "fontawesome", 
   // ], // end iconAssets.hopeTheme
   
   logo: "/logo.svg", // end logo

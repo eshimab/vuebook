@@ -1,5 +1,6 @@
 ---
 title: A Sorted Affair
+icon: droplet
 ---
 
 

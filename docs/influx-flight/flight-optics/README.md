@@ -1,5 +1,6 @@
 ---
 title: Setup Optics
+icon: burst
 ---
 
 

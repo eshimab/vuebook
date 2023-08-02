@@ -1,5 +1,6 @@
 ---
 title: Sortware 1 - Connect
+icon: computer
 ---
 
 

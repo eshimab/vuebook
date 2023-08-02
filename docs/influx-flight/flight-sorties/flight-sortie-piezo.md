@@ -1,5 +1,6 @@
 ---
 title: Piezo Voltage
+icon: bolt
 ---
 
 

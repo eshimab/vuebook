@@ -1,5 +1,6 @@
 ---
 title: System Power
+icon: power-off
 ---
 
 
