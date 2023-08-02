@@ -1,0 +1,24 @@
+#
+#
+#
+#
+#
+#
+#
+#
+#
+# ------------------ FOR VUEBOOK
+# npm / pnpm installed modules
+/node_modules/
+# Temp Directories for VuePress local server
+/docs/.vuepress/.cache/
+/docs/.vuepress/.temp/
+# VuePress Build Distribution
+/docs/.vuepress/dist/
+<<<<<<< HEAD
+# oversized assets
+/oversized-assets/
+=======
+
+>>>>>>> d9b6ea89f995c4cc42eb485466464a13880432ad
+*.DS_Store

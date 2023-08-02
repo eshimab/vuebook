@@ -1,0 +1,51 @@
+brenesb@dhcp-168-105-221-82 vuebook % git config --global --edit
+hint: Waiting for your editor to close the file... error: There was a problem with the editor 'vi'.
+brenesb@dhcp-168-105-221-82 vuebook % git commit --amend --reset-author
+[main 7aa8a60] hi eric
+ Committer: Brandon Brenes <brenesb@dhcp-168-105-221-82.wireless.manoa.hawaii.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+brenesb@dhcp-168-105-221-82 vuebook % git config --global user.name "Brandon"
+brenesb@dhcp-168-105-221-82 vuebook % git config --global user.email brenesb@hawaii.edu
+brenesb@dhcp-168-105-221-82 vuebook % git commit --amend --reset-author
+[main 1c0084b] hi eric
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+brenesb@dhcp-168-105-221-82 vuebook % git status
+On branch main
+nothing to commit, working tree clean
+brenesb@dhcp-168-105-221-82 vuebook % git push vuemain main
+
+
+brenesb@dhcp-168-105-221-82 vuebook % git pull vuemain main
+remote: Enumerating objects: 14, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 14 (delta 5), reused 6 (delta 3), pack-reused 0
+Unpacking objects: 100% (14/14), 3.79 KiB | 276.00 KiB/s, done.
+From https://github.com/eshimab/vuebook
+ * branch            main       -> FETCH_HEAD
+   ca70e0c..ee3fac4  main       -> vuemain/main
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+brenesb@dhcp-168-105-221-82 vuebook %   

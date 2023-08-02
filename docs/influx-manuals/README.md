@@ -1,0 +1,6 @@
+---
+title: Instruction Manual
+---
+
+Hello
+
