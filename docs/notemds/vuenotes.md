@@ -1,27 +1,10 @@
+---
+title: VueNotes
+---
 
-
-### Update Homebrew
-
-1. Update Homebrew using an "unshallow" clone
-```bash
-git -C /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core fetch --unshallow
-```
-
-Following the guide on: ![Digital Ocean VuePress Intro](https://www.digitalocean.com/community/tutorials/how-to-build-a-documentation-system-with-vue-and-vuepress)
-
-
-### Use Homebrew to install `nodejs@18` and `npm` globally
-
-1. Open terminal, use `brew` to find node, install version 18 `node@18`
-```bash
-brew install node@18
-```
-2. Use `brew` to install `npm`
-```bash
-brew install npm
-```
-
-## Initiate vuepress project
+<!-- Reference Links -->
+[digital-ocean]: https://www.digitalocean.com/community/tutorials/how-to-build-a-documentation-system-with-vue-and-vuepress
+<!-- End Ref Links -->
 
 ### After the vuebook re-init
 
@@ -57,9 +40,34 @@ brew install npm
     vuepress-theme-hope 2.0.0-beta.233
     ```
 
+### Update Homebrew
+
+1. Update Homebrew using an "unshallow" clone
+```bash
+git -C /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core fetch --unshallow
+```
+
+Following the guide on: [Digital Ocean VuePress Intro][digital-ocean]
+
+
+### Use Homebrew to install `nodejs@18` and `npm` globally
+
+1. Open terminal, use `brew` to find node, install version 18 `node@18`
+```bash
+brew install node@18
+```
+2. Use `brew` to install `npm`
+```bash
+brew install npm
+```
+
+## Initiate vuepress project
+
+
+
 ### Make project `~/scidev/vuebook` directory
 
-Following the guide on: ![Digital Ocean VuePress Intro](https://www.digitalocean.com/community/tutorials/how-to-build-a-documentation-system-with-vue-and-vuepress)
+Following the guide on: [Digital Ocean VuePress Intro](https://www.digitalocean.com/community/tutorials/how-to-build-a-documentation-system-with-vue-and-vuepress)
 
 Make vuepress site directory `scidev/vuebook/` (or just `vuebook`):
 ```shell
