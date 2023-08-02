@@ -5,11 +5,39 @@ icon: pencil
 
 
 
-## Easy Way
+## TLDR
 
-Use this link to go to GitHub, and set your working branch to `bbnotes`. If you do that, skip down to **Editing Files**.
+1.  See if `git` is installed (Usually ships on Mac)
+    ```sh
+    git version
+    ```
+    -   Not installed? https://github.com/git-guides/install-git
+2.  Initialize the Git directory on local machine
+    1.  Make the directory `mkdir` named `vuebook` in the `/Users/username/vuebook` 
+    2.  Change Directory `cd` into `~/vuebook`
+    ```sh
+    mkdir ~/vuebook22
+    cd ~/vuebook22
+    ```
+3.  Initialize it as a git directory
+    ```sh
+    git init .
+    ```
+4.  Set the `remote` GitHub repository URL
+    1.  `add` a new `remote` alias
+    2.  Give it the alias (nickname) `vuemain`
+    3.  Target the url `https://github.com/eshimab/vuebook`
+    ```sh
+    git remote add vuemain https://github.com/eshimab/vuebook
+    ```
+5.  `pull` a copy of the files 
+    1.  Use the `vuemain` alias to point to the GitHub URL
+    2.  Select the `main` branch (for our use case)
+    ```sh
+    git pull vuemain main
+    ```
 
-https://github.com/eshimab/vuebook/tree/bbnotes
+---
 
 ## Long Way
 

@@ -3,12 +3,23 @@ import { navbar } from "vuepress-theme-hope";
 export default navbar([
   "/",
   //
-  // -------  GitHub Notes
-  "/dev-setup/",
+  // GitHub Notes
+    // {
+      // text: "GitHub Setup",
+  //   prefix: "/dev-setup/",
+  //   link: "/dev-setup/README",
+  //   children: "structure",
+    // },
+  "/dev-setup/README",
+    // {
+  //   text: "Edit Files with GitHub",
+  //   link: "/dev-setup/",
+  //   children: "structure",
+    // },
   //
   // Dev Links Page
-  // "/dev-setup/dev-links",
-  //
+  "/dev-setup/dev-links",
+    //
   // ------- BEGIN INFLUX FLGHT MANUAL docs/influx-flight/
   {
     text: "InFlux Flight Manual",

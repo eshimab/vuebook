@@ -5,6 +5,12 @@ export default sidebar({
     "",
     //
     // GitHub Notes
+    // {
+    //   text: "GitHub Setup",
+    //   prefix: "/dev-setup/",
+    //   link: "/dev-setup/README",
+    //   children: "structure",
+    // },
     "/dev-setup/README",
     // {
     //   text: "Edit Files with GitHub",
