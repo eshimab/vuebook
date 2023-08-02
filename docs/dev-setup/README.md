@@ -107,6 +107,28 @@ The `::: note` is part of the code syntax. `asset` indicates that "This is a req
 
 ---
 
+::: note Include and Image in Markdown using the following Syntax
+```markdown
+Figure Example Goes Here
+
+![Image Caption & Alt Text](./assets/img-flowmeter/flowmeter-both-final.png)
+
+-   Skip a line after the image to center figure and caption.
+-   The img filepath is relative to this markdown file `setup-flowmeters.md`
+```
+:::
+
+::: note That Markdown Code renders as
+Figure Example Goes Here
+
+![Image Caption & Alt Text](./assets/img-flowmeter/flowmeter-both-final.png)
+
+-   Skip a line after the image to center figure and caption.
+-   The img filepath is relative to this markdown file `setup-flowmeters.md`
+:::
+
+---
+
 ## Adding Note Containers
 
 1.  The syntax of `:::` means to start a container, those little colored bubbles.

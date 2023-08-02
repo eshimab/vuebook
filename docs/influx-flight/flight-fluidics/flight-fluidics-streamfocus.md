@@ -5,11 +5,6 @@ title: Visual Alignment
 
 
 
-<<<<<<< HEAD
-
-=======
-## Skip ahead...
->>>>>>> d9b6ea89f995c4cc42eb485466464a13880432ad
 
 [[toc]]
 

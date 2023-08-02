@@ -3,7 +3,6 @@ title: InFlux Flight Manual
 icon: book
 ---
 
-<<<<<<< HEAD
 
 ## Using this guide
 
@@ -29,62 +28,33 @@ icon: book
 ### Lab and Instrument Startup
 
 #### Lab Prep
-=======
-The manual follows the outline:
-1.  Lab Prep stufffffff
-2.  Sheath Solution 
-3.  Calibration beads
-4.  Fluidics 
-
-## Lab and Instrument Startup
-
-### Lab Prep
->>>>>>> d9b6ea89f995c4cc42eb485466464a13880432ad
 
 -   Sheath solution 
 -   QC Bead samples
 -   Other supplies
 
-<<<<<<< HEAD
 #### Power On Instrument
-=======
-### Power On Instrument
->>>>>>> d9b6ea89f995c4cc42eb485466464a13880432ad
 
 -   Systems check
 -   Instrument Power
 -   Workstation Power
 -   Network Troubleshooting
 
-<<<<<<< HEAD
 #### Software Startup
-=======
-### Software Startup
->>>>>>> d9b6ea89f995c4cc42eb485466464a13880432ad
 
 - Flowmwter Sensor Viewer
 - BD Sortware Basics
 
-<<<<<<< HEAD
 ### Setup Fluidics
 
 #### Sheath and nozzle assembly
-=======
-## Setup Fluidics
-
-### Sheath and nozzle assembly
->>>>>>> d9b6ea89f995c4cc42eb485466464a13880432ad
 
 -   Hooking up Sheath/Waste tanks
 -   Nozzle installation
 -   Nozzle purging
 -   Align stream to waste pipe
 
-<<<<<<< HEAD
 #### Sample running basics
-=======
-### Sample running basics
->>>>>>> d9b6ea89f995c4cc42eb485466464a13880432ad
 
 -   Sample cradle
 -   Sample line

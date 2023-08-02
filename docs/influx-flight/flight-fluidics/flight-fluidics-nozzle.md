@@ -3,13 +3,9 @@ title: Install and Purge Nozzle
 ---
 
 
-<<<<<<< HEAD
 <!-- Reference Links -->
 <!-- Images -->
 [img-nozzle-zoom]: ./assets/ifm-fluidics-nozzle-installed-zoom-anno.png
-=======
-
->>>>>>> d9b6ea89f995c4cc42eb485466464a13880432ad
 
 
 
@@ -37,20 +33,12 @@ title: Install and Purge Nozzle
 
 ## Install Nozzle on Nozzle Assembly
 
-<<<<<<< HEAD
 ::: note 
 ![Nozzle installed][img-nozzle-zoom]
 A picture with the nozzle installed. Note the 
 -   *Nozzle Assembly*
 -   *Nozzle Nut* (Orifice)
 -   *Nozzle* 
-=======
-::: note asset Nozzle + Assembly
-A picture with the nozzle installed. Note the 
--   Nozzle assembly
--   Nozzle lock ribf
--   Nozzle 
->>>>>>> d9b6ea89f995c4cc42eb485466464a13880432ad
 :::
 
 1.  Use the Nozzle Nut to install the Nozzle 
@@ -66,19 +54,11 @@ A picture with the nozzle installed. Note the
         ::: note asset “Unclogged Nozzle”
         The stream should look like this when using the 60ml syringe to check for clogs
         :::
-<<<<<<< HEAD
-=======
-        
->>>>>>> d9b6ea89f995c4cc42eb485466464a13880432ad
         ::: note asset Clogged Nozzle
         Our analysts are too ~~dishonest~~ *skilled* to have photographic evidence of instrument malfunctions.
         :::
         1. If the Stream comes out at an angle, attempt this flushing by reversing the Nozzle so that the tip is fitted into the outflow of the Acrodisc Filter. **BE CAREFULE**
-<<<<<<< HEAD
         2. If Flushing in reverse does not work, Sonicate the *Nozzle*.
-=======
-        2. If Flushing in reverse does not work, Sonicate the Nozzle.
->>>>>>> d9b6ea89f995c4cc42eb485466464a13880432ad
             ::: note asset Sonnication Procedure
             For stubborn clogs, try sonication. The nozzle inside the protective plastic lid, inside of the sonicator.
             :::
@@ -87,21 +67,12 @@ A picture with the nozzle installed. Note the
             3. Attempt Syringe purges again
             4. If still clogged, soak Nozzle in 70% Ethanol for 30 minutes and repeat flushes and sonication
 4. Place Nozzle inside Nozzle Nut and install on Nozzle Assembly
-<<<<<<< HEAD
     ::: warning PURGE vacuum won’t hold nozzle in place
     (Applies to next step)
     Using the vacuum pulled by **PURGE** will not hold the *Nozzle* aloft. Always support the nozzle manually or with the *Nozzle Nut*.
     :::
     1. It may help to turn on PURGE on the Regulator Tower to open the Waste Valve and create a vacuum on the Nozzle Assembly to hold the Nozzle steady. 
         1. After Nozzle has been installed, turn off **PURGE** if used.
-=======
-    ::: warning “PURGE” vacuum won’t hold nozzle
-    (Applies to next step)
-    Using the vacuum pulled by PURGE will not hold the nozzle aloft. Always support the nozzle manually or with the lock ring.
-    :::
-    1. It may help to turn on PURGE on the Regulator Tower to open the Waste Valve and create a vacuum on the Nozzle Assembly to hold the Nozzle steady. 
-        1. After Nozzle has been installed, turn off PURGE if used.
->>>>>>> d9b6ea89f995c4cc42eb485466464a13880432ad
 
 ## Hook-Up Sheath Fluid Canister to InFlux
 

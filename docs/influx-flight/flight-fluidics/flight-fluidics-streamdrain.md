@@ -36,17 +36,11 @@ title: Align Stream to Sheath Drain
 
 
 ### Center Stream over Sheath Drain
-<<<<<<< HEAD
 
 ::: note asset Stream start, not aligned
 Example starting position.
 :::
 
-=======
-    ::: note asset “Stream start, not aligned
-    Example starting position.
-    :::
->>>>>>> d9b6ea89f995c4cc42eb485466464a13880432ad
 1.  Use the Stream Camera, Right Monitor, Video 1
 2.  Use the Stream Tilt X and Stream Tilt Y Knobs at the top of the nozzle assembly stage.
 3.  Adjust the stream until the laser interception point is brightest.
@@ -59,10 +53,6 @@ Example starting position.
     1.  The ILLUM laser fires from left to right in the sort chamber.
     2.  If you plan to sort, it may speed up your alignment to ensure that the ILLUM laser properly intersects both sort streams.
     3.  See the Sorting Setup for details on this process.
-<<<<<<< HEAD
-=======
-
->>>>>>> d9b6ea89f995c4cc42eb485466464a13880432ad
 5.  Press BACKFLUSH Button next to the Sample Cradle to open the Sample Valve. 
     ::: note asset “Sample buttons and sample cradle ”
     Shown with back flush on. Both error lights are shown in the default (no error) state.
