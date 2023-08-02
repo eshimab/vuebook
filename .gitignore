@@ -8,6 +8,12 @@
 #
 #
 # ------------------ FOR VUEBOOK
+#
+# Remember you can make ignore exceptions by prepending the
+#     filepath with !
+# Or upload an empty directory by making a .gitinclude 
+#     text file in that dir
+# ------------------ Directories
 # npm / pnpm installed modules
 /node_modules/
 # Temp Directories for VuePress local server
@@ -17,4 +23,6 @@
 /docs/.vuepress/dist/
 # oversized assets
 /oversized-assets/
+# 
+# ------------------ Files
 *.DS_Store

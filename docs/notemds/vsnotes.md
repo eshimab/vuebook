@@ -7,6 +7,12 @@
 
 # Using VS Code for general development
 
+
+## Install the VSC CLI Tool
+
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-the-visual-studio-code-vs-code-command-line-interface
+
+
 # Editor Settings in `settings.json`
 
 ## Notes:

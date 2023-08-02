@@ -39,6 +39,44 @@ icon: pencil
 
 ---
 
+## Ignore Files
+
+-   You **must** setup a `.gitignore` file in the root directory so that `git` does not backup large files or directories.
+-   `eshimab/vuebook` repo contains a `.gitignore` file that should be downloaded during your first `pull`
+-   In the `.gitignore` file, you use `#` for comments
+-   The filepaths are relative to the root `git` directory, in this case `vuebook`
+-   End a directory with `/` to recursively ignore everything in that directory
+-   On MacOS, most folders have a hidden file `.DS_Store` that is a record keeping file. 
+    -   Ignore these files because they will cause conflicts.
+-   Ensure that in `~/vuebook/.gitignore` you have:
+```sh
+# ------------------ Directories
+# npm / pnpm installed modules
+/node_modules/
+# Temp Directories for VuePress local server
+/docs/.vuepress/.cache/
+/docs/.vuepress/.temp/
+# VuePress Build Distribution
+/docs/.vuepress/dist/
+# oversized assets
+/oversized-assets/
+# ------------------ Files
+*.DS_Store
+```
+
+### gitignore Syntax
+
+```sh
+# Ignore all files with .txt extension
+*.txt
+# Ignore all files in the "logs" directory
+/logs/
+# Exception: Include "important.txt" even though it has .txt extension
+!important.txt
+# Exception: Include everything in the "logs" directory
+!/logs/*
+```
+
 ## Long Way
 
 On almost every page of the VueBook website, you can click the Edit This Page On GitHub link on the bottom of the page.
