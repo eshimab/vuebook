@@ -13,7 +13,7 @@ icon: water
 
 ## Sensor Viewer Screenshots
 
-::: note asset "I have most of the Sensor Viewer screenshots"
+::: details asset "I have most of the Sensor Viewer screenshots"
 The screenshots are located in `docs/influx-flight/flight-begin/img/img-flowmeter/` but the pictures need to be:
 -   Cropped
 -   Annotated
