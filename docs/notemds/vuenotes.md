@@ -45,56 +45,45 @@ title: VueNotes
     vuepress-theme-hope 2.0.0-beta.233
     ```
 
-### Update Homebrew
 
-1. Update Homebrew using an "unshallow" clone
-```bash
-git -C /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core fetch --unshallow
-```
 
 Following the guide on: [Digital Ocean VuePress Intro][digital-ocean]
 
 
 ### Use Homebrew to install `nodejs@18` and `npm` globally
 
-1. Open terminal, use `brew` to find node, install version 18 `node@18`
+::: details if the brew install commands fail...
+-   If Homebrew fails, you may need to update it to an `unshallow clone` (whatever that is)
+-   Update Homebrew using an "unshallow" clone
+```bash
+git -C /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core fetch --unshallow
+```
+:::
+
+1.  Open terminal, use `brew` to find node, install version 18 `node@18`
 ```bash
 brew install node@18
 ```
-2. Use `brew` to install `npm`
+1.  Use `brew` to install `npm`
 ```bash
 brew install npm
 ```
 
 ## Initiate vuepress project
 
+Original guide from: [Digital Ocean VuePress Intro](https://www.digitalocean.com/community/tutorials/how-to-build-a-documentation-system-with-vue-and-vuepress)
 
 
-### Make project `~/scidev/vuebook` directory
+### Initialize `~/vuebook` with `npm` 
 
-Following the guide on: [Digital Ocean VuePress Intro](https://www.digitalocean.com/community/tutorials/how-to-build-a-documentation-system-with-vue-and-vuepress)
-
-Make vuepress site directory `scidev/vuebook/` (or just `vuebook`):
-```shell
-mkdir ~/scidev/vuebook
-cd ~/scidev/vuebook
-```
-
-### Use `npm` to install `vue` and `vuepress` **locally** in `vuebook`
-
-1. Initialize `vuebook`  as an `npm` project
+1.  Initialize `vuebook`  as an `npm` project
     ```shell
+    cd ~/vuebook
     npm init --yes
     ```
-2.  Use `npm` to install `vue` and `vuepress`
+2.  Use `pnpm` to install `vue` and `vuepress`
     ```bash
-    npm install vue
-    npm install vuepress --save-dev
+    pnpm install vuepress-theme-hope
     ```
-    - At date of writing, `vue` is at version `3.3.4` and `vuepress` at `1.9.9`
-3. Smooth out dependences with `npm upate`
-    ```shell
-    npm update
-    ``` 
-    
+    -   At date of writing, `vue` is at version `3.3.4` and `vuepress` at `1.9.9`
 
