@@ -47,10 +47,10 @@ Picture of the graduated cylinder and/or salt and/or MilliQ.
     1. For Non-Sorting, pure MilliQ Water is fine.
     2. For Sorting, we need a saline solution:
         1. For BioSure: Mixture is 1/8 BioSure Concentrate and 7/8 MilliQ Water in a Graduated Cylinder
-        2. For NaCl: Dissolve **X** g NaCl in **Y** liters MillQ Water. *Let Sheath Fluid sit overnight to fully dissolve NaCl*
+        2. For NaCl: Dissolve **32**g NaCl in **4** liters MillQ Water. *Let Sheath Fluid sit overnight to                     fully dissolve NaCl*
     3. Fill a 60ml Syringe with Sheath Fluid for Purging the instrument and filling sort tubes.
         1. Label Syringe.
-        2. Attach a 0.2um Acrodisc Synring Filter to the synringe
+        2. Attach a 0.2um Acrodisc Syringe Filter to the syringe
 
 ### Syringes
 
@@ -58,33 +58,33 @@ Picture of the graduated cylinder and/or salt and/or MilliQ.
 Three syringes filled with sheath fluid, MilliQ Water, and 70% ethanol.
 :::
 
--   Sheath Syringe
+
+1.  Sheath Syringe
     1.  Fill a 60ml Syringe with Sheath solution using the LuerLok Adapter.
-        1.  Make sure the Sheath Tank is not sealed.
-    2.  Attach a 0.2um Acrodisc filter. 
--   MilliQ Syringe
+       -   Make sure the Sheath Tank is not sealed.
+    1.  Attach a 0.2um Acrodisc filter.
+2. MilliQ Syringe
    1.  Fill a 60ml Syringe with MilliQ Water.
    2.  Attach a 0.2um Acrodisc filter.
--   (Sometimes Useful) 70% Ethanol
+3. 70% Ethanol (sometimes useful)
    1.  Fill a 60ml Syringe with 70% Ethanol.
    2.  Cap the Syringe. 
-   3.  Ethanol will eat away at the Acrodisc filter. Install the filter only when necessary.
+   3. Ethanol will eat away at the Acrodisc filter. Install the filter only when necessary.
    
-
-### Alignment Samples
+### Alignment/Calibration Samples
 
 ::: note asset "Alignment Sample Tubes"
 Filtered MilliQ, HB-` "Beer", 1.0um bead dilution, and (if sorting) 3.1um bead dilution.
 :::
 
--   Filtered MilliQ
-    -   From the MilliQ Syringe with 0.2um Filter
--   Coarse Alignment "Beer"
-    1.  Fill a sample tube with about 800ul of "HB-1" Beer.
-    2.  This is a dangerous lab chemical. Do not consume.
--   Laser Alignment 1.0um Calibration beads
+1. Filtered MilliQ
+    - From the MilliQ Syringe with 0.2um Filter
+2. Coarse Alignment "Beer"
+    - Fill a sample tube with about 800ul of "HB-1" Beer.
+    - This is a highly toxic lab chemical. Do not consume.
+3. Laser Alignment 1.0um Calibration beads
     -   Create a dilution of 1.0um Ultra Rainbow Fluorescent Beads (*Spherotech*) by dropping 2-3 drops of Bead Concentrate into ~2ml 0.2um Filtered MilliQ Water
         -   Note: The 1.0um Bead concentration is **1E7**
--   (Sorting) 3.1um Calibration Beads
+4. Drop Delay 3.1um Calibration Beads
     -   Create a dilution of 1.0um Ultra Rainbow Fluorescent Beads (*Spherotech*) by dropping 5-6 drops of Bead Concentrate into ~2ml 0.2um Filtered MilliQ Water.
         -   Note: The 3.1um Bead concentration is **1E6** (lower than the 1.0 um)
