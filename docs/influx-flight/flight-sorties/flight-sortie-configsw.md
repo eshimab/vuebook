@@ -17,6 +17,8 @@ icon: computer
 <!-- End Ref Links -->
 
 
+[[toc]]
+
 ## Sortware Panels
 
 1.  **Sort Settings**

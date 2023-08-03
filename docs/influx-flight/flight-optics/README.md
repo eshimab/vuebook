@@ -6,6 +6,9 @@ icon: burst
 
 
 
+[[toc]]
+
+
 ## Stage Directions
 
 The various knobs on the InFlux provide increasingly fine levels of adjustment. In order from "Coarse" to "Finest" the knobs are:

@@ -4,6 +4,8 @@ icon: flask
 ---
 
 
+[[toc]]
+
 
 ### Consult the Oracle
 

@@ -4,6 +4,9 @@ icon: list-check
 ---
 
 
+
+[[toc]]
+
 ## Yesterday: Prep Sheath
 
 ::: note Create the sheath fluid the day before

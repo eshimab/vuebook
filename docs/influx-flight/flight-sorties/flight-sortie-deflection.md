@@ -3,6 +3,14 @@ title: Drop Charge and Deflection
 icon: lines-leaning
 ---
 
+
+
+
+[[toc]]
+
+
+
+
 ## Goals
 
  

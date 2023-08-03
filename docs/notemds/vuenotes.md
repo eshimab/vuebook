@@ -6,6 +6,11 @@ title: VueNotes
 [digital-ocean]: https://www.digitalocean.com/community/tutorials/how-to-build-a-documentation-system-with-vue-and-vuepress
 <!-- End Ref Links -->
 
+
+
+[[toc]]
+
+
 ### After the vuebook re-init
 
 1.  Copied over the 

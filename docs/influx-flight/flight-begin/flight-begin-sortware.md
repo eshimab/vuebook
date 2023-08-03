@@ -6,6 +6,10 @@ icon: computer
 
 
 
+
+[[toc]]
+
+
 ## Connect *Sortware* to Cytometer
 
 ::: warning Check Sort Chamber before connecting to Cytometer

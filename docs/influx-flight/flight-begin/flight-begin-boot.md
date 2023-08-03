@@ -6,6 +6,10 @@ icon: power-off
 
 
 
+
+
+[[toc]]
+
 ## System Power TLDR:
 
 1. Turn On InFlux Instrument

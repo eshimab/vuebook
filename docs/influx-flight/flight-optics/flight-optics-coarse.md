@@ -1,12 +1,12 @@
 ---
-title: Coarse "Beer" Alignment
+title: Coarse Alignment
 icon: beer-mug-empty
 ---
 
 
 
 
-## Jump to...
+
 
 [[toc]]
 

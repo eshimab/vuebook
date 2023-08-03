@@ -6,7 +6,7 @@ icon: bullseye
 
 
 
-## Table of Contents
+
 
 [[toc]]
 

@@ -4,6 +4,9 @@ icon: filter-circle-xmark
 ---
 
 
+
+[[toc]]
+
 ::: warning Before removing the Purge Drain
 -   Be prepared advance directly to aligning the stream to the stream drain.
 -   Ensure that there is a 50ml centrifuge tube in the sort tray stage and that it is centered below the waste pipe.

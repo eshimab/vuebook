@@ -4,6 +4,11 @@ icon: clock
 ---
 
 
+
+[[toc]]
+
+
+
 The Drop Delay is the time it takes for a particle to get from the trigger laser to the droplet at the tip of the jet. 
 
 1.  The instrument applies a charge to the jet just before the target drop breaks off.

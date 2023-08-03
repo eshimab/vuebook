@@ -5,6 +5,9 @@ icon: pencil
 
 
 
+
+[[toc]]
+
 ## TLDR
 
 1.  See if `git` is installed (Usually ships on Mac)

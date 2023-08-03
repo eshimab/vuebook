@@ -6,6 +6,10 @@ icon: bolt
 
 
 
+[[toc]]
+
+
+
 ## Find Break-Off-Point (BOP)
 
 The break-off point (BOP) is where the waves on the surface of the stream (imparted by the nozzle assembly) cause the continuous stream jet to break off into individual droplets. 

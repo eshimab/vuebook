@@ -1,7 +1,7 @@
 
 
 
-
+[[toc]]
 
 # A Semi-Integrated Development Environment
 
