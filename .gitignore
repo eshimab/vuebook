@@ -26,3 +26,7 @@
 # 
 # ------------------ Files
 *.DS_Store
+*.mov
+*.mp4
+*.mat
+*.fig
