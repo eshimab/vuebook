@@ -6,10 +6,10 @@
 
 
 
-# ------------------ CONVERTING PNGS
+# ------------------ CONVERTING HEIC
 input_dir=$(pwd) # Get PWD
 output_dir="${input_dir}" # Set Output Dir (same dir)
-# Create directories for saving converted images
+# Create Dir for original images
 orig_dir="${input_dir}/origimg"
 mkdir -p "${orig_dir}"
 
@@ -23,43 +23,39 @@ oversized_assets_dir="$project_dir/oversized-assets"
 oversize_dir="$oversized_assets_dir${input_dir#$project_dir}/origimg"
 mkdir -p "${oversize_dir}"
 
-# Original full-resolution PNGs
-fullres_dir="${input_dir}/origimg/fullres"
-mkdir -p "${fullres_dir}"
-input_all_pngs="${input_dir}/*.png"
-rsync --archive --progress --recursive --verbose $input_all_pngs $fullres_dir
+# Make HEIC Backup
+heic_dir="${orig_dir}/heic"
+mkdir -p "${heic_dir}"
+input_all_heic="${input_dir}/*.HEIC"
+rsync --archive --progress --recursive --verbose $input_all_heic $heic_dir
 
-# Full Colors Backup
-fullcolors_dir="${input_dir}/origimg/fullcolors"
-mkdir -p "${fullcolors_dir}"
-input_all_pngs="${input_dir}/*.png"
-rsync --archive --progress --recursive --verbose $input_all_pngs $fullcolors_dir
-
-# Sync Files To oversized-assets
-orig_all_files="${orig_dir}/*"
-rsync --archive --progress --recursive --verbose $orig_all_files $oversize_dir
-
-# File Conversion with ImageMagick
-# Loop through png Files to convert them
+# Filetype conversion with sips
+# Loop through HEIC files in the input directory
 mkdir -p "${orig_dir}/preconvert"
-for file in "$input_dir"/*.png; do
-    # Get Filename
+for file in "$input_dir"/*.HEIC; do
+    # Convert HEIC to PNG and save it in original-png directory
     filename=$(basename "$file")
     # Backup Original
     cp "$file" "${orig_dir}/preconvert/$filename" 
-    # REPLACE ORIGINAL
+
     echo "converting $filename"
-    # Apply ImageMagick 
-    convert "$file" -colors 256 "$file"
-    # convert "$file" -resize 720x -colors 256 "$file"
+    # Create png output
+    png_output_file="${output_dir}/${filename%.*}.png"
+    # Convert to png with sips
+    sips -s format png "$file" --out "$png_output_file"
+    # Delete heic
+    rm "$file"
 done
 
 # Sync Files To oversized-assets
 orig_all_files="${orig_dir}/*"
 rsync --archive --progress --recursive --verbose $orig_all_files $oversize_dir
 
-# Remove dir
+# Remove Orig File Dir.
 rm -r $orig_dir
+
+
+
 
 
 echo "\n----ORIG DIR"
