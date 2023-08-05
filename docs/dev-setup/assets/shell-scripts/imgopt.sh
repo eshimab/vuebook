@@ -61,7 +61,7 @@ rsync --archive --progress --recursive --verbose $orig_all_files $oversize_dir
 # Remove dir
 rm -r $orig_dir
 
-
+# Check Before Remove?
 echo "\n----ORIG DIR"
 echo $orig_dir
 ls -la $orig_dir
