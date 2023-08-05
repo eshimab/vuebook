@@ -1,28 +1,81 @@
 #!/bin/bash
 
-# Specify the input directory containing HEIC files
-input_directory="/Users/eshim/vuebook/docs/influx-flight/flight-begin/assets/img-power"
-output_directory="${input_directory}/imgopt"
 
+
+
+
+
+
+# Specify the input directory containing HEIC files
+input_dir="/Users/eshim/vuebook/docs/influx-flight/flight-begin/assets/img-power"
+input_dir=$(pwd)
+output_dir="${input_dir}"
 # Create directories for saving converted images
-mkdir -p "${output_directory}/heic-orig"
-mkdir -p "${output_directory}/png-orig"
-mkdir -p "${output_directory}/png-reduced"
+orig_dir="${input_dir}/origimg"
+
+mkdir -p "${orig_dir}"
+# mkdir -p "${orig_dir}/heic"
+# Double check
+echo $input_dir
+echo $output_dir
+echo $orig_dir
+
 
 # Loop through HEIC files in the input directory
-for file in "$input_directory"/*.HEIC; do
-    # Save the original HEIC image
-    cp "$file" "${output_directory}/heic-orig/"
-
+for file in "$input_dir"/*.HEIC; do
     # Convert HEIC to PNG and save it in original-png directory
     filename=$(basename "$file")
-    png_output_file="${output_directory}/png-orig/${filename%.*}.png"
+    
+    echo "NEW LOOP"
+    echo "Full filepath"
+    echo $file
+    echo "Filename"
+    echo $filename
+    # Create png output
+    png_output_file="${output_dir}/${filename%.*}.png"
+    # Convert to png with sips
     sips -s format png "$file" --out "$png_output_file"
+    mv "$file" "${orig_dir}/heic/" 
 
-    # Apply ImageMagick command to reduce image size and save it in assets directory
-    reduced_output_file="${output_directory}/png-reduced/${filename%.*}.png"
-    # convert "$png_output_file" -quality 50 -resize 30% "$reduced_output_file"
-    convert "$png_output_file" -colors 256 "$reduced_output_file"
+    # Optional Conversion
+    # cp "$png_output_file" "${orig_dir}/"
+    # convert "$png_output_file" -resize 720x -colors 256 "$png_output_file"
 done
 
-echo "Conversion and size reduction complete!"
+
+
+# Loop through PNG files in the input directory
+input_dir=$(pwd)
+output_dir="${input_dir}"
+# Create directories for saving converted images
+orig_dir="${input_dir}/origimg"
+mkdir -p "${orig_dir}"
+for file in "$input_dir"/*.png; do
+    # Get Filename
+    filename=$(basename "$file")
+    # Backup Original
+    cp "$file" "${orig_dir}/$filename" 
+    # REPLACE ORIGINAL
+    # Apply ImageMagick 
+    convert "$file" -resize 720x -colors 256 "$file"
+done
+# Extract the relevant parts of the current directory
+# The /Users/username/vuebook part
+project_dir=$(echo "$input_dir" | cut -d'/' -f1-4)
+# The /Users/username/vuebook/oversized-assets
+oversized_assets_dir="$project_dir/oversized-assets"
+# The /Users/username/vuebook/oversized-assets/docs/
+# target_dir="$oversized_assets_dir${current_dir#$project_dir}/origimg"
+target_dir="$oversized_assets_dir${input_dir#$project_dir}/origimg"
+mkdir -p "${target_dir}"
+
+# Sync Files
+orig_all_files="${orig_dir}/*"
+rsync --archive --progress --recursive --verbose $orig_all_files $target_dir
+echo "\n----ORIG DIR"
+ls -la $orig_dir
+echo "TARGET DIR"
+ls -la $target_dir
+
+# Remove dir
+rmdir -r $orig_dir

@@ -21,7 +21,28 @@ icon: book
 | *ITALICS CAPS*     | Instrument Display          | *Pinhole Camera* |
 | *Italics*          | Instrument Component?       | *Nozzle*         |
 
+### Container Highlights
 
+::: danger 
+A Danger box indicates something may seriously injur or kill the user.
+:::
+
+::: warning
+Warnings are for things that may damage the instrument, cause data loss, or serioudly inconvenience the user.
+:::
+
+
+::: note
+Notes highlight important steps or display useful images.
+:::
+
+::: tip
+Tips are for best practices
+:::
+
+::: details Details Dropdown Menu 
+Details are for troubleshooting or user's edification.
+:::
 
 ## Manual Outline
 

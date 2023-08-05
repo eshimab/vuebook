@@ -23,13 +23,50 @@ ls -a
 # Combine with -l
 ls -al
 ```
-
 Yes, the long form of the -a option in the ls command is --all. Both -a and --all have the same functionality of showing all files, including hidden ones.
 
 Need to add `code`
 ```bash
 nano ~/.bash_profile
 ```
+
+## Sending Output
+
+### Greater Than Symbol
+
+#### `>` (Single Greater Than):
+
+-   Explanation:
+  -   Used to redirect output and create a new file or overwrite an existing file with the output.
+  -   If the specified file does not exist, it will be created.
+  -   If the file already exists, its content will be replaced with the new output.
+  
+- Example:
+  ```shell
+  echo "Hello, World!" > output.txt
+  ```
+
+If `output.txt` exists, it will be overwritten with "Hello, World!". If it doesn't exist, a new file named `output.txt` will be created with "Hello, World!".
+
+#### `>>` (Double Greater Than):
+
+-   Explanation:
+    - Used to redirect output and append it to the end of an existing file.
+    - If the specified file does not exist, it will be created.
+    - If the file already exists, the new output will be added at the end without removing the existing content.
+
+-   Example:
+    ```shell
+    echo "Line 1" >> data.txt
+    echo "Line 2" >> data.txt
+    ```
+-   If data.txt exists with the content "Line 1", the second echo command will append "Line 2" to the file, resulting in:
+    ```txt
+    Line 1
+    Line 2
+    ```
+
+
 
 
 ## Working with BASH variables
@@ -209,3 +246,42 @@ umount /Users/eshim/mounts/AWlab
 # Disconnect from VPN
 networksetup -disconnectpppoeservice "JETT"
 ```
+
+---
+### Piping `tree` to text file
+
+I did a basic tree command and piped it to a text file
+`tree >> treefile.md`But when I preview the markdown file, it seems that no newline characters were included in the tree output. I want to know how do to fix this two options:
+1.  Use VSCode Regex find and replace on all lines simultaneously by finding the last letter on each line
+2.  Use some sort of simple bash scripting method to do the same thing
+
+#### Using VSCode Regex Find and Replace
+
+1.  Open the treefile.md in Visual Studio Code (VSCode).
+2.  Press Ctrl + H (or Cmd + H on macOS) to open the "Find and Replace" panel.
+3.  Enable the regex mode by clicking the .* button in the search bar (it will become .*).
+4.  In the "Find" field, enter the regex .$ to match the last character on each line.
+5.  In the "Replace" field, enter the regex \0\n to append the matched character with a newline.
+6.  Click the "Replace All" button to add newlines at the end of each line.
+
+#### Option 2: Using Bash and sed
+
+```bash
+#!/bin/bash
+
+# Save the tree output to a temporary file
+tree > temp_tree.txt
+
+# Use sed to add newlines at the end of each line
+sed -i '' 's/.$/&\'$'\r/g' temp_tree.txt
+
+# Move the modified tree to the final file
+mv temp_tree.txt treefile.md
+```
+Explanation:
+
+-   The script saves the tree output to a temporary file `temp_tree.txt`.
+-   `sed -i '' 's/.$/&\'$'\n/g' temp_tree.txt` adds a newline at the end of each line using `sed`. The regex `.$` matches the last character on each line, and `&\'$'\n` appends the matched character with a newline.
+-   Finally, the script renames the temporary file to `treefile.md`.
+
+Both options will add newline characters at the end of each line, making the tree output display correctly in the Markdown file.
