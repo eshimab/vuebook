@@ -86,5 +86,7 @@ Filtered MilliQ, HB-` "Beer", 1.0um bead dilution, and (if sorting) 3.1um bead d
     -   Create a dilution of 1.0um Ultra Rainbow Fluorescent Beads (*Spherotech*) by dropping 2-3 drops of Bead Concentrate into ~2ml 0.2um Filtered MilliQ Water
         -   Note: The 1.0um Bead concentration is **1E7**
 4. Drop Delay 3.1um Calibration Beads
-    -   Create a dilution of 1.0um Ultra Rainbow Fluorescent Beads (*Spherotech*) by dropping 5-6 drops of Bead Concentrate into ~2ml 0.2um Filtered MilliQ Water.
+    -   Create a dilution of 1.0um Ultra Rainbow Fluorescent Beads (*Spherotech*) by dropping 5-6 drops of Bead Concentrate into ~2ml 0.2um Filtered Sheath or MilliQ Water.
         -   Note: The 3.1um Bead concentration is **1E6** (lower than the 1.0 um)
+        -   Technically, using sheath fluid for the bead dilutions could be better because it maxes the indices of refraction of the sample and sheath solutions most similar. 
+        -   In practice, however, the differences are immaterial.
