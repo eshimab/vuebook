@@ -137,8 +137,7 @@ Front of the workstation cart where the PCs, Marshal Monitors, Oscilliscope, Mai
 4. Power On LG Monitor using button on bottom/center of monitor.
 5. Use the login info recorded locally
 
-### Tip Start Sortware
-
+### Start Sortware
 
 ::: warning Check Sort Chamber before connecting to Cytometer
 -   Be sure that the Sort Chamber is free of any loose objects (beakers, syringes, etc) before Connecting Sortware to the Cytometer. 
@@ -150,14 +149,28 @@ Front of the workstation cart where the PCs, Marshal Monitors, Oscilliscope, Mai
 It’s best to make sure that Sortware can connect to the instrument before doing any more setup. If Sortware cannot Connect to Cytometer, you may need to power cycle the Instrument, potentially impeding alignment.
 :::
 
-To do so:
-1.  Start Sortware using the shortcut in the Start Menu bar at top of screen.
+To start Sortware and Connect to Cytometer:
+
+1.  Ensure that the Dell PC isn't making any error noises. 
+2.  On the HP PC, click the *Sortware* icon in the menu bar on the top of the screen. 
 2.  Go to the menu item `Cytometer > Connect to Cytometer`
 3.  In should report a successful connection.
     4.  If the Cytometer Settings panel is open, the Status tab should not have a red symbol on it.
     5.  The symbol will appear if there are connection problems with the instrument.
-    6.  The symbol may not be cleared automatically. You will need to click `Clear` in the `Status` tab of the `Cytometer Settings` panel.
-
+    6.  The symbol may not be cleared automatically. You will need to click `Clear` in the `Status` tab of the `Cytometer Settings` panel. 
+    :::: note Unable to Connect?
+    If the `Connect` button is greyed out or the software "Fails to connect to the cytometer:"
+    ::: note details Attempt simple power cycling
+    1.  Shutdown the HP and Dell PCs gracefully using the Windows OS. Don't just press and hold the Power button.
+    2.  Unplug the router and wait 30 seconds.
+    3.  Plug in the router, wait a couple minutes for it to boot up.
+    4.  Start the Dell and HP PCs in that order, as detailed earlier.
+    5.  If the first power cycle fails, do another power cycle, this time also turning the Instrument off *after* shutting down the PCs.
+        -   The Instrument should be turned off at both the Chassis and Workstation power switches
+        -   Power on the Instrument and then PCs as in the Power section.
+    6.  If you are still unable to connect, go to Network Troubleshooting.
+    :::
+    ::::
 
 ### (Optional) User computer to HP PC
 
