@@ -49,9 +49,17 @@ for file in "$input_dir"/*.png; do
     cp "$file" "${orig_dir}/preconvert/$filename" 
     # REPLACE ORIGINAL
     echo "converting $filename"
+    # Get the width of the image using identify command
+    width=$(identify -format '%w' "$file")
+    # Check if width is above 1000px, and resize only if necessary
+    if [ "$width" -gt 1000 ]; then
+        rsync --archive --progress --recursive --verbose --ignore-existing $file $fullres_dir
+        convert "$file" -resize 720x "$file"
+    fi
     # Apply ImageMagick 
+    # convert "$file" -colors 256 "$file"
+    rsync --archive --progress --recursive --verbose --ignore-existing $file $fullcolors_dir
     convert "$file" -colors 256 "$file"
-    # convert "$file" -resize 720x -colors 256 "$file"
 done
 
 # Sync Files To oversized-assets
