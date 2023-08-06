@@ -6,7 +6,7 @@
 
 
 
-# ------------------ CONVERTING PNGS
+# ------------------ SHRINKING PNG FILES
 input_dir=$(pwd) # Get PWD
 output_dir="${input_dir}" # Set Output Dir (same dir)
 # Create directories for saving converted images

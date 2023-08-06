@@ -84,7 +84,7 @@ icon: pencil
 
 On almost every page of the VueBook website, you can click the Edit This Page On GitHub link on the bottom of the page.
 
-![GitHub  Link](./assets/img/git/gitnotes-1-vuebook-github-link.png “Vuebook page link to GitHub”)
+![GitHub  Link](./assets/img-git/gitnotes-1-vuebook-github-link.png “Vuebook page link to GitHub”)
 
 You could also just go to the github website:
 
@@ -93,26 +93,26 @@ https://github.com/eshimab/vuebook
 Now you're on the GitHub page. Click the side menu button
 
 ::: figure
-![GitHub Side Menu](./assets/img/git/gitnotes-2-webui-sidemenu.png)
+![GitHub Side Menu](./assets/img-git/gitnotes-2-webui-sidemenu.png)
 Caption
 :::
 
 Use the dropdown menu below `Code` on the sidebar. If the `main` branch is checked off, use the drop-down to select the branch `bbnotes`.
 Using a branch prevents changes from breaking website because it only loads files from the `main` branch.
 
-![Side Menu bbnotes](./assets/img/git/gitnotes-3-webui-sidemenu-bbnotes.png)
+![Side Menu bbnotes](./assets/img-git/gitnotes-3-webui-sidemenu-bbnotes.png)
 
 ## Editing Files
 
 Now you should be able to edit the file, and the filepath above the text editor should display the `bbnotes` branch:
 
-![bbnotes Edit File](./assets/img/git/gitnotes-4-webui-bbnotes-editfile.png)
+![bbnotes Edit File](./assets/img-git/gitnotes-4-webui-bbnotes-editfile.png)
 
 If you accidentally leave the text editor, make sure that you are viewing the `Code` tab, and have the branch set to `bbnotes`. use the dropdown in the top right corner to edit the file.
 
 Alternatively, you can click the `Code` button in the top left of the text editor window. You can see what the rendered content will look like in the `Preview` pane.
 
-![Enter Text Editor](./assets/img/git/gitnotes-5-webui-editfile-code.png)
+![Enter Text Editor](./assets/img-git/gitnotes-5-webui-editfile-code.png)
 
 Edit the file using the text editor. You can type enumerated lists using "lazy numbers" because MarkDown till automatically number list items
 ```markdown
@@ -127,7 +127,7 @@ Numbered List ( Software Will automatically fix numbers)
 
 Edit the file with the text editor. If you would like to save the work, then press `Commit changes...` otherwise, press `Cancel changes` to permanently erase your edits.
 
-![After Editting File](./assets/img/git/gitnotes-6-webui-editfile-precommit.png)
+![After Editting File](./assets/img-git/gitnotes-6-webui-editfile-precommit.png)
 
 ## Save Changes with "Commit"
 
@@ -136,11 +136,11 @@ To save your work, click the `Commit changes...` button. It will open up a `Comm
 -   Ensure that "Commit directly to the `bbnotes` branch" is Checked
 -   Click the green `Commit changes` button
 
-![Commit Window](./assets/img/git/gitnotes-7-webui-commit-window.png)
+![Commit Window](./assets/img-git/gitnotes-7-webui-commit-window.png)
 
 You may need to refresh your browser to see the edits. Note that if you are not set the `bbnotes` branch, the edits will not appear. 
 
-![Check file edits](./assets/img/git/gitnotes-8-webui-post-commit.png)
+![Check file edits](./assets/img-git/gitnotes-8-webui-post-commit.png)
 
 ---
 
@@ -181,7 +181,7 @@ The `::: note` is part of the code syntax. `asset` indicates that "This is a req
 ```markdown
 Figure Example Goes Here
 
-![Image Caption & Alt Text](./assets/img/git/gitnotes-1-vuebook-github-link.png)
+![Image Caption & Alt Text](./assets/img-git/gitnotes-1-vuebook-github-link.png)
 
 -   Skip a line after the image to center figure and caption.
 -   The img filepath is relative to this markdown file `flight-begin-meters.md`
@@ -191,7 +191,7 @@ Figure Example Goes Here
 ::: note That Markdown Code renders as
 Figure Example Goes Here
 
-![Image Caption & Alt Text](./assets/img/git/gitnotes-1-vuebook-github-link.png)
+![Image Caption & Alt Text](./assets/img-git/gitnotes-1-vuebook-github-link.png)
 
 -   Skip a line after the image to center figure and caption.
 -   The img filepath is relative to this markdown file `flight-begin-meters.md`
@@ -359,15 +359,15 @@ Outer container text continues here
 
 ### Edit File using GitHub UI
 
-![Editting Files on GitHub](./assets/img/git/gitnotes-fikes-edittext.png)
+![Editting Files on GitHub](./assets/img-git/gitnotes-fikes-edittext.png)
 
 ### Commit those changes to save the edits
 
-![Committing the edits on GitHub](./assets/img/git/gitnotes-files-commitedits.png)
+![Committing the edits on GitHub](./assets/img-git/gitnotes-files-commitedits.png)
 
 ### Behold your beautiful work
 
-![The Website Rendered on VuePress](./assets/img/git/gitnotes-files-vuepress.png)
+![The Website Rendered on VuePress](./assets/img-git/gitnotes-files-vuepress.png)
 
 ::: tip GitHub will not render the containers
 There are many Markdown extensions, this is one of them. 
