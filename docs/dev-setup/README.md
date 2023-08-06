@@ -10,6 +10,76 @@ icon: pencil
 
 ## TLDR
 
+
+### Setup local CLI
+
+If you are initializing a new VuePress site with `vuepress-theme-hope`, then that command has to be run before initializing the `git` repository.
+
+#### Install Homebrew
+
+1. Open Terminal
+2. Check local Homebrew Installation
+    ```bash
+    which brew
+    ```
+    -   If this command returns the filepath `/usr/local/bin/brew`
+        -   See extended section in `dev-local.md`
+    -   If it returns nothing, install Homebrew using their website
+    ::: details Install Homebrew from their website
+    1.  Go to https://brew.sh/
+    2.  Following the instructions on the website. 
+        -   As of Aug 2023, that involves just one command in terminal:
+        ```sh
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+        ```
+        -   You may need to enter your password
+    :::
+
+#### Install npm and pnpm
+
+1.  Check for npm and pnpm
+    ```sh
+    dhcp-168-105-223-225:staging eshim$ which npm
+    /opt/homebrew/bin/npm
+    dhcp-168-105-223-225:staging eshim$ which pnpm
+    /opt/homebrew/bin/pnpm
+    ```
+2.  Install if needed
+    ```sh
+    brew install npm
+    npm install pnpm
+    ```
+
+#### Create the vuepress-theme-hope project
+
+1.  Create and initialize the project dir using `pnpm create`
+    -   Storing the project in `/Users/username/repos/vpth`
+    ```sh
+    mkdir -p ~/repos # -p to not overwrite if it exists
+    cd ~/repos
+    pnpm create vuepress-theme-hope vpth
+    ```
+4.  Follow the `vuepress-theme-hope` installation instructions
+    1.  Set the `package manager` to `pnpm`
+    2.  Set name to `vpth` or your choice
+    3.  `Version 2.0.0` (Aug 2023)
+    4.  Description: Use your imagination
+    5.  Licesne: I accept the default `MIT` but claim knowledge of this choice's implications
+    6.  If you know enough to balance multiple languages, this guide is probably beneath you. I chose `N`o
+    7.  See above for GitHub workflow
+    8.  Set your type of project to `docs`
+    1.  Don't initialize it as a `git repository`
+    1.  After it installs, don't view the preview template
+5.  Change the name of the `vpth/src` directory to `vpth/docs` (you can do this in Finder too)
+    ```sh
+    cd ~/repos/vpth
+    mv ./src ./docs
+    ```
+
+
+
+### Setup local Git
+
 1.  See if `git` is installed (Usually ships on Mac)
     ```sh
     git version
@@ -19,8 +89,8 @@ icon: pencil
     1.  Make the directory `mkdir` named `vuebook` in the `/Users/username/vuebook` 
     2.  Change Directory `cd` into `~/vuebook`
     ```sh
-    mkdir ~/vuebook22
-    cd ~/vuebook22
+    mkdir ~/vuebook
+    cd ~/vuebook
     ```
 3.  Initialize it as a git directory
     ```sh
@@ -28,7 +98,7 @@ icon: pencil
     ```
 4.  Set the `remote` GitHub repository URL
     1.  `add` a new `remote` alias
-    2.  Give it the alias (nickname) `vuemain`
+    2.  Give the alias a nickname `vuemain`
     3.  Target the url `https://github.com/eshimab/vuebook`
     ```sh
     git remote add vuemain https://github.com/eshimab/vuebook
@@ -39,8 +109,11 @@ icon: pencil
     ```sh
     git pull vuemain main
     ```
-
 ---
+
+
+
+
 
 ## Ignore Files
 
