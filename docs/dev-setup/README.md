@@ -78,33 +78,72 @@ If you are initializing a new VuePress site with `vuepress-theme-hope`, then tha
 
 
 
-### Setup local Git
+### Setup Git
+
+#### Create GitHub Repository
+
+I think that it's easier to create the repository using the website than to initialize the online repo with a push.
+
+
+#### Initialize local Git Repository
 
 1.  See if `git` is installed (Usually ships on Mac)
     ```sh
     git version
     ```
     -   Not installed? https://github.com/git-guides/install-git
-2.  Initialize the Git directory on local machine
-    1.  Make the directory `mkdir` named `vuebook` in the `/Users/username/vuebook` 
-    2.  Change Directory `cd` into `~/vuebook`
-    ```sh
-    mkdir ~/vuebook
-    cd ~/vuebook
     ```
-3.  Initialize it as a git directory
+2.  Initialize `~/repos/vpth` as a `git` project
     ```sh
+    cd ~/repos/vpth
     git init .
     ```
-4.  Set the `remote` GitHub repository URL
-    1.  `add` a new `remote` alias
-    2.  Give the alias a nickname `vuemain`
-    3.  Target the url `https://github.com/eshimab/vuebook`
+    -   Should Return
     ```sh
-    git remote add vuemain https://github.com/eshimab/vuebook
+    Initialized empty Git repository in /Users/username/repos/vpth/.git/
     ```
-5.  `pull` a copy of the files 
-    1.  Use the `vuemain` alias to point to the GitHub URL
+3.  Set the `remote` GitHub repository URL
+    1.  `add` a new `remote` alias
+    2.  Give the alias a nickname `vpmain`
+    3.  Assign the `vpmain` alias to the GitHub url: `https://github.com/YourUserName/vpthproj`
+    ```sh
+    git remote add vpmain https://github.com/eshimab/vpthproj
+    ```
+    -   Verify installation with 
+    ```sh
+    git remote --verbose
+    ```
+    -   Which returns
+    ```sh
+    vpmain  https://github.com/eshimab/vpthproj (fetch)
+    vpmain  https://github.com/eshimab/vpthproj (push)
+    ```
+4.  Create a `.gitignore` file
+    -   This prevents `git` from backing up large files and folders.
+    ```sh
+    touch ~/repos/vpth/.gitignore
+    ```
+    -   Use a text editor to add these lints to the file, then save it
+    ```sh
+    # ------------------ Directories
+    # npm / pnpm installed modules
+    /node_modules/
+    # Temp Directories for VuePress local server
+    /docs/.vuepress/.cache/
+    /docs/.vuepress/.temp/
+    # VuePress Build Distribution
+    /docs/.vuepress/dist/
+    # ------------------ Files 
+    # This is a Mac specific tracking file in every dir
+    *.DS_Store
+    ```
+5.  When `git` is initialized, it tracks the `node_modules/` directory even though that is on our `.gitignore`
+    1.  Remove that from the `git` `HEAD`
+    ```sh
+    
+    ```
+6.  `pull` a copy of the files 
+    1.  Use the `vpmain` alias to point to the GitHub URL
     2.  Select the `main` branch (for our use case)
     ```sh
     git pull vuemain main
