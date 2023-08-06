@@ -12,6 +12,11 @@ icon: bullseye
 
 ## Full Alignment
 
+### Procedure
+
+::: note details degrees of instrument (as opposed to the user’s) freedom
+The beer alignment should have set you up for a relatively painless bead alignment. The nature of the inFlux’s flexibility means that there are multiple combinations of [laser stages] + [stream position] + [FSC lens] that result in a well-defined beer alignment but which do not translate to a tight bead alignment. 
+:::
 
 
 
