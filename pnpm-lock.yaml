@@ -4,18 +4,13 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-dependencies:
-  markdown-it-implicit-figures:
-    specifier: ^0.11.0
-    version: 0.11.0
-  search:
-    specifier: ^1.0.0
-    version: 1.0.0
-
 devDependencies:
   '@vuepress/client':
     specifier: 2.0.0-beta.66
     version: 2.0.0-beta.66
+  markdown-it-implicit-figures:
+    specifier: ^0.11.0
+    version: 0.11.0
   typescript:
     specifier: ^5.1.6
     version: 5.1.6
@@ -2738,11 +2733,6 @@ packages:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
     dev: true
 
-  /commander@0.3.2:
-    resolution: {integrity: sha512-wCUu0gLg2JakdzAOPenfK1TIOot7sMjfnCe8A6St7F0RTaMytPrP1ZDn6dfVu0xZIsshGwNZj8RJlsRvMPMAmQ==}
-    engines: {node: '>= 0.4.x < 0.7.0'}
-    dev: false
-
   /commander@2.20.3:
     resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==}
     dev: true
@@ -4254,7 +4244,7 @@ packages:
   /markdown-it-implicit-figures@0.11.0:
     resolution: {integrity: sha512-ed32u3O8pTEM3TKgeBTMKw8ce86L8u5L41CuLvGee3yevYOq+1BoxjI84m/f7RcUaATcKgXTgZwieadvOH4afg==}
     engines: {node: '>=0.10.0'}
-    dev: false
+    dev: true
 
   /markdown-it@13.0.1:
     resolution: {integrity: sha512-lTlxriVoy2criHP0JKRhO2VDG9c2ypWCsT237eDiLqi09rmbKoUetyGHq2uOIRoRS//kfoJckS0eUzzkDR+k2Q==}
@@ -5071,14 +5061,6 @@ packages:
   /sax@1.2.4:
     resolution: {integrity: sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==}
     dev: true
-
-  /search@1.0.0:
-    resolution: {integrity: sha512-5XTZ/qcowUmUfJExlG9cASJnbFaL0+e3VTWDjx+j5CdswOmeYtNySvK0Vtr9Q9vpOREJ1rshW0KoXZ2r/2QjOw==}
-    engines: {node: '>= 0.4.x < 0.7.0'}
-    hasBin: true
-    dependencies:
-      commander: 0.3.2
-    dev: false
 
   /section-matter@1.0.0:
     resolution: {integrity: sha512-vfD3pmTzGpufjScBh50YHKzEu2lxBWhVEHsNGoEXmCmn2hKGfeNLYMzCJpe8cD7gqX7TJluOVpBkAequ6dgMmA==}

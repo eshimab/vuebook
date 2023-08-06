@@ -59,7 +59,7 @@ If you are initializing a new VuePress site with `vuepress-theme-hope`, then tha
     cd ~/repos
     pnpm create vuepress-theme-hope vpth
     ```
-4.  Follow the `vuepress-theme-hope` installation instructions
+2.  Follow the `vuepress-theme-hope` installation instructions
     1.  Set the `package manager` to `pnpm`
     2.  Set name to `vpth` or your choice
     3.  `Version 2.0.0` (Aug 2023)
@@ -68,9 +68,13 @@ If you are initializing a new VuePress site with `vuepress-theme-hope`, then tha
     6.  If you know enough to balance multiple languages, this guide is probably beneath you. I chose `N`o
     7.  See above for GitHub workflow
     8.  Set your type of project to `docs`
-    1.  Don't initialize it as a `git repository`
+    9.  Don't initialize it as a `git repository`
     1.  After it installs, don't view the preview template
-5.  Change the name of the `vpth/src` directory to `vpth/docs` (you can do this in Finder too)
+1.  Update the packages with `pnpm`. Remember to `cd ~/vpth` if necessary
+    ```sh
+    pnpm update
+    ```
+2.  Change the name of the `vpth/src` directory to `vpth/docs` (you can do this in Finder too)
     ```sh
     cd ~/repos/vpth
     mv ./src ./docs
@@ -92,7 +96,6 @@ I think that it's easier to create the repository using the website than to init
     git version
     ```
     -   Not installed? https://github.com/git-guides/install-git
-    ```
 2.  Initialize `~/repos/vpth` as a `git` project
     ```sh
     cd ~/repos/vpth
@@ -118,8 +121,13 @@ I think that it's easier to create the repository using the website than to init
     vpmain  https://github.com/eshimab/vpthproj (fetch)
     vpmain  https://github.com/eshimab/vpthproj (push)
     ```
-4.  Create a `.gitignore` file
-    -   This prevents `git` from backing up large files and folders.
+
+### A fork in the code
+
+#### Starting a new repo
+
+1.  Create a `.gitignore` file
+        -   This prevents `git` from backing up large files and folders.
     ```sh
     touch ~/repos/vpth/.gitignore
     ```
@@ -127,7 +135,7 @@ I think that it's easier to create the repository using the website than to init
     ```sh
     # ------------------ Directories
     # npm / pnpm installed modules
-    /node_modules/
+    node_modules
     # Temp Directories for VuePress local server
     /docs/.vuepress/.cache/
     /docs/.vuepress/.temp/
@@ -137,22 +145,84 @@ I think that it's easier to create the repository using the website than to init
     # This is a Mac specific tracking file in every dir
     *.DS_Store
     ```
-5.  When `git` is initialized, it tracks the `node_modules/` directory even though that is on our `.gitignore`
-    1.  Remove that from the `git` `HEAD`
+    -   The `#` is used for comments
+    -   `.DS_Store` is a file created by macOS in every folder for record keeping.
+5.  When `git` is initialized, it may track the `node_modules` directory even if it was in the `.gitignore` file
+    1.  After saving the new `.gitignore` file, start a new Terminal window and use `cd ~/repos/vpth` to move back to the project root directory.
+    2.  Use this command, it will report nothing done if `node_modules` is successfully ignored
+        ```sh
+        git rm -r --cached node_modules
+        ```
+1. Check your `git status`
+       ```sh
+       git status
+       ```
+2.  You should have untracked documents:
+    3.  Remember you can use TAB to auto-complete, but only as far as the unique characters in the file or dir name allow.
     ```sh
-    
+    .gitignore
+    docs 
+    package.json
+    pnpm-lock.yaml
     ```
-6.  `pull` a copy of the files 
+3.  Add the documents to `git` traking with `git add`. This command is recursive by default.
+    ```sh
+    git add docs
+    git add .gitingore
+    git add package.json
+    git add pnpm-locl.yaml
+    ```
+4.  Ensure that those files and all sub-directories and files in `docs/` are ready for staging with another `git status`
+5.  Create a local `commit` to prepare to upload to the remote GitHub repo
+    6.  Use the `-m` flag to include a message bounded by parentheses.
+    7.  Every `commit` must have a message.
+6.  ```sh
+    git commit -m "First commit"
+    ```
+1.  Use `push` to sync the staged local `commit` of the `master` branch to the `remote` GitHub repository using the remote alias `vpmain`. 
+    ```sh
+    git push vpmain master
+    ```
+1.  
+
+#### Pulling from an established repo
+
+1.  `pull` a copy of the files 
     1.  Use the `vpmain` alias to point to the GitHub URL
     2.  Select the `main` branch (for our use case)
     ```sh
     git pull vuemain main
     ```
+
+
+## Config VuePress
+
+1.  Go into the `vpth/package.json` file and replace the three instances of `src` (the old name for the VuePress documents) to `docs`.
+    -   If you have not altered the `package.json` file, it will look similar to this:
+```json {8-10}
+{
+  "name": "vuepress-theme-hope-template",
+  "version": "2.0.0",
+  "description": "A project of vuepress-theme-hope",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "docs:build": "vuepress build docs",
+    "docs:clean-dev": "vuepress dev docs --clean-cache",
+    "docs:dev": "vuepress dev docs",
+    "docs:update-package": "pnpm dlx vp-update"
+  },
+  "devDependencies": {
+    "@vuepress/client": "2.0.0-beta.66",
+    "vue": "^3.2.47",
+    "vuepress": "2.0.0-beta.66",
+    "vuepress-theme-hope": "2.0.0-beta.234"
+  }
+}
+```
+
+
 ---
-
-
-
-
 
 ## Ignore Files
 
