@@ -8,7 +8,8 @@ icon: glass-water
 
 <!-- Reference Links -->
 <!-- Images -->
-[img-nozzle-zoom]: ./assets/ifm-fluidics-nozzle-installed-zoom-anno.png
+[img-nozzle-zoom]: ./assets/img-nozzle/ifm-fluidics-nozzle-installed-zoom-anno.png
+[img-sheath-components]: ./assets/img-sheath/ifm-fluidics-sheathTankComponents-anno.png
 <!-- End Ref Links -->
 
 
@@ -20,6 +21,7 @@ icon: glass-water
 
 ::: note 
 ![Nozzle installed][img-nozzle-zoom]
+
 A picture with the nozzle installed. Note the 
 -   *Nozzle Assembly*
 -   *Nozzle Nut* (Orifice)
@@ -56,13 +58,17 @@ A picture with the nozzle installed. Note the
     (Applies to next step)
     Using the vacuum pulled by **PURGE** will not hold the *Nozzle* aloft. Always support the nozzle manually or with the *Nozzle Nut*.
     :::
-    1. It may help to turn on PURGE on the Regulator Tower to open the Waste Valve and create a vacuum on the Nozzle Assembly to hold the Nozzle steady. 
+    1. It may help to turn on **PURGE** on the Regulator Tower to open the Waste Valve and create a vacuum on the Nozzle Assembly to hold the Nozzle steady. 
         1. After Nozzle has been installed, turn off **PURGE** if used.
 
 ## Hook-Up Sheath Fluid Canister to InFlux
 
-::: note
+::: tip Check sheath drain at rear of instrument
 The Waste Pipe is plumbed to the Waste Tank via a piece of tubing that runs out of the rear/center of the Sort Chamber. Always inspect that tubing visually before starting the Sheath stream to ensure it has no holes or tears.
+:::
+
+::: note Sheath tank components
+![Sheath tank Components][img-sheath-components]
 :::
 
 ::: note asset “InFlux sheath tank plumbed to instrument”
@@ -97,7 +103,7 @@ The InFlux sheath tank installed on the instrument with the inline filter and sc
     3. On the Sheath Tank, Slowly tighten the Pressure Release valve on the            
         1. You may need to wiggle the lid of the Tank to get the O-Ring to settle and seal the container
         2. And by wiggle I mean pull up while holding the tank down and twisting the lid handle.
-        2. This is done to gently fill the 0.2um Sterivex In-line Filter so that it doesn’t have air bubbles
+        3. This is done to gently fill the 0.2um Sterivex In-line Filter so that it doesn’t have air bubbles
     4.  *Optional* (If Filtering Sheath Fluid):
         1.  Filter the Sheath Fluid from the Original Sheath Tank to the New Sheath Tank
         2.  Transfer the Sheath Line and Sterivex to the New Sheath Tank.
@@ -114,7 +120,7 @@ The InFlux sheath tank installed on the instrument with the inline filter and sc
     Sheath control buttons and sheath valves on top of regulator tower. Note that:
     -   RUN must be turned off before any other button can be activated 
     :::
-    6.  Press the RINSE button on the Regulator Tower to open the Sheath and Waste valves.
+    1.  Press the RINSE button on the Regulator Tower to open the Sheath and Waste valves.
         1. **Stop the Rinse** when Sheath Fluid reaches the Y-Connector affixed to the upper right corner of the Nozzle Assembly 
         2. See figure below
 
@@ -174,7 +180,7 @@ The flow path for sheath fluid entering the middle assembly
 
 ## Check for leaks
 
-::: note asset “Instrument picture with common  leak points”
+::: note asset “Instrument picture with common leak points”
 A few common points of failure.
 :::
 
