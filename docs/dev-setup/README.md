@@ -44,10 +44,14 @@ If you are initializing a new VuePress site with `vuepress-theme-hope`, then tha
     dhcp-168-105-223-225:staging eshim$ which pnpm
     /opt/homebrew/bin/pnpm
     ```
-2.  Install if needed
+2.  Use `brew` to `install` `npm` and `pnpm`
     ```sh
     brew install npm
-    npm install pnpm
+    brew install pnpm
+    ```
+3.  Use `brew` to `install` NodeJS Version 18 (stable)
+    ```sh
+    brew install node@18
     ```
 
 #### Create the vuepress-theme-hope project
@@ -74,11 +78,82 @@ If you are initializing a new VuePress site with `vuepress-theme-hope`, then tha
     ```sh
     pnpm update
     ```
-2.  Change the name of the `vpth/src` directory to `vpth/docs` (you can do this in Finder too)
+2.  Use `pnpm` to `install` additonal packages as Develop Dependencies (`devDependences`) using the `-D` flag.
+    -   As of Aug 2023
+    ```sh
+    pnpm install -D typescript
+    pnpm install -D vuepress-plugin-md-enhance
+    pnpm install -D vuepress-plugin-search-pro
+    pnpm install -D markdown-it-implicit-figures
+    ```
+1.  Check the packages installed with `pnpm list` (in the `vpth` dir)
+    ```sh
+    pnpm list
+    ```
+    -   Output (versions as of Aug 2023):
+    ```sh
+    Legend: production dependency, optional only, dev only
+
+    vuebook@2.0.0 /Users/eshim/vuebook
+
+    devDependencies:
+    @vuepress/client 2.0.0-beta.66
+    markdown-it-implicit-figures 0.11.0
+    typescript 5.1.6
+    vue 3.3.4
+    vuepress 2.0.0-beta.66
+    vuepress-plugin-md-enhance 2.0.0-beta.234
+    vuepress-plugin-search-pro 2.0.0-beta.234
+    vuepress-theme-hope 2.0.0-beta.234
+    ```
+2.  Use `pnpm` to `update` all the installed packages
+    ```sh
+    pnpm update
+    ```
+3.  Change the name of the `vpth/src` directory to `vpth/docs` (you can do this in Finder too)
     ```sh
     cd ~/repos/vpth
     mv ./src ./docs
     ```
+4.  Configure the `vpth/package.json` file
+    1.  Alter the `script` commands by changing `src` to `docs`.
+        -   This is because we renamed the VuePress root directory from `vpth/src/` to `vpth/docs/`
+    2.  Add the `--port` flag to the `docs:dev` `script` to change the `localhost` site from the default `8080` to `8082`
+        -   The default port is `8080` and if you do not specify a `--port` then the server will run on `http://localhost:8080`
+        -   If you want to run multiple instances of VuePress on your local machine, then they need to have different ports.  
+    -   If you have not altered the `package.json` file, it will look similar to this:
+    ```json {8-11}
+    {
+      "name": "vuepress-theme-hope-template",
+      "version": "2.0.0",
+      "description": "A project of vuepress-theme-hope",
+      "license": "MIT",
+      "type": "module",
+      "scripts": {
+        "docs:build": "vuepress build docs",
+        "docs:clean-dev": "vuepress dev docs --clean-cache",
+        "docs:dev": "vuepress dev docs --port 8082",
+        "docs:update-package": "pnpm dlx vp-update"
+      },
+      "devDependencies": {
+        "@vuepress/client": "2.0.0-beta.66",
+        "markdown-it-implicit-figures": "^0.11.0",
+        "typescript": "^5.1.6",
+        "vue": "^3.3.4",
+        "vuepress": "2.0.0-beta.66",
+        "vuepress-plugin-md-enhance": "2.0.0-beta.234",
+        "vuepress-plugin-search-pro": "2.0.0-beta.234",
+        "vuepress-theme-hope": "2.0.0-beta.234"
+      }
+    }
+    ```
+5.  You can now use `pnpm` to `run` to run the script `docs:dev` (by default, line 10 of the `package.json` file, in the `"scripts"` list)
+    ```sh
+    pnpm run docs:dev
+    ```
+6.  Check your web browser by going to `http://localhost:8080`
+    -   If you modify a configuration file that causes the local server to crash, you can restart it using the `pnpm run docs:dev` command again.
+    -   You may need to manually restart the server for some changes. Use `ctrl + C` in the Terminal window to cancel the active command and use `pnpm run docs:dev` to start the server.
 
 
 
@@ -197,29 +272,7 @@ I think that it's easier to create the repository using the website than to init
 
 ## Config VuePress
 
-1.  Go into the `vpth/package.json` file and replace the three instances of `src` (the old name for the VuePress documents) to `docs`.
-    -   If you have not altered the `package.json` file, it will look similar to this:
-```json {8-10}
-{
-  "name": "vuepress-theme-hope-template",
-  "version": "2.0.0",
-  "description": "A project of vuepress-theme-hope",
-  "license": "MIT",
-  "type": "module",
-  "scripts": {
-    "docs:build": "vuepress build docs",
-    "docs:clean-dev": "vuepress dev docs --clean-cache",
-    "docs:dev": "vuepress dev docs",
-    "docs:update-package": "pnpm dlx vp-update"
-  },
-  "devDependencies": {
-    "@vuepress/client": "2.0.0-beta.66",
-    "vue": "^3.2.47",
-    "vuepress": "2.0.0-beta.66",
-    "vuepress-theme-hope": "2.0.0-beta.234"
-  }
-}
-```
+
 
 
 ---
