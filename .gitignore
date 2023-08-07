@@ -14,6 +14,7 @@
 # Or upload an empty directory by making a .gitinclude 
 #     text file in that dir
 # ------------------ Directories
+/.git/
 # npm / pnpm installed modules
 /node_modules/
 # Temp Directories for VuePress local server

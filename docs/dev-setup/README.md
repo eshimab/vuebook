@@ -285,14 +285,35 @@ I think that it's easier to create the repository using the website than to init
         ```sh
         git branch --set-upstream-to=vpmain/main main
         ```
+1.  Add some `.gitkeep` files to sync otherwise ignored/empty directories. You may need to create the directory with `mkdir`. Use the `mkdir` flag `-p`  to not risk over-writing the directories in they exist:
+    ```sh
+    # To go project root dir
+    cd ~/repos/vpth
+    # Make the .vuepress subdirs
+    mkdir -p ~/repos/vpth/docs/.vuepress/.cache/
+    mkdir -p ~/repos/vpth/docs/.vuepress/.temp/
+    mkdir -p ~/repos/vpth/docs/.vuepress/dist/
+    # Make the .gitkeep files
+    touch ~/repos/vpth/docs/.vuepress/.cache/.gitkeep
+    touch ~/repos/vpth/docs/.vuepress/.temp/.gitkeep
+    touch ~/repos/vpth/docs/.vuepress/dist/.gitkeep
+    ```
+    -   Use `git push` to send these changes to the GitHub repository using the alias `vpmain`. Send the `main` (should be the only) branch.
+    ```sh
+    cd ~/repos/vpth
+    git add docs
+    git commit -m "Updating empty dirs with .gitkeep files"
+    git push vpmain main
+    ```
+
 
 #### Pulling from an established repo
 
 1.  `pull` a copy of the files 
-    1.  Use the `vpmain` alias to point to the GitHub URL
+    1.  Use the `vpmain` alias to point to the GitHub URL 
     2.  Select the `main` branch (for our use case)
     ```sh
-    git pull vuemain main
+    git pull vpmain main
     ```
 
 
