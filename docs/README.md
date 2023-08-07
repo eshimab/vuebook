@@ -7,7 +7,7 @@ bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
 bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
 bgImageStyle:
   background-attachment: fixed
-heroText: Scidev VueBook
+heroText: Vuebook
 tagline: Digressions, documented.
 actions:
   #
@@ -44,7 +44,7 @@ highlights:
     bgImageStyle:
       background-repeat: repeat
       # background-size: initial
-    # ----- beg features.header Collab With GitHub
+    # ----- beg features.header.highlights  Collab With GitHub
     features:
       # How To  
       - title: How to
