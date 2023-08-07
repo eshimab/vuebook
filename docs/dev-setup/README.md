@@ -258,7 +258,33 @@ I think that it's easier to create the repository using the website than to init
     ```sh
     git push vpmain master
     ```
-1.  
+2.  The default name for the primary `git` `branch` is `master`. We will change it to `main`, but that is optional.
+    1.  Change the `branch` name on the GitHub website. 
+        1.  Go to the GitHub repository page and click the `Settings` tab 
+            1.  https://github.com/USERNAME/vpthproj/settings
+        2.  Find the `Default branch` section and edit the field by clicking the pencil icon
+        3.  Enter `main` in the popup window and click `Rename branch`
+        4.  Reload the page
+    2.  Change the local `branch` to `main`
+        1.  Starting in the `~/vpth` directory:
+        ```sh
+        # Rename the local "master" branch to "main"
+        git branch -m master main
+        # Push the new branch name "main" to the remote repository
+        git push -u vpmain
+        
+        ```
+    3.  Test the connection by modifying a file (eg change the `heroText` in `vpth/docs/README.md`) to your website tagline.
+        ```sh
+        cd ~/repos/vpth
+        git add docs/README.md
+        git commit -m "Testing push"
+        git push vpmain main
+        ```
+    4.  Then update the upstream branch for future pushes/pulls
+        ```sh
+        git branch --set-upstream-to=vpmain/main main
+        ```
 
 #### Pulling from an established repo
 

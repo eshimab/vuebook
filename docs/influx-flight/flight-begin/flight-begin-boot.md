@@ -139,15 +139,16 @@ Front of the workstation cart where the PCs, Marshal Monitors, Oscilliscope, Mai
 
 ### Start Sortware
 
+::: tip Start Sortware and Connect to Cytometer
+It’s best to make sure that Sortware can connect to the instrument before doing any more setup. If Sortware cannot Connect to Cytometer, you may need to power cycle the Instrument, potentially impeding alignment.
+:::
+
 ::: warning Check Sort Chamber before connecting to Cytometer
 -   Be sure that the Sort Chamber is free of any loose objects (beakers, syringes, etc) before Connecting Sortware to the Cytometer. 
 -   When the cytometer connects to Sortware, the Sort Tray will perform a homing movement to center the tray.
 -   Any objects which block the free movement of the Sort Tray aparatus will cause a mis-alignment between the coordinates in the Sortware Tray Control and the physical location of the sort tray.
 :::
 
-::: tip Start Sortware and Connect to Cytometer
-It’s best to make sure that Sortware can connect to the instrument before doing any more setup. If Sortware cannot Connect to Cytometer, you may need to power cycle the Instrument, potentially impeding alignment.
-:::
 
 To start Sortware and Connect to Cytometer:
 
