@@ -1,3 +1,22 @@
+---
+title: Namecheap TLDs
+---
+
+
+
+
+<!-- Reference Links -->
+<!-- Usage -->
+<!-- [img-label]: ./assets/filename.png -->
+<!-- ![Caption Text][img-label] -->
+<!-- Assets -->
+
+<!-- URLs -->
+
+<!-- End Ref Links -->
+
+
+
 ### Namecheap TLDs
 [nc-gtld-systems]: https://www.namecheap.com/domains/registration/gtld/systems/
 

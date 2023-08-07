@@ -5,9 +5,6 @@ icon: computer
 
 
 
-
-
-
 <!-- Reference Links -->
 <!-- Page Links -->
 [piezo-amp]: ./flight-sortie-piezo.md "Piezo Amplitude (V)"

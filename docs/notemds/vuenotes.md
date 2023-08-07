@@ -2,10 +2,18 @@
 title: VueNotes
 ---
 
+
+
+
 <!-- Reference Links -->
+<!-- Usage -->
+<!-- [img-label]: ./assets/filename.png -->
+<!-- ![Caption Text][img-label] -->
+<!-- Assets -->
+
+<!-- URLs -->
 [digital-ocean]: https://www.digitalocean.com/community/tutorials/how-to-build-a-documentation-system-with-vue-and-vuepress
 <!-- End Ref Links -->
-
 
 
 [[toc]]

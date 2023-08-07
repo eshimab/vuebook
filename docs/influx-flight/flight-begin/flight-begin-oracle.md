@@ -4,6 +4,18 @@ icon: hat-wizard
 ---
 
 
+
+<!-- Reference Links -->
+<!-- Usage -->
+<!-- [img-label]: ./assets/filename.png -->
+<!-- ![Caption Text][img-label] -->
+<!-- Assets -->
+
+<!-- URLs -->
+
+<!-- End Ref Links -->
+
+
 ::: note “The Magic 8 Ball.”
 
 The InFlux is attuned to metaphysical influences (i.e. vibes) that are undetectable to humans. If the day has bad vibes, no amount of analyst effort will result in a successful run. 

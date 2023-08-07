@@ -4,6 +4,16 @@ icon: list-check
 ---
 
 
+<!-- Reference Links -->
+<!-- Usage -->
+<!-- [img-label]: ./assets/filename.png -->
+<!-- ![Caption Text][img-label] -->
+<!-- Assets -->
+[power-e107-on]: ./assets/img-lasers/ifm-optics-lasers-e107-on-anno.png
+[laser-488-psu-on]: ./assets/img-lasers/ifm-optics--lasers-488-psuOn-standby.png
+[laser-457-psu-on]: ./assets/img-lasers/ifm-optics-lasers-457-psuOff.png
+<!-- End Ref Links -->
+
 
 
 
@@ -26,6 +36,7 @@ Laser Chamber Door is closed. Notice the finger switch and the Drop Camera Mirro
 ### Laser Power: 488
 
 Turn On 488nm *Coherent* Laser Power Supply Unit with the following sequence:
+
 1.  Turn on the 488 Rocker Switch (*E 107* Plug 2) 
 2.  Turn Key CW to `ON` (key is horizontal)
 3.  Use the dial to set the 488nm Laser Power Percent to 108 (as seen in the digital read-out)
@@ -35,9 +46,19 @@ Turn On 488nm *Coherent* Laser Power Supply Unit with the following sequence:
     3.  Turn off the 488 Rocker Switch (*E 107* Plug 2)
 
 
-::: note asset "Laser Power Supplies 488 and 457"
+::: note Laser Power Supplies 488 and 457
+
+![The E 107 Unit][power-e107-on]
+
+![488nm Lasre PSU][laser-488-psu-on]
+
+![457nm Lasre PSU][laser-457-psu-on]
+
 Laser power supply units (PSU) and E 107 Power Switches when all lasers are powered on.
+
 :::
+
+
 
 ### Laser Power: 457
 

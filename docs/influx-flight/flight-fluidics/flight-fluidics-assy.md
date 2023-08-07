@@ -5,7 +5,6 @@ icon: glass-water
 
 
 
-
 <!-- Reference Links -->
 <!-- Images -->
 [img-nozzle-zoom]: ./assets/img-nozzle/ifm-fluidics-nozzle-installed-zoom-anno.png
