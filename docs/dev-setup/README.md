@@ -353,8 +353,8 @@ I think that it's easier to create the repository using the website than to init
 /docs/.vuepress/.temp/
 # VuePress Build Distribution
 /docs/.vuepress/dist/
-# oversized assets
-/oversized-assets/
+# assets oversized
+/assets-oversized/
 # ------------------ Files
 *.DS_Store
 ```

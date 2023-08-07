@@ -13,13 +13,13 @@ output_dir="${input_dir}" # Set Output Dir (same dir)
 orig_dir="${input_dir}/origimg"
 mkdir -p "${orig_dir}"
 
-# -------- Create the sync dir in vuebook/oversized-assets/
+# -------- Create the sync dir in vuebook/assets-oversized/
 # Extract the relevant parts of the current directory
 # The /Users/username/vuebook part
 project_dir=$(echo "$input_dir" | cut -d'/' -f1-4)
-# The /Users/username/vuebook/oversized-assets
-oversized_assets_dir="$project_dir/oversized-assets"
-# The target dir with filestructure in oversized-assets
+# The /Users/username/vuebook/assets-oversized
+oversized_assets_dir="$project_dir/assets-oversized"
+# The target dir with filestructure in assets-oversized
 oversize_dir="$oversized_assets_dir${input_dir#$project_dir}/origimg"
 mkdir -p "${oversize_dir}"
 
@@ -35,7 +35,7 @@ mkdir -p "${fullcolors_dir}"
 input_all_pngs="${input_dir}/*.png"
 rsync --archive --progress --recursive --verbose $input_all_pngs $fullcolors_dir
 
-# Sync Files To oversized-assets
+# Sync Files To assets-oversized
 orig_all_files="${orig_dir}/*"
 rsync --archive --progress --recursive --verbose $orig_all_files $oversize_dir
 
@@ -62,7 +62,7 @@ for file in "$input_dir"/*.png; do
     convert "$file" -colors 256 "$file"
 done
 
-# Sync Files To oversized-assets
+# Sync Files To assets-oversized
 orig_all_files="${orig_dir}/*"
 rsync --archive --progress --recursive --verbose $orig_all_files $oversize_dir
 
@@ -73,6 +73,6 @@ rm -r $orig_dir
 echo "\n----ORIG DIR"
 echo $orig_dir
 ls -la $orig_dir
-echo "Oversized Assets DIR"
+echo "Assets Oversized DIR"
 echo $oversize_dir
 ls -la $oversize_dir

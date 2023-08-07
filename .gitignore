@@ -15,6 +15,9 @@
 #     text file in that dir
 # ------------------ Directories
 /.git/
+# Assets
+/assets-oversized/
+/assets-new/
 # npm / pnpm installed modules
 /node_modules/
 # Temp Directories for VuePress local server
@@ -22,8 +25,7 @@
 /docs/.vuepress/.temp/
 # VuePress Build Distribution
 /docs/.vuepress/dist/
-# oversized assets
-/oversized-assets/
+
 # 
 # ------------------ Files
 *.DS_Store

@@ -4,7 +4,7 @@
 input_directory="/Users/eshim/vuebook/docs/influx-flight/flight-sorties/assets/img-sortware"
 output_directory="${input_directory}"
 
-rsync --archive --progress --recursive --verbose $input_directory /Users/eshim/vuebook/oversized-assets/png_fullcolor/
+rsync --archive --progress --recursive --verbose $input_directory /Users/eshim/vuebook/assets-oversized/png_fullcolor/
 
 # Create directories for saving converted images
 # mkdir -p "${output_directory}/png-orig"
