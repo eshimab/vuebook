@@ -219,8 +219,49 @@ Fluidics system includes components necessary for:
     -   Placing a stream of particles (typically suspended in MilliQ water or a saline solution) in the center of a larger stream of sheath fluid
     -   Using carefullt regulated pressures, the stream is forced through a tiny orifice in a nozzle to produce a fine, fast-moving jet of fluid with sample particles in the center.
 -   Sheath Fluid
-    -   So named becaue the sample fluid is surrounded by a Sheath of saline (or MilliQ)
+    -   So named becaue the sample fluid is surrounded by a Sheath of saline (or MilliQ) water as it is forced through the nozzle
+    -   This causes the sample core within the stream to be centered and lined up with the jet emitted from the nozzle tip.
+    -   The main components of sheath fluid managemeant are:
+        -   Sheath Reservoir (tank)
+        -   Digital scale for monitoring level of fluid in the Sheath reservoir.
+        -   Sheath line
+        -   Sheath valve
+        -   Nozzle Assembly
+-   Pressure Regulation
+    -   Adjust Sheath PSI directly. 
+    -   ~~Two presets levels of pressure for sheath~~ 
+    -   Adjust Sample psi directly
+    -   Adjust Sample relative to Sheath psi
+    -   Adjust **BOOST** psi relative to Sample psi
+    -   Monitor Sample and Sheath psi 
+    -   Main Components:
+        -   Pressure Console
+        -   Pressure lines
+-   Waste Fluid Recovery
+    -   Retrieving all fluids that have been run through the inFlux except for those sorted into collection vessels
+    -   Main Components
+        -   Waste drains and buckets
+        -   Purge line and valve
+        -   Waste Lines
+        -   Waste Reservoir (tank)
+        -   Vacuump pump
 
+### 2.3.2 Illumination
+
+The illumination subsystem includes all the components necessary to apply a focused beam of laser-emitted light to the jet of sheath and sample fluid exitting the nozzle tip.
+
+Illumination subsystem main components:
+-   Laser(s)
+-   Protective shields and guards
+-   laser shutters
+-   Shutter interlock system
+-   Alignment prisms and/or mirrors
+-   Iris diaphragms
+-   Focusing lenses mounted on adjustable stages
+
+### 2.3.3 Detection
+
+    
 
 
 
