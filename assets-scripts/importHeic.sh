@@ -29,13 +29,29 @@ assets_new_heic_dir="$project_dir/assets-new/heic"
 mkdir -p "${assets_new_dir}"
 mkdir -p "${assets_new_heic_dir}"
 
-# Import .HEIC to ignored folder
-download_files_heic_big="${download_dir}/*.HEIC"
-rsync --archive --progress --recursive --verbose $download_files_heic_big $assets_new_heic_dir
-# Import .heic to ignored folder
-# download_files_heic_sml="${download_dir}/*.heic"
-# rsync --archive --progress --recursive --verbose $download_files_heic_sml $assets_new_heic_dir
 
-# Permanent Deletion.
-# rm $download_files_heic_big
-# rm $download_files_heic_sml
+file_target="JPG"
+file_output="jpg"
+asset_dir_type="jpg"
+
+asset_dir_target="${assets_new_dir}"/"${asset_dir_type}"
+mkdir -p "${asset_dir_target}"
+# Rsync
+download_files_type="${download_dir}"/*."${file_target}"
+rsync --archive --progress --recursive --verbose $download_files_type $asset_dir_target
+
+mkdir -p "${assets_new__dir}"
+for file in "$download_dir"/*.JPG; do
+    # Convert HEIC to PNG and save it in original-png directory
+    filename=$(basename "$file")
+    # Backup Original
+    cp "$file" "${orig_dir}/preconvert/$filename" 
+
+    echo "converting $filename"
+    # Create png output
+    png_output_file="${output_dir}/${filename%.*}.png"
+    # Convert to png with sips
+    sips -s format png "$file" --out "$png_output_file"
+    # Delete heic
+    rm "$file"
+done
