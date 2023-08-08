@@ -57,14 +57,22 @@ Details are for troubleshooting or user's edification.
 
 ## Manual Outline
 
-1.  Lab Prep stuff
-2.  Sheath Solution 
-3.  Calibration beads
-4.  Fluidics 
    
 ### Lab and Instrument Startup
 
+
+
 #### Lab Prep
+
+
+
+#### Instrument Power
+
+
+
+#### Workstation Power
+
+
 
 -   Sheath solution 
 -   QC Bead samples
