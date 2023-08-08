@@ -116,13 +116,6 @@ export default sidebar({
               // link: "flight-fluidics-samples",
             // }, // end flight-fluidics-samples
             //
-            //
-            "flight-fluidics-sortware",
-            // {
-              // text: "Setup Sortware Basics",
-              // link: "flight-fluidics-sortware",
-            // }, // end flight-fluidics-sortware
-            //
           ], // end children.flight-fluidics
         }, // end flight-fluidics
         //
@@ -137,6 +130,12 @@ export default sidebar({
             //
             // ------- beg: flight-optics-activate
             "flight-optics-activate",
+            //
+            "flight-optics-bdsorts",
+            // {
+              // text: "Setup Sortware Basics",
+              // link: "flight-optics-bdsorts",
+            // }, // end flight-optics-bdsorts
             //
             "flight-optics-coarse",
             // {
