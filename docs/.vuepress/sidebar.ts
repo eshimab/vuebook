@@ -210,6 +210,17 @@ export default sidebar({
     }, // end /influx-flight/
     // --------------- END INFLUX FLIGHT MANUAL --------------
     //
+    // ------- BEGIN INFLUX MANUALS ----------
+    {
+      text: "Influx Mfg Manuals",
+      prefix: "/influx-manuals/",
+      link: "/influx-manuals/README",
+      children: [
+        "manual-og",
+      ],
+    // End children.influx-manuals.docs
+    },
+    // ------- END INFLUX MANUALS ----------
     // ------- BEGIN INFLUX SYSTEMS docs/influx-systems/
     {
       text: "Influx Systems",
