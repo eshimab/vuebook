@@ -317,7 +317,19 @@ Sample Collection Subsystem Main Components:
 
 #### 2.3.7 Monitoring
 
-The Monitoring Subsystem
+The Monitoring Subsystem enables the User to oberserve in real-time:
+-   data acquired by the inFlux
+-   Feedback on system settings
+-   View close-up images necessary for proper adjustment and monitoring of the instrument
+
+-   Monitoring Subsystem Main Components
+    -   Software interface
+    -   Triple LCD Camera Monitors
+    -   Oscilliscope
+-   Monitoring System Auxillar Components
+    -   Pressure readouts
+    -   Drop Position indicator
+    -   Master Clock
 
 
 
@@ -326,9 +338,73 @@ The Monitoring Subsystem
 
 
 
-## 3 
 
-3.2.4 Mechanical
+
+## 3 Safety
+
+This chapter:
+-   alerts users to known or potential hazards reasonably associated with the inFLux operation
+-   outlines safety precautions
+
+::: danger From the Cytopeia manual:
+>   Operation of the intrument poses several potential hazards, including hazardous voltage and current, laser ratiation and moving parts. PLEASE read and understand this safety information and this entire manual prior to operating the instrument and follow all safey precautions.
+::: 
+
+### 3.1 Hazards
+
+-   The follwing table lists the primary potential hazards that may be encountered during inFlux operation.
+-   The instrument is labeled with ANSI/ISO-harmonized safety labels, alerting the user to these potential hazards.
+-   The alerting symbols contained in these labels are shown in the table
+
+| type       |     Potential Hazard              | Symbol |
+|:-----------|:----------------------------------|--------|
+| Electrical | High voltage plates and circuitry |        |
+| Light      | Laser Radiation                   |        |
+| Light      | UV Radiation                      |        |
+| Mechanical | Pinch/crush from Moving Parts     |        | 
+| Pneumatic | Tanks and fluidics under pressure  |        | Heat      | Heated air from instrument
+
+### 3.2 Safe Operation
+
+
+
+#### 3.2.1 General Electric
+
+-   As with all electrical equipment, protect against shock by connecting to an approved grounded power source.
+-   Do not, under any circumstances, remove the grounding plug from the power plug.
+-   Do not perform any servicing except as specifially stated in this manual.
+-   Do not removr any wiring cover or panel with a warning label affixed to it. These covers and panels provide protection against potential electrical shock from components inside.
+
+
+#### 3.2.2 High Voltage Plates
+
+This instrument requires the use of high voltage plates (HV Plates/Deflection Plates) to deflect desired droplets from the stream for collection. Whenever the plates are in use, the potential for electrical shock exists.
+
+::: danger High Voltage
+Do not reach into Workspace (Sort Chamber) while the Deflection Plates are energized! Switch **PLATES** off prior to opening door door and reaching into Workspace (Sort Chamber).
+:::
+
+#### 3.2.3 Light Hazards
+
+##### Laser Radiation
+
+This instrument utilizes both Class 2 and Class 3b laser radiation during operation. Follow all laser safety precautions.
+
+::: danger Laser radiation present!
+-   Wear suitible eye protection.
+-   AVOID DIRECT EXPOSURE TO THE BEAM.
+:::
+
+-   For each laser installed with the instrument, follow the laser manufacturer’s operating manual and facility-specific laser safety precautions.
+-   For the safety of operators and other persons near the inFlux system during operation, the instrument is equipped with an automatic laser shutter interlock system.
+    -   Suitable eye protection must still be worn
+    -   Do not intentially defeat this system.
+
+##### Ultra Violet Light
+
+
+
+#### 3.2.4 Mechanical
 
 Mechanical pinch or crush hazard due to:
 -   Do not remove guard or covers with labels alerting mechanical hazards. 
@@ -338,11 +414,109 @@ Well Deposition Unit
 -   Moving parts alert
 -   Don’t reach into “workspace” while unit is operating
 
-3.2.5 Pneumatic
+#### 3.2.5 Pneumatic
 
 Pressurized air and vacuum hazards
 -   Safely connected
 -   Know how to shut off
 -   Use caution near vacuum 
 
+::: warning Pressurized air and fluid lines
+The sheath reservoir, sheath lines, and sample lines are pressurized during operation. **Do not operate the instrument at more than 100 PSI.** Use caution when handling Sheath reservoir connections and when relieving reservoir pressure with the pressure relief valve.
+:::
+
+#### 3.2.6 Biohazard
+
+::: warning 
+Do not introduce any toxic, biohazardous, or other potentially dangerous substances into the instrument.
+:::
+
+Responsibility for disregarding this caution rests solely with the owners and operators of the instrument. As with all research-grade equipment:
+-   Observe universal biohazard safety precautions and utilize standard laboratory procedures
+-   operate Instrument only with doors fully closed to guard against aerosols, splashes, and spills.
+-   keep intrument workspace (sort chamber) and table clean.
+-   Do not store liquids on the instrument table.
+
+
+## 4 Operating Procedures
+
+::: note Summary
+This chapter contains detailed step-by-step instructions for operators new to the instrument. Information on use of the ~~Spigot~~ software is included.
+:::
+
+### 4.1 Preparation
+
+#### 4.1.1 Collect Supplies
+
+Gather and clean all supplies
+-   Sheath and waste reservoirs
+-   nozzle tip
+-   nozzle back-flush reservoir (spoon)
+-   sample tubes
+-   cotton swabs
+-   paper towels
+-   microscope slides
+
+#### 4.1.2 Prepare fluidics reservoirs
+
+-   Fill the sheath tank with up to 6 liters of sheath fluid, preferably filtered at 0.2um.
+-   Ensure the Waste Reservoir is clean and empty
+-   Attach lids and quick connect fittings from instrument fluidics lines to the reservoirs
+    -   Note that each port is unique. Each fitting connects to only one port.
+
+### 4.2 Power-up
+
+#### 4.2.1 Power up Fluidics
+
+##### Start Fluidics Early
+
+Fluids take from 30-60 minutes to fully stabilize. It is therefore important to start the fluidics as early as possible.
+
+##### Choose Sort Setting
+
+This section not relevant.
+
+##### Close Valves
+
+Ensure all the valves are closed:
+-   Sample Valve
+-   Sheath Valve
+-   Purge Valve
+-   Sample Pressure Valve
+
+##### Pressurize Sheath Reservoir
+
+1.  Close the pressure relief valve on the sheath reservoir. 
+2.  turn on air supply by flipping up the AIR toggle switch on the Pressure Console
+3.  Observe the gauge on the sheath reservoir to ensure that it is being pressurized.
+    1.  Reseat the lid of the Sheath Res if the pressure on the Sheath Res does not increase.
+
+##### Apply Vacuum
+
+1.  Turn on the vacuum pump or other vacuum supply
+2.  Read the gauge of the waste reservoir and ensure that it reads at least 5” Hg. If less than 5” Hg is observed after the tank has a few moments to come to pressure, tighten the lid.
+    3.  It is necessary for the wastr reservoir lid to be tightened as much as possible *without* the use of a wrench.
+
+#### 4.2.2 Start Lasers
+
+Most lasers require at least 30 minutes of warm-up time. 
+1.  Close all laser shutters on the instrument and start all lasers in accordance with the manufacturer’s procedures. 
+2.  Typical Laser Control Units have key switches to prevent unauthorized or unintended use.
+3.  Power output of the laser may be set to the desired label, or the laser put into standby mode.
+
+#### Start Computer
+
+Turn on the computer
+
+#### 4.2.4 ~~Power-up electronics Console~~
+
+#### 4.2.5 ~~Start Spigot~~
+
+### 4.3 Stream Generation
+
+4.3.1 Flush system
+
+1.  Place the flush bucket under the nozzle
+2.  Recheck that the waste reservoir has an adequate level of vacuum applied to it.
+3.  Open the Purge Valve and then the Sheath Valve 
 
