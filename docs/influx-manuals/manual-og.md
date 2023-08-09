@@ -246,7 +246,7 @@ Fluidics system includes components necessary for:
         -   Waste Reservoir (tank)
         -   Vacuump pump
 
-### 2.3.2 Illumination
+#### 2.3.2 Illumination
 
 The illumination subsystem includes all the components necessary to apply a focused beam of laser-emitted light to the jet of sheath and sample fluid exitting the nozzle tip.
 
@@ -259,9 +259,66 @@ Illumination subsystem main components:
 -   Iris diaphragms
 -   Focusing lenses mounted on adjustable stages
 
-### 2.3.3 Detection
+#### 2.3.3 Detection
 
-    
+-   The detection subsystem is modular and open.
+-   The purpose is to spectrally separate and quantify the intensity of light fluoresced or scattered by particles passing through the laser beam.
+-   Detection Subsystem Main Components
+    -   Image block assembly
+        -   Objective lens
+        -   Pinhole mirror
+        -   Prisms for directing light into the detector modules
+    -   Detector modules
+        -   Band-pass filters
+        -   Dichroic mirrors
+        -   Photo Multiplier Tubes (PMTs)
+
+#### 2.3.4 Signal Processing
+
+Signal Processsing encompasses all the electrical components necessary to:
+-   control PMTs
+-   Amplify and Process analog PMT signals into digital data that are sent to ~~Spigot~~ Sortware (via the Dell PC and router).
+-   Signal Processing Main Components
+    -   Logarithmic (log) and Linear (lin) Pre-amplifiers (preamps).
+    -   Analg-to-Digital Converters (ADCs)
+
+#### 2.3.5 Sort Electronics
+
+The Sort Electronics Subsystem is comprised of all the electronic components necessary for sorting particles. Including:
+-   Trasnferring sort gating information from ~~Spigot~~ Sortware into the hardware look-up tables
+-   Applying the hardware look-up table information and data provided by Signal Processing to make sort/no sort decisions.
+-   Controlling electrical components involved in the sorting of individual drops:
+    -   Drop Formation
+    -   Drop Tracking
+    -   Drop Deflection
+-   Sort Electronics Subsytem Main Components
+    -   Circuit boards for hardware look-up tables
+    -   Counters
+    -   Piezo Drive
+    -   Stream Deflection
+    -   High Voltage Deflection Plates
+    -   Control circuitry
+    -   Note: Many of these components are housed in the Electronics Console
+
+#### 2.3.6 Sample Collection
+
+After droplets are formed and deflected from the sample stream, the Sample Collection Subsystem is responsible for collecting the droplets.
+
+The options for sorting are:
+-   Standard 5ml test tubes
+-   24, 48, 96 well plates
+-   microscope slides
+
+Sample Collection Subsystem Main Components:
+
+-   Well Deposition Unit (WDU)
+    -   Two-Axis moveable tray powered by stepper motors and controlled by the User via the ~~Spigot~~ Sortware interface.
+    -   The tray can hold a well plate or use attachments for test tubes or microscope slides
+
+#### 2.3.7 Monitoring
+
+The Monitoring Subsystem
+
 
 
 
