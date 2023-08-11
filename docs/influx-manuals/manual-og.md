@@ -514,9 +514,10 @@ Turn on the computer
 
 ### 4.3 Stream Generation
 
-4.3.1 Flush system
+#### 4.3.1 Flush system
 
 1.  Place the flush bucket under the nozzle
 2.  Recheck that the waste reservoir has an adequate level of vacuum applied to it.
 3.  Open the Purge Valve and then the Sheath Valve 
+
 
