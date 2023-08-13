@@ -10,8 +10,8 @@
 input_dir=$(pwd) # Get PWD
 output_dir="${input_dir}" # Set Output Dir (same dir)
 # Create Dir for original images
-orig_dir="${input_dir}/origimg"
-mkdir -p "${orig_dir}"
+# orig_dir="${input_dir}/origimg"
+# mkdir -p "${orig_dir}"
 
 # -------- Create the sync dir in vuebook/assets-oversized/
 # Extract the relevant parts of the current directory
@@ -36,7 +36,7 @@ for file in "$input_dir"/*.HEIC; do
     # Convert HEIC to PNG and save it in original-png directory
     filename=$(basename "$file")
     # Backup Original
-    cp "$file" "${orig_dir}/preconvert/$filename" 
+    # cp "$file" "${orig_dir}/preconvert/$filename" 
 
     echo "converting $filename"
     # Create png output
