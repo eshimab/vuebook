@@ -22,6 +22,7 @@ icon: list-check
 
 ## Yesterday: Prep Sheath
 
+
 ::: note Create the sheath fluid the day before
 -   If Using BioSure or MilliQ for Sheath fluid, this is handy
 -   If dissolving NaCl into MilliQ, it is **required.** 
