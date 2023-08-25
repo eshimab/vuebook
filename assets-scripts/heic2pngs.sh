@@ -10,27 +10,27 @@
 # dir_heic=$(pwd) # Get PWD
 dir_asset="/Users/eshim/vuebook/assets-new"
 dir_prefix="ifm-lab-startup-init"
+dir_heic="$dir_asset/$dir_prefix/$dir_prefix-heic"
 dir_pngs="$dir_asset/$dir_prefix/$dir_prefix-pngs" # Set Output Dir (same dir)
-dir_site="$dir_asset/$dir_prefix/$dir_prefix-site" # Set Output Dir (same dir)
+echo "HEIC Dir: $dir_heic"
 echo "PNGS Dir: $dir_pngs"
-echo "SITE Dir: $dir_site"
-mkdir -p "$dir_site"
+mkdir -p "$dir_pngs"
 
 # Filetype conversion with sips
 # Loop through HEIC files in the input directory
-for file_png in "$dir_pngs"/*.png; do
+for file_heic in "$dir_heic"/*.HEIC; do
     # Get filename without extension
-    filename=$(basename "$file_png")
-    # Create site output file
-    filepath_site="${dir_site}/${filename%.*}.png"
+    filename=$(basename "$file_heic")
+    # Create png output
+    filepath_png="${dir_pngs}/${filename%.*}.png"
     # Check before running?
-    echo "Optimizing Image ${filename%.*}.png"
-    # Reduce Image size via reducing colors
-    convert "$file_png" -colors 256 "$file"
+    echo "Converting ${filename%.*}.HEIC --> ${filename%.*}.png"
+    # Convert to png with sips
+    sips -s format png "$file_heic" --out "$filepath_png"
     echo "---- ${filename%.*}.png Complete! -------"
 done
 
-echo "Conversion complete for $dir_site"
+echo "Conversion complete for $dir_pngs"
 # Saved for posterity
 # Extract the relevant parts of the current directory
 # The /Users/username/vuebook part
