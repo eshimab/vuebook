@@ -35,3 +35,4 @@ echo "Conversion complete for $dir_pngs"
 # Extract the relevant parts of the current directory
 # The /Users/username/vuebook part
 # project_dir=$(echo "$dir_heic" | cut -d'/' -f1-4)
+

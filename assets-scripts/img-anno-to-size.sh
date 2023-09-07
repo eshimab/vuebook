@@ -13,9 +13,14 @@ dir_prefix="ifm-lab-microscope"
 file_prefix="ifm-startup-microscope-max-height-zoom"
 file_type="png"
 
-dir_anno="$dir_asset/$dir_prefix/$dir_prefix-anno" # Set Output Dir (same dir)
-dir_size="$dir_asset/$dir_prefix/$dir_prefix-size" # Set Output Dir (same dir)
+dir_anno="$dir_asset/$dir_prefix/$dir_prefix-anno" # Set Anno Dir
+dir_crop="$dir_asset/$dir_prefix/$dir_prefix-crop" # Set Crop Dir
+dir_size="$dir_asset/$dir_prefix/$dir_prefix-size" # Set Size Dir
+dir_site="$dir_asset/$dir_prefix/$dir_prefix-site" # Set Site Dir
+mkdir -p "$dir_anno"
+mkdir -p "$dir_crop"
 mkdir -p "$dir_size"
+mkdir -p "$dir_site"
 max_wide=2000
 max_tall=1600
 

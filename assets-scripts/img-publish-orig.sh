@@ -50,35 +50,15 @@ echo "      "
 echo "      "
 echo "------      Begin img-publish script    --------"
 echo "Begin img-publish optimization for $filepath_src"
-
-# echo "      "
-# echo "------      Reporting Options    --------"
-# Report Write Overide
-overide_write_all=0 # 1 = Replace target file if it exsits
-check_write_all=0
-if ((overide_write_all == 1)); then
-    echo "------      overide_write_all is ACTIVE Confirm with 1   --------"
-    read -p 'Replace all files? check_write_all = ' check_write_all
-    if ((check_write_all != 1)); then
-        echo "check_write_all != 1. EXITING!"
-        exit 1
-    fi
-    overide_write_anno=1
-    overide_write_dims=1
-    overide_write_site=1
-elif ((overide_write_all == 0)); then
-    overide_write_anno=0
-    overide_write_dims=0
-    overide_write_site=0
-fi
-
 echo "      "
 echo "------      Reporting Options    --------"
-#
-echo "overide_write_all  = $overide_write_all  (1 = File Replacement)"
-echo "    overide_write_anno = $overide_write_anno (1 = File Replacement)"
-echo "    overide_write_dims = $overide_write_dims (1 = File Replacement)"
-echo "    overide_write_site = $overide_write_site (1 = File Replacement)"
+# Report Write Overide
+overide_write=0 # 1 = Replace target file if it exsits
+if ((overide_write == 1)); then
+    echo "overide_write = $overide_write - Replacing Files if they exist"
+elif ((overide_write == 0)); then
+    echo "overide_write = $overide_write - (default) No file replacement"
+fi
 # Report Byte Overide
 overide_byte=1   # 1 = No max file size (default 1)
 # Set Max Filesize 2,100,000 = 2.1MB
@@ -133,25 +113,21 @@ echo "------      Running Script!   --------"
 echo "      "
 echo "------      Transfer Crop to Anno? 0 = no, 1 = yes, 2 = only this  --------"
 check_crop_to_anno=0
-
+overide_crop=1
 read -p 'Set check_crop_to_anno = ' check_crop_to_anno
-if ((overide_write_anno == 0)) && [ -e "$filepath_crop" ]; then
-    if [ -e "$filepath_anno" ]; then
-        echo "      "
-        echo "------    File Exists in filepath_anno Set overide_write_anno = 1?  --------"
-        read -p 'Set overide_write_anno = ' overide_write_anno
-    elif [ ! -e "$filepath_anno" ]; then
-        overide_write_anno=1
-    fi
+if ((overide_write == 1)) && [ -e "$filepath_crop" ] && [ -e "$filepath_anno" ]; then
+    echo "      "
+    echo "------    File Exists in filepath_anno Set override_crop = 1?  --------"
+    read -p 'Set overide_crop = ' overide_crop
 fi
 
 # Transfer from crop to anno if requested
-if ((overide_write_anno == 0)) && ((check_crop_to_anno == 0)); then
+if ((overide_crop == 0)) && ((check_crop_to_anno == 0)); then
     echo " No transfer from crop. "
-elif ((overide_write_anno == 1)) && ((check_crop_to_anno == 1)); then
+elif ((overide_crop == 1)) && ((check_crop_to_anno == 1)); then
     echo "Transfer crop to anno and continue "
     rsync -arpv "$filepath_crop" "$filepath_anno"
-elif ((overide_write_anno == 1)) && ((check_crop_to_anno == 2)); then
+elif ((overide_crop == 1)) && ((check_crop_to_anno == 2)); then
     echo "Transfer crop to anno and exit"
     rsync -arpv "$filepath_crop" "$filepath_anno"
     echo "      "
@@ -167,8 +143,8 @@ echo "------      Checking Abort Conditions    --------"
 if [ ! -e "$filepath_src" ]; then
     echo "SOURCE FILE MISSING. EXITING. $filepath_src"
     exit 1
-# elif [ -e "$filepath_out" ] && (( overide_write_all == 0 )); then
-#     echo "FILE OUTPUT EXISTS AND overide_write_all = ${overide_write_all}. EXITING."
+# elif [ -e "$filepath_out" ] && (( overide_write == 0 )); then
+#     echo "FILE OUTPUT EXISTS AND overide_write = ${overide_write}. EXITING."
 #     echo "OUTPUT FILE: $filepath_out"
 #     exit 1
 elif [ ! -e "$dir_target" ]; then
@@ -184,22 +160,18 @@ fi
 echo "      "
 echo "------      Begin Image Dimensions Check for   -------"
 # Set overide Condition
-# if ((overide_write_all == 1)); then
-    # overide_dims=1
-# else
-    # overide_dims=0
-# fi
+if ((overide_write == 1)); then
+    overide_dims=1
+else
+    overide_dims=0
+fi
 # Get input if file exists in anno
-if ((overide_write_dims == 0)) && [ -e "$filepath_anno" ]; then
-    if [ -e "$filepath_dims" ]; then
-        echo "      "
-        echo "------    File Exists in filepath_dims Set overide_write_dims = 1?  --------"
-        read -p 'Set overide_write_dims = ' overide_write_dims
-    elif [ ! -e "$filepath_dims" ]; then
-        echo "No file in dims. Setting overide_write_dims = 1"
-        overide_write_dims=1
-    fi
-    if ((overide_write_dims != 1)); then
+if ((overide_dims == 0)) && [ -e "$filepath_anno" ] || [ -e "$filepath_dims" ]; then
+    echo "      "
+    echo "------    File Exists in filepath_dims Set overide_dims = 1?  --------"
+    
+    read -p 'Set overide_dims = ' overide_dims
+    if ((overide_dims != 1)); then
         echo "------    No Write Overide for dims Exiting!  --------"
         echo "      "
         exit 1
@@ -270,22 +242,21 @@ echo "------      Apply Color Conversion?      --------  "
 echo "filepath_src = $filepath_src"
 echo "      "
 # Set overide Condition
-
-# Get input if file exists in anno
-if ((overide_write_site == 0)) && [ -e "$filepath_dims" ]; then
-    if [ -e "$filepath_site" ]; then
-        echo "      "
-        echo "------    File Exists in filepath_site Set overide_write_site = 1?  --------"
-        read -p 'Set overide_write_site = ' overide_write_site
-    elif [ ! -e "$filepath_site" ]; then
-        overide_write_site=1
-    fi
+if ((overide_write == 1)); then
+    overide_site=1
+else
+    overide_site=0
 fi
-# Abort?
-if ((overide_write_site != 1)); then
-    echo "------    No Write Overide for filepath_site Exiting!  --------"
+# Get input if file exists in anno
+if ((overide_site == 0)) && [ -e "$filepath_dims" ] || [ -e "$filepath_site" ]; then
     echo "      "
-    exit 1
+    echo "------    File Exists in filepath_site Set overide_site = 1?  --------"
+    read -p 'Set overide_site = ' overide_site
+    if ((overide_site != 1)); then
+        echo "------    No Write Overide for filepath_site Exiting!  --------"
+        echo "      "
+        exit 1
+    fi
 fi
 # Convert Colors if above max_colors
 colors_src=$(identify -format "%k" "$filepath_src")
@@ -304,7 +275,7 @@ fi
 file_byte=$(stat -f %z "$filepath_src")
 # echo "filepath_src has file_byte = $file_byte"
 if [ "$file_byte" -gt "$byte_max" ] && (( overide_byte == 0 )); then
-   echo "FILE SIZE ABOVE MAX ${byte_max} BYTES ND overide_write_all = ${overide_write_all}. EXITING"
+   echo "FILE SIZE ABOVE MAX ${byte_max} BYTES ND overide_write = ${overide_write}. EXITING"
    exit 1
 fi
 
