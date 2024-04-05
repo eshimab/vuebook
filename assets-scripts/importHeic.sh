@@ -41,7 +41,7 @@ download_files_type="${download_dir}"/*."${file_target}"
 rsync --archive --progress --recursive --verbose $download_files_type $asset_dir_target
 
 mkdir -p "${assets_new__dir}"
-for file in "$download_dir"/*.JPG; do
+for file in "$download_dir"/*.HEIC; do
     # Convert HEIC to PNG and save it in original-png directory
     filename=$(basename "$file")
     # Backup Original

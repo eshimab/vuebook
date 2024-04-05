@@ -12,7 +12,8 @@ icon: bullseye
 <!-- Assets -->
 
 <!-- URLs -->
-
+[img-457-delay-low]: ./assets/img-457/ifm-startup-main-003-scope-457-delay-too-low.png
+[img-457-delay-set]: ./assets/img-457/ifm-startup-main-004-scope-457-delay-set.png
 <!-- End Ref Links -->
 
 
@@ -40,6 +41,23 @@ The 488nm Laser is the Primary laser for this Instrument. It is the only laser t
 
 
 ## Align 457 Laser
+
+
+### 457nm Set Delay
+
+::: note 457nm Laser Delay Too short (Third pinhole)
+
+![Oscilliscope View for 457nm Delay Value too low][img-457-delay-low]
+
+:::
+
+::: note 457nm Laser Delay Set (Third pinhole)
+
+![Oscilliscope View for 457nm Delay Set][img-457-delay-set]
+
+:::
+
+
 
 ## *Optional* Align 671 Laser
  

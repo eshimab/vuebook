@@ -12,7 +12,7 @@ icon: water
 <!-- Assets -->
 
 <!-- URLs -->
-
+[sensor-viewer-running]: ./assets/img-flowmeter/ifm-startup-main-002-flowmeters-01-running.png
 <!-- End Ref Links -->
 
 
@@ -54,6 +54,15 @@ The screenshots are located in `docs/influx-flight/flight-begin/img/img-flowmete
 1.  Press `Run` in the upper left corner of the `Sensor Viewer` window (`Measurement Control`  box).
 2.  *If logging* Start recording the log file by pressing `Start Logging` on the right side of the `Sensor Viewer` window.
 3.  If the `Measurement Type` is set to `Flow [Linearized]` (which, if you're reading this, it should be), then `Start` the `Totalizer` on the right side of the `Sensor Viewer` window.
+
+## Sensor Viewer Running
+
+::: note Sensor Viewer software running and logging for both flowmeters
+
+![Sensor Viewer Software][sensor-viewer-running]
+
+:::
+
 
 
 ## `Sensor Viewer` Logfile

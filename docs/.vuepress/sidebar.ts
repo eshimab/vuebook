@@ -40,32 +40,32 @@ export default sidebar({
           // beg children.flight-begin
           children: [
             //
-            "flight-begin-oracle",
+            "flight-begin-00-oracle",
             // {
               // text: "The Oracle",
               // link: "flight-begin-oracle",
             // }, // end flight-begin-oracle
             //
             //
-            "flight-begin-activate",
+            "flight-begin-01-activate",
             // {
               // text: "Lab Prep",
               // link: "flight-begin-activate",
             // }, // end flight-begin-activate
             //
-            "flight-begin-boot",
+            "flight-begin-02-boot",
             // {
               // text: "System Power",
               // link: "flight-begin-boot",
             // }, // end flight-begin-boot
             //
-            "flight-begin-meters",
+            "flight-begin-03-meters",
             // {
               // text: "Software flowmeters",
               // link: "flight-begin-meters",
             // }, // end flight-begin-meters
             //
-            "flight-begin-sortware",
+            "flight-begin-04-sortware",
             // {
               // text: "Setup sortwareConnect",
               // link: "flight-begin-sortware",
@@ -115,6 +115,13 @@ export default sidebar({
               // text: "Sample Basics",
               // link: "flight-fluidics-samples",
             // }, // end flight-fluidics-samples
+            //
+            // flight-fluidics-sortware
+            "flight-fluidics-sortware",
+            // {
+              // text: "Sortware Part 2",
+              // link: "flight-fluidics-sortware",
+            // }, // end flight-fluidics-sortware
             //
           ], // end children.flight-fluidics
         }, // end flight-fluidics

@@ -10,7 +10,7 @@ icon: filter-circle-xmark
 <!-- [img-label]: ./assets/filename.png -->
 <!-- ![Caption Text][img-label] -->
 <!-- Assets -->
-
+[img-sheath-drain-zoom]: ./assets/img-sheath/ifm-startup-main-011-sheath-waste-tube.png
 <!-- URLs -->
 
 <!-- End Ref Links -->
@@ -79,3 +79,9 @@ Example starting position.
     3.  See the above if water begins to spill out because you ignored the previously given advice.
 6.  Check Warning Lights below SAMPLE Button next to Sample Cradle.
  
+
+::: note Stream centered over the stream drain in the sort chamber
+
+![Sheath centered over drain][img-sheath-drain-zoom]
+
+:::

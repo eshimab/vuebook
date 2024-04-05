@@ -10,7 +10,7 @@ icon: computer
 <!-- [img-label]: ./assets/filename.png -->
 <!-- ![Caption Text][img-label] -->
 <!-- Assets -->
-
+[sw-error-plots-stacked]: ./assets/img-sortware/ifm-startup-main-001-sortware-workspacer-load-error-01-plots-stacked.png
 <!-- URLs -->
 
 <!-- End Ref Links -->
@@ -36,4 +36,13 @@ icon: computer
     -   Cytometer not connected? See the previous note on failed connections, or go to Network Troubleshooting.
     ::: 
 5.  Under the Acquisition Dashboard, click Acquire to initiate data transfer to Sortware
-6.  
+
+
+
+### Troubleshooting
+
+::: note Sortward Workspace load error resulting in stackes plots
+
+![Workspace load error][sw-error-plots-stacked]
+
+:::

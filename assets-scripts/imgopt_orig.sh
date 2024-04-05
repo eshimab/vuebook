@@ -1,7 +1,8 @@
 #!/bin/bash
 
 
-
+"$source_dir" -type f -size -4G | while read -r source_file; do
+$sourcehunt
 
 
 
@@ -73,6 +74,7 @@ rm -r $orig_dir
 echo "\n----ORIG DIR"
 echo $orig_dir
 ls -la $orig_dir
+
 echo "Assets Oversized DIR"
-echo $oversize_dir
+echo $oversize_dirimport_ori
 ls -la $oversize_dir

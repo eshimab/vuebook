@@ -5,19 +5,50 @@
 
 # ------------------ CONVERTING HEIC
 # SOURCE
-dir_prefix="ifm-lab-microscope"
-file_prefix="ifm-startup-microscope-objective-main-2"
-file_type="png"
-# TARGET
-dir_output="flight-sorties"
-dir_img="img-microscope"
+dir_prefix="ifm-startup-main-01"
+file_prefix="ifm-startup-main-t1200-030-drop156-pz4p31-sortware-bop-steady-short-flash-on"
 
-overide_mkdir=1 # 1 = Make target dir if it does not exist
+# TARGET
+dir_sec="flight-sorties"
+dir_img="img-drop156"
+
+# Sync to Vuebook
+send_to_vue=2 # 1 = Send to Vuebook
+# Back-up IMage Copy from anno dir
+backup_anno=1 # 1 = backup if it exists
+# Max Colors
+max_colors=256
+# Set Max Filesize 2,100,000 = 2.1MB
+byte_max=900000 # Bytes
+# Dimensions in pixels
+max_wide=600
+max_tall=600
+
+# ------      Overides    --------
+overide_byte=0      # 0 = No max file size (default 1)
+overide_cols=1      # 0 = No Limit to Colors (default 1) 
+overide_dims=1      # 0 = No Max dims (or use old file) (default 1)
+overide_crop=0      # 1 = Move file from Crop dir (default 0)
+# Write Overides
+overide_write_all=1  # 1 = Set all write overides to true
+# Asset Dir Overides
+overide_write_anno=1
+overide_write_dims=1 # 1 = to overwrite in -dims (default 0)
+overide_write_site=1
+# Vuebook Overide
+overide_write_vue=0  # 1 = to overwrite in vuebook (default 0)
+
+# Other Checks
+check_write_all=0
+overide_mkdir=1     # 1 = Make target dir if it does not exist
 
 # Project
 dir_base="/Users/eshim/vuebook"
 # IFM
-dir_ifm="$dir_base/docs/influx-flight"
+dir_ifm="$dir_base/docs/influx-flight/$dir_sec/assets/$dir_img"
+mkdir -p "$dir_ifm"
+# Filetype
+file_type="png"
 # Build Filepaths
 dir_asset="$dir_base/assets-new"
 # Build Image Dirs
@@ -28,6 +59,8 @@ dir_site="$dir_asset/$dir_prefix/$dir_prefix-site"
 mkdir -p "$dir_crop"
 mkdir -p "$dir_dims"
 mkdir -p "$dir_site"
+# Create Output Directory
+dir_output="$dir_base/docs/influx-flight/$dir_ifm/assets/$dir_img"
 # Create Filepaths
 filepath_anno="$dir_anno/$file_prefix.$file_type"
 filepath_crop="$dir_crop/$file_prefix.$file_type"
@@ -38,24 +71,28 @@ filepath_site="$dir_site/$file_prefix.$file_type"
 # echo "filepath_dims = $filepath_dims"
 # echo "filepath_site = $filepath_site"
 
+# Report
+echo "      "
+echo "-----------------------------------------------------------------------------------------"
+echo "------      Begin img-publish script    --------"
+echo "Begin img-publish optimization for $filepath_src"
+
+if [ -e "$filepath_anno" ] && ((backup_anno == 1)); then
+    echo "      "
+    echo "------      Backing Up Anno File    --------"
+    mkdir -p "$dir_anno/backup"
+    rsync -avrp "$filepath_anno" "$dir_anno/backup/$file_prefix.$file_type"
+fi
 
 # dir_target="$dir_ifm/$dir_output/assets/$dir_img"
 dir_target="$dir_site"
 
 filepath_src="$dir_anno/$file_prefix.$file_type"
-filepath_out="$dir_target/$file_prefix.$file_type"
+filepath_ifm="$dir_ifm/$file_prefix.$file_type"
 
-# Report
-echo "      "
-echo "      "
-echo "------      Begin img-publish script    --------"
-echo "Begin img-publish optimization for $filepath_src"
 
 # echo "      "
-# echo "------      Reporting Options    --------"
-# Report Write Overide
-overide_write_all=0 # 1 = Replace target file if it exsits
-check_write_all=0
+
 if ((overide_write_all == 1)); then
     echo "------      overide_write_all is ACTIVE Confirm with 1   --------"
     read -p 'Replace all files? check_write_all = ' check_write_all
@@ -66,11 +103,15 @@ if ((overide_write_all == 1)); then
     overide_write_anno=1
     overide_write_dims=1
     overide_write_site=1
-elif ((overide_write_all == 0)); then
-    overide_write_anno=0
-    overide_write_dims=0
-    overide_write_site=0
+    overide_write_vue=1
+# elif ((overide_write_all == 0)); then
+#     overide_write_anno=0
+#     overide_write_dims=0
+#     overide_write_site=0
+#     overide_write_vue=0
 fi
+
+
 
 echo "      "
 echo "------      Reporting Options    --------"
@@ -79,42 +120,56 @@ echo "overide_write_all  = $overide_write_all  (1 = File Replacement)"
 echo "    overide_write_anno = $overide_write_anno (1 = File Replacement)"
 echo "    overide_write_dims = $overide_write_dims (1 = File Replacement)"
 echo "    overide_write_site = $overide_write_site (1 = File Replacement)"
+echo "    overide_write_vue = $overide_write_vue (1 = File Replacement)"
 # Report Byte Overide
-overide_byte=1   # 1 = No max file size (default 1)
-# Set Max Filesize 2,100,000 = 2.1MB
-byte_max=2100000 # Bytes
-if ((overide_byte == 1)); then
+if ((overide_byte == 0)); then
     echo "overide_byte = $overide_byte - No Max Filesize (default)"
-elif ((overide_byte == 0)); then
+elif ((overide_byte == 1)); then
     echo "overide_byte = $overide_byte - Max Byte Size of byte_max = $byte_max"
 fi
-# Report Color Overide
-overide_cols=0  # 1 = No Limit to Colors (default 0) 
-# Max colors in multiples of two
-max_colors=256
-if ((overide_cols == 1)); then
+if ((overide_cols == 0)); then
     echo "overide_cols = $overide_cols - No Max Colors"
-elif ((overide_cols == 0)); then
+elif ((overide_cols == 1)); then
     echo "overide_cols = $overide_cols - Max Num Colors of max_colors = $max_colors (default)"
 fi
 # Report Dimensions Overide
-overide_dims=0  # 1 = No Max dims (or use old file) (default 0)
-# Dimensions in pixels
-max_wide=1200
-max_tall=1000
-if ((overide_dims == 1)) && [ ! -e "$filepath_dims" ]; then
+if ((overide_dims == 0)) && [ ! -e "$filepath_dims" ]; then
     echo "overide_dims = $overide_dims - No max Dims"
-elif ((overide_dims == 1)) && [ -e "$filepath_dims" ]; then
+elif ((overide_dims == 0)) && [ -e "$filepath_dims" ]; then
     echo "overide_dims = $overide_dims - Using Max Dims from previous file (default)"
-elif ((overide_dims == 0)); then
+elif ((overide_dims == 1)); then
     echo "overide_dims = $overide_dims - Overide Max Dims to max_wide = $max_wide and max_tall = $max_tall"
 fi
 # Report Target File
-echo "      "
-echo "------      Reporting Target File    --------"
-echo "Target dir_prefix = $dir_prefix"
-echo "Target file_prefix.file_type = $file_prefix.$file_type"
-# echo ""
+if ((send_to_vue == 1)); then
+    echo "      "
+    echo "------      Syncing to VueBook!    --------"
+    echo "dir_ifm = $dir_ifm"
+    echo "filepath_ifm = $filepath_ifm"
+    if [ -e  "$filepath_ifm" ] && ((overide_write_vue == 0)); then
+        echo "      "
+        echo "------      File Exsists in filepath_ifm. Set overide_write_vue = 1 to Replace    --------"
+        read -p 'overide_write_vue = ' overide_write_vue
+        if ((overide_write_vue == 1)); then
+            send_to_vue=2
+        else
+            send_to_vue=0
+        fi
+    else
+        echo "NO VUEBOOK FILE. Making Dir."
+        mkdir -p "$dir_ifm"
+        send_to_vue=2 # Syncing.
+    fi
+fi
+
+if ((overide_write_dims == 0)) && [ -e "$filepath_dims" ]; then
+    echo "      "
+    echo "------    File Exists in filepath_dims Set overide_write_dims = 1?  --------"
+    read -p 'Set overide_write_dims = ' overide_write_dims
+elif [ ! -e "$filepath_dims" ]; then
+    echo "No file in dims. Setting overide_write_dims = 1"
+    overide_write_dims=1
+fi
 
 # Check to proceed
 check_proceed=0
@@ -130,13 +185,13 @@ echo "      "
 echo "------      Running Script!   --------"
 
 
-echo "      "
-echo "------      Transfer Crop to Anno? 0 = no, 1 = yes, 2 = only this  --------"
-check_crop_to_anno=0
 
-read -p 'Set check_crop_to_anno = ' check_crop_to_anno
-if ((overide_write_anno == 0)) && [ -e "$filepath_crop" ]; then
-    if [ -e "$filepath_anno" ]; then
+check_crop_to_anno=0
+if (( overide_crop == 1 )) && [ -e "$filepath_crop" ]; then
+    echo "      "
+    echo "------      Transfer Crop to Anno? 0 = no, 1 = yes, 2 = only this  --------"
+    read -p 'Set check_crop_to_anno = ' check_crop_to_anno
+    if [ -e "$filepath_anno" ] && ((overide_write_anno == 0)); then
         echo "      "
         echo "------    File Exists in filepath_anno Set overide_write_anno = 1?  --------"
         read -p 'Set overide_write_anno = ' overide_write_anno
@@ -205,6 +260,10 @@ if ((overide_write_dims == 0)) && [ -e "$filepath_anno" ]; then
         exit 1
     fi
 fi
+
+
+
+
 # Begin Dim stuff
 echo "filepath_src = $filepath_src"
 src_wide=$(identify -format "%w" $filepath_src)
@@ -220,7 +279,7 @@ if [ -e "$filepath_dims" ]; then
     dims_tall=$(identify -format "%h" $filepath_dims)
     # echo "Dims Wide: $dims_wide"
     # echo "Dims Tall: $dims_tall"
-    if ((overide_dims == 1)); then
+    if ((overide_dims == 0)); then
         echo "Using Dimensions in from Previous File $filepath_dims"
         # Dimensions in pixels
         max_wide="$dims_wide"
@@ -229,7 +288,7 @@ if [ -e "$filepath_dims" ]; then
         # echo "max_tall: $max_tall"
         overide_dims=0
     fi
-elif ((overide_dims == 0)); then
+elif ((overide_dims == 1)); then
     echo "Applying image resize overide"
     echo "max_wide = $max_wide    and    max_tall = $max_tall"
 fi
@@ -239,7 +298,7 @@ echo "      "
 echo "------      Apply Image Dimensions?   ------  "
 echo "      "
 # Apply Image Sizing
-if (( overide_dims == 0 )) && (( src_wide > $max_wide || src_tall > $max_tall )); then
+if (( overide_dims == 1 )) && (( src_wide > $max_wide || src_tall > $max_tall )); then
     echo "------  Yes! Apply Image Dimensions Conversion  ------  "
     echo "max_wide = $max_wide    and    max_tall = $max_tall"
     # Calculate scaling factor
@@ -287,31 +346,48 @@ if ((overide_write_site != 1)); then
     echo "      "
     exit 1
 fi
+
+
 # Convert Colors if above max_colors
 colors_src=$(identify -format "%k" "$filepath_src")
 # Check if colors_src is above 256
-if [ "$colors_src" -gt "$max_colors" ]  & (( overide_cols == 0 )); then
+if (($colors_src > $max_colors)) & (( overide_cols == 1 )); then
     echo "------      Yes! Converting Colors      --------  "
     echo "colors_src = $colors_src Convert to ${max_colors}"
     # Convert with 256 colors
     convert "$filepath_src" -colors $max_colors "$filepath_site"
+elif (($colors_src > $max_colors)) & (( overide_cols != 1 )); then
+    echo "------     No color overide     --------  "
+    rsync -avrp "$filepath_src" "$filepath_site"
 else
-    echo "------      No. Colors below max.      --------  "
+    echo "------      No, Colors at min      --------  "
     echo "Number of colors is ${max_colors} or less. No need to convert."
+    rsync -avrp "$filepath_src" "$filepath_site"
 fi
 
-# Get the filesize in bytes using stat on macOS
-file_byte=$(stat -f %z "$filepath_src")
-# echo "filepath_src has file_byte = $file_byte"
-if [ "$file_byte" -gt "$byte_max" ] && (( overide_byte == 0 )); then
-   echo "FILE SIZE ABOVE MAX ${byte_max} BYTES ND overide_write_all = ${overide_write_all}. EXITING"
-   exit 1
+
+file_byte=$(stat -f %z "$filepath_ifm")
+if ((file_byte > byte_max)) && (( overide_byte == 0 )) && ((send_to_vue == 2)); then
+   echo "file_byte = $file_byte and is above byte_max of $byte_max and overide_byte = $overide_byte"
+   echo "Set overide_byte to 1?"
+   read -p 'Transfer file anyway? Enter 2 send_to_vue = ' send_to_vue
 fi
+
+
+echo "$overide_byte"
+echo "$filepath_site"
+
+if (( send_to_vue == 2 )); then
+    echo "      "
+    echo "-------    Syncing to VueBok    ---------   "
+    rsync -aprv "$filepath_site" "$filepath_ifm"
+fi
+
+
+
 
 echo "      "
 echo "-------    Script Completed!    ---------   "
-echo "Final file in filepath_site = $filepath_site"
-echo "      "
 echo "-------    Exiting with success!    ---------   "
 echo "      "
 exit 1

@@ -10,7 +10,7 @@ icon: list-check
 <!-- [img-label]: ./assets/filename.png -->
 <!-- ![Caption Text][img-label] -->
 <!-- Assets -->
-
+[img-plates-on]: ./assets/img-plates/ifm-startup-main-012-plates-on.png
 <!-- URLs -->
 
 <!-- End Ref Links -->
@@ -67,3 +67,11 @@ Use the red PLATES button on the left side of the Sorr Chamber control panel. Th
     ::: note asset "Probably this "
     Not sure how to take this picture though...
     :::
+
+
+
+::: note Deflection PLates turned on using the front panel button
+
+![Deflection Plates turned on and at +/-3.60][img-plates-on]
+
+:::

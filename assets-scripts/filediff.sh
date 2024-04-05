@@ -134,4 +134,14 @@ find "$source_dir" -type f -size -4G | while read -r source_file; do
         echo "Removed $target_file"
         rm "$target_file"
     fi
+# STart Display Loop
+source_dir="/Volumes/toshidat 1/research/hfcm/20221013/hotfcm"
+# 
+find "$source_dir" -type f -size -4G | while read -r source_file; do
+    relative_path=${source_file#$source_dir}
+    target_file="$target_dir$relative_path"
+    if [ -f "$target_file" ] && diff "$source_file" "$target_file" >/dev/null; then
+        echo "Removed $target_file"
+        rm "$target_file"
+    fi
 done
