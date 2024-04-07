@@ -12,7 +12,6 @@ icon: list-check
 <!-- Assets -->
 
 <!-- URLs -->
-
 <!-- End Ref Links -->
 
 
@@ -30,8 +29,6 @@ icon: list-check
 :::
 
 ## Run Day
-
-### House Air
 
 ::: tip Always check the house air valve first!
 -   The InFlux air pressure is provided by an air compressor in C-MORE's attic. 
@@ -85,12 +82,8 @@ Three syringes filled with sheath fluid, MilliQ Water, and 70% ethanol.
    2.  Cap the Syringe. 
    3. Ethanol will eat away at the Acrodisc filter. Install the filter only when necessary.
    
-### Alignment/Calibration Samples
 
-::: note asset "Alignment Sample Tubes"
-Filtered MilliQ, HB-` "Beer", 1.0um bead dilution, and (if sorting) 3.1um bead dilution.
-:::
-
+::: note  "Alignment and Calibration Slides"
 1. Filtered MilliQ
     - From the MilliQ Syringe with 0.2um Filter
 2. Coarse Alignment "Beer"
@@ -103,4 +96,6 @@ Filtered MilliQ, HB-` "Beer", 1.0um bead dilution, and (if sorting) 3.1um bead d
     -   Create a dilution of 1.0um Ultra Rainbow Fluorescent Beads (*Spherotech*) by dropping 5-6 drops of Bead Concentrate into ~2ml 0.2um Filtered Sheath or MilliQ Water.
         -   Note: The 3.1um Bead concentration is **1E6** (lower than the 1.0 um)
         -   Technically, using sheath fluid for the bead dilutions could be better because it maxes the indices of refraction of the sample and sheath solutions most similar. 
-        -   In practice, however, the differences are immaterial.
+Filtered MilliQ, HB-` "Beer", 1.0um bead dilution, and (if sorting) 3.1um bead dilution.
+:::
+

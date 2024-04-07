@@ -519,5 +519,59 @@ Turn on the computer
 1.  Place the flush bucket under the nozzle
 2.  Recheck that the waste reservoir has an adequate level of vacuum applied to it.
 3.  Open the Purge Valve and then the Sheath Valve 
+4.  Run sheath fluid through the lines for approx 2min
+5.  Ensure that lines are free of air bubbles
+6.  Close the Purge and Sheath valves
+
+####  4.3.2 Clean and attach nozzle tip
+
+1.  Get the nozzle tip
+2.  Clean Nozzle tip
+    3.  Sonicate nozzle tip for approx 5 minutes
+    4.  Fill a 60my syringe filtered water (De-ionized distilled milliQ SheathSolution etc) 
+    5.  Attach or 0.1um filter to the tip of the syringe
+    6.  Place the nozzle (tip up) on the edge of the outflow of the 0.1um filter
+    7.  Flush with clean water. Don't worry about keeping it wet or drying it out.
+1. Install the nozzle tip
+    1.  Using tweezers where necessary to avoid contaminating the nozzle tip..
+    2.  Snuggle an O-ring of PN-645263 in the channel at the inside-bottom of the nozzle nut.
+    3.  Hold the nozzle nut aloft. Insert the nozzle, tip down, so the the O-ring seals to the sloped sides of the hozzle tip, and the nozzle protrudes from the bottom of the nollze nut
+    4.  Gently snuggle the nozzle tip and O-ring to even out pressure on the O-ring
+    5.  Screw the nozzle nut onto the threads at the tip of the nozzle assembly. Using only your fingers, tighten the nozzle nut onto the assembly as tighyly as you can. Never use wrenches or other tools to install the nozzle nut
+        1.  Be gentle starting off. If you feel any sort of resistance, it may be that the base of the nozzle tip is pressing against the rim of the pipe the nut is being attched to
+        2.  Carefully bach the nut off, and attempt to re-straighten the nozzle tip within in nozzle nut to attempt another installation. Remember to keep the nozzle tip clean of contamination.
+
+#### 4.3.3 Start a stream
+
+1.  Open the Sheath Valve to start a stream
+
+
+#### 4.3.4 Backflush and Debubble
+
+1.  Backflusgh the sample loine by oppenning ther SAMPLE VALVE. 
+2.  Close th SAMOKE mVAKVE after the samople line drips  sheath fluid for abouit 30 seconds
+3.  Close tyhe SAMPLE VALVE after backflushing
+4.  
+
+1.  Purtge the nozzle of bubbles by placing the clcean nozzle purge reservoid filled withnsheath gluid atop the flush bucket.
+2.  this allows sheath fluid to be pulled up into the nozzle
+3.  
+
+##### img "Nozzle purgwe reservoir rests in place on flush bucket"
+
+1.  Ensure tghat the nozzle tip uis submerfed into filterded sheathnfluid in the nozzlw purge reservoir. 
+2.  Clos both the SAMPLE VALVE and the SHEATH VALVE, then open up the purge-valve.
+3.  When the purge-valve is opened b, bubbles (in the nozzle assy) shou8ld be observed as they are pulled up throughj the nozzle
+4.  
+
+
+
+
+
+
+
+
+
+
 
 
