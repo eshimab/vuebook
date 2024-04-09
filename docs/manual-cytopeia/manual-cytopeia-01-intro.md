@@ -3,9 +3,8 @@ title: 1. Introduction
 --- 
 
 
-## 1. Introduction
 
-Overview of this manual and it's use in conjuction with the inFlux platform
+Overview of this manual and its use in conjunction with the inFlux platform
 
 
 ### 1.1 Intended Use
@@ -18,8 +17,8 @@ LIMITED BY FEDERAL (OR UNITED STATES) LAW TO INVESTIGATIONAL USE
 
 ::: note details Intended for laboratory research
 -   Approval for use beyond laboratory research requires express permission.
--   inFlux should only be operated by trained personnel in accordance with standard operating procedures of the facility
--   All devices (e.g. lasers) that are part of the inFlux instrument platform should be used in accordance within the specifications of the original manufacturer.
+-   inFlux should only be operated by trained personnel in accordance with the standard operating procedures of the facility
+-   All devices (e.g., lasers) that are part of the inFlux instrument platform should be used in accordance with the specifications of the original manufacturer.
 :::
 
 #### 1.1.2 Spigot software
@@ -28,19 +27,19 @@ LIMITED BY FEDERAL (OR UNITED STATES) LAW TO INVESTIGATIONAL USE
 
 ### 1.2 About the *inFlux&reg; Cell Sorter Operator Manual v2.1*
 
--   Resource for inFlux operators
+-   A resource for inFlux operators
 -   Intended to be an introduction to the inFlux platform and the basic operations
--   A reference giude for experienced users
+-   A reference guide for experienced users
 -   The manual contains:
-    -   Basic description of influx
+    -   Basic description of inFlux
     -   Critical safety information
     -   Operating procedures
     -   Maintenance information
-    -   ~~Spigot Interfance~~ No longer relevant
+    -   ~~Spigot Interface~~ No longer relevant
 
 ### 1.3 Using this manual
 
--   User’s should read through the guide before first using the instrument.
+-   Users should read through the guide before first using the instrument.
 -   Be aware of the text style conventions
 
 ### 1.4 Chapter Descriptions
@@ -53,22 +52,22 @@ There are six chapters
         -   Scope
         -   Organization (You are here)
         -   Conventions
-1.  Instrument overview
+2.  Instrument overview
     -   How the inFlux works TLDR
     -   Main functional subsystems
         -   Descriptions
         -   Images
         -   Terminology
-1.  Safety
+3.  Safety
     -   Critical safety info
-        -   potential hazardds
+        -   potential hazards
         -   Safety features
         -   Warning labels
-1.  Operating Procedure
+4.  Operating Procedure
     -   Step by step instructions.
-1.  ~~Spigot Interface~~
+5.  ~~Spigot Interface~~
     -   Likely to be skipped
-1.  Maintenance
+6.  Maintenance
     -   Cleaning
     -   Periodic Maintenance
     -   Inspection
@@ -89,25 +88,24 @@ Indicates important information
 
 #### 1.5.2 Instrument Description Conventions
 
-|    **Text Style**  |        **Meaning**          |    **Example**   |  
-|:-------------------|:----------------------------|:-----------------|  
-| **ALL CAPS BOLD**  | Physical Instrument Button  | **PLATES**       |
-| *ITALICS CAPS*     | Instrument Display          | *Pinhole Camera* |
-| *Italics*          | Instrument Component?       | *Nozzle*         |
-| `Monospace Font`   | Software menus and values   | `File`           |  
-| `Mono > Menu Item` | Software menu item.         | `File > Open`    |
-| *`Mono Italics`*.  | Software ???                | *`Something...`* |
-
+| **Text Style**     | **Meaning**                | **Example**      |
+| :----------------- | :------------------------- | :--------------- |
+| **ALL CAPS BOLD**  | Physical Instrument Button | **PLATES**       |
+| *ITALICS CAPS*     | Instrument Display         | *Pinhole Camera* |
+| *Italics*          | Instrument Component       | *Nozzle*         |
+| `Monospace Font`   | Software menus and values  | `File`           |
+| `Mono > Menu Item` | Software menu item         | `File > Open`    |
+| *`Mono Italics`*   | Software ???               | *`Something...`* |
 
 ::: note STAGE ADJUSTMENT AXES
 -   Stages are the adjustable platforms for focusing and aiming:
     -   Illumination laser light
-    -   Light edmitted as fluorescence or scatter 
+    -   Light emitted as fluorescence or scatter 
     -   Detailed later in the guide
 -   Each stage is adjustable in Three Cartesian Axes: X, Y, Z
     -   Defined with respect to *either*
         -   Illuminating light path
-        -   Path of emitted fluorescnce or scatter
+        -   Path of emitted fluorescence or scatter
     -   The axes directions
         -   X-Axis: Move stage parallel to the light path.
             -   Don’t move without much foresight.
@@ -117,12 +115,12 @@ Indicates important information
 
 ::: note Nozzle Adjustment Axes
 -   Nozzle Stage Cartesian
-    -   The nozzle stage has all three cartesian axes and all adjustments are used in typical operation
+    -   The nozzle stage has all three Cartesian axes and all adjustments are used in typical operation
 -   Nozzle Assembly Tilt
     -   Theta 
-        -   Side-to-Side tilt parallel the direction of laser illumination
+        -   Side-to-Side tilt parallel to the direction of laser illumination
     -   Phi 
-        -   In/Out parralel to fluoresence/scattering emission optical path
+        -   In/Out parallel to fluorescence/scattering emission optical path
 :::
 
 ::: note Well Deposition Unit (WDU) Axes

@@ -293,7 +293,25 @@ Default pre-defined positions and nudge displacement values may be changed. Spec
 
 ##### 5.4.2.1 Global Options
 
-1.  Spigot may be also customized to fit user preference and inFlux.
+1.  Spigot may be also customized to fit user preference and inFlux configuration by clicking on GLOBAL OPTIONS or by selecting GLOBAL ACTIONS: GLOBAL OPTIONS from the Global Actions drop down list on the menu bar.
+2.  The dialog box that appears is shown below.
+
+
+1.  Individual ADC channels may be deactivated by clearing the check boxes on the left side of the dialog box.
+4.  Next, channel names may be changed from the default names ADC1, ADC2, etc. (this feature is also available on the hardware configuration screens.)
+5.  On the right side of the dialog box, users may choose from among several colors on drop-down lists for customizing the data displays.
+6.  There is also a check box for toggling the slider type PMT gain control on the 2D dot plots displays.
+
+
+1.  The GLOBAL OPTIONS tool also allows "remapping" of PMTs to ADCs from the default configuration of ADC1 to PMT1, ADC2 to PMT2, and so on.
+8.  Each drop-down list under Attached PMT enables mapping any PMT to a particular ADC, to reflect a change in hardware wiring of ADCs and PMTs.
+
+
+::: warning CAUTION: 
+1.  This feature should only be used by advanced users or technicians as it depends on the instrument's hardware configuration.
+1.  Spigot and the inFlux will not operate properly if this feature is set up incorrectly.
+:::
+
 
 
 
@@ -303,9 +321,34 @@ Default pre-defined positions and nudge displacement values may be changed. Spec
 
 ##### 5.4.2.2 List Tool
 
+1.  Spigot has the ability to capture data and store it in files using the standard flow cytometry format (*fcs). 
+2.  This data capture is configured using the List Tool, available by clicking LIST (or by selecting GLOBAL ACTIONS: TAKE A LIST from the drop down list on the menu bar).
+3.  In the Start a List dialog box that appears, specific channels and parameters may be checked for inclusion in the data capture.
+4.  The number of events to be captured may be set in the center of the dialog box, either by typing numbers in the window or by clicking on one of the shortcut buttons placed under the window for user convenience.
+5.  After setting these list parameters, clicking Take List starts the data capture.
+6.  A List Options dialog box also appears for attaching reference information to the file being created.
+7.  Clicking on Save List brings up a standard Windows "Save As" dialog box for naming and saving the new list in a preferred location.
+
+##### img: Spigot Software Screenshot: Start a List
+
+1.  After setting these list parameters, clicking Take List starts the data capture.
+1.  A List Options dialog box also appears for attaching reference information to the file being created.
+1.  Clicking on Save List brings up a standard Windows "Save As" dialog box for naming and saving the new list in a preferred location.
+
 
 ##### 5.4.2.3 Quick List
 
+##### img: Spigot Software Screenshot: List Options
+
+1.  Once data capture has been configured using LIST, the user can repeatedly save data to files using the same list settings by utilizing the QUICK LIST feature.
+1.  The QUICK LIST button (and GLOBAL OPTIONS: QUICK LIST from the drop down list on the menu bar) is active when the List Tool has been configured.
+1.  Clicking on QUICK LIST starts a new data capture and saves the data to a new fcs file with a sequential number appended to the file name.
+1.  For example, if the LIST was initially configured to save to a file named test.fcs, then subsequent files saved using QUICK LIST would be test1.fcs, test2.fcs, etc., all saved to the same directory path as the first file.
 
 #### 5.4.3 Menu Options
+
+1.  Under FILE, the user can open an existing Spigot Configuration File (*.sco) or save a current one to be used later.
+1.  There are also options for printing the left or right displays, or both.
+1.  The GLOBAL ACTIONS menu contains selections for displaying or storing the raw data stream from the sorter.
+1.  In all other cases, the options available from the menu bar duplicate options available simply by clicking on buttons.
 

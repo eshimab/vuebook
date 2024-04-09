@@ -3,7 +3,6 @@ title: 4. Operating Procedures
 --- 
 
 
-## 4 Operating Procedures
 
 ::: note Summary
 This chapter contains detailed step-by-step instructions for operators new to the instrument. Information on use of the ~~Spigot~~ software is included.

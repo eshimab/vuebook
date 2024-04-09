@@ -25,6 +25,8 @@
 /docs/.vuepress/.temp/
 # VuePress Build Distribution
 /docs/.vuepress/dist/
+# Retired Files
+/docs/00-retired/
 
 # 
 # ------------------ Files
