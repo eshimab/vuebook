@@ -5,7 +5,6 @@
 # /Users/username/vuebook/assets-scripts
 input_dir=$(pwd) # Get PWD
 # Create Dir for original images
-llll
 # -------- Create the sync dir in vuebook/assets-oversized/
 # Extract the relevant parts of the current directory
 # /Users/username
@@ -22,7 +21,7 @@ mkdir -p "${assets_new_dir}"
 mkdir -p "${assets_new_heic_dir}"
 
 
-file_target="JPG"
+# file_target="heic"
 # file_output="jpg"
 asset_dir_type="jpg"
 
