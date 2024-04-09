@@ -1,5 +1,5 @@
 ---
-title: Instruction Manual
+title: Cytopeia Manual 
 icon: book
 ---
 
@@ -15,3 +15,4 @@ icon: book
 
 <!-- End Ref Links -->
 
+Transcribed herein.

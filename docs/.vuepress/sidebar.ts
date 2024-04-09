@@ -219,11 +219,22 @@ export default sidebar({
     //
     // ------- BEGIN INFLUX MANUALS ----------
     {
-      text: "Influx Mfg Manuals",
-      prefix: "/influx-manuals/",
-      link: "/influx-manuals/README",
+      text: "Cytopeia Manual",
+      prefix: "/manual-cytopeia/",
+      link: "/manual-cytopeia/README",
       children: [
-        "manual-og",
+        "manual-cytopeia-01-intro",
+        // 
+        "manual-cytopeia-02-instrument",
+        //
+        "manual-cytopeia-03-safety",
+        //
+        "manual-cytopeia-04-ops",
+        //
+        "manual-cytopeia-05-spigot",
+        //
+        "manual-cytopeia-06-maint",
+        
       ],
     // End children.influx-manuals.docs
     },
