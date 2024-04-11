@@ -84,40 +84,40 @@ export default sidebar({
           // beg children.flight-fluidics
           children: [
             //
-            "flight-fluidics-activate",
+            "flight-fluidics-01-activate",
             // {
             // text: "Fluidics Pre-Flight",
             // link: "flight-fluidics-activate",
             // }, // end flight-fluidics-activate
             //
-            "flight-fluidics-assy",
+            "flight-fluidics-02-assy",
             // {
               // text: "Sheath and Nozzle",
               // link: "flight-fluidics-assy",
             // }, // end flight-fluidics-assy
             //
-            "flight-fluidics-drain",
+            "flight-fluidics-03-drain",
               // {
               // text: "Stream Drain",
               // link: "flight-fluidics-drain",
               // }, // end flight-fluidics-drain
             //
             // ------- beg: flight-fluidics-pinholes
-            "flight-fluidics-pinholes",
+            "flight-fluidics-04-pinholes",
             // {
               // text: "Visual Alignment",
               // link: "flight-fluidics-pinholes",
             // }, // end flight-fluidics-pinholes
             //
             // flight-fluidics-samples
-            "flight-fluidics-samples",
+            "flight-fluidics-05-samples",
             // {
               // text: "Sample Basics",
               // link: "flight-fluidics-samples",
             // }, // end flight-fluidics-samples
             //
             // flight-fluidics-sortware
-            "flight-fluidics-sortware",
+            "flight-fluidics-06-sortware",
             // {
               // text: "Sortware Part 2",
               // link: "flight-fluidics-sortware",

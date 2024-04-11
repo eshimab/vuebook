@@ -46,3 +46,56 @@ for file in "$download_dir"/*.HEIC; do
     # Delete heic
     rm "$file"
 done
+
+
+
+# Get out of downloads
+# cp ~/Downloads/IMG_2617.HEIC /Users/eshim/vuebook/assets-new/00-final-cuts/ifm-startup-house-air-open.heic
+# cd ~/vuebook/assets-new/00-final-cuts
+# Convert to PNG
+# sips -s format png ifm-startup-house-air-open.heic --out ifm-startup-house-air-open.png
+# Manual Croping via Preview etc
+# 
+# Resize image
+# convert ./ifm-startup-house-air-closed.png -resize 600 ./ifm-startup-house-air-closed-resized.png
+# 
+# Manually Annotate with software of choice
+# 
+# Reduce Colors
+# convert ifm-startup-house-air-closed.png -colors 256 ifm-startup-house-air-closed-color256.png 
+
+
+
+# Extra
+max_tall=600
+max_wide=600
+filepath_src="/Users/eshim/vuebook/assets-new/00-final-cuts/ifm-startup-house-air-closed.png"
+src_wide=$(identify -format "%w" $filepath_src)
+src_tall=$(identify -format "%h" $filepath_src)
+echo "src_wide = $src_wide    and    src_tall = $src_tall"
+echo "max_wide = $max_wide    and    max_tall = $max_tall"
+# Calculate scaling factor
+# If Image is taller than wide, then use max_tall
+if (( src_tall > src_wide)) && (( src_tall > max_tall )); then
+    echo "Scaling based on max_tall because image is hamburger"
+    scale_factor="x$max_tall"
+# If Image is Wide, use max_wide
+elif (( src_wide > src_tall )) && (( src_wide > max_wide )); then
+    echo "Scaling based on max_wide because image is hotdog"
+    scale_factor="$max_wide"
+else
+    scale_factor=""
+fi
+convert ./ifm-startup-house-air-closed.png -resize "$scale_factor" ./ifm-startup-house-air-closed-resized.png
+# Colors
+
+
+
+
+
+
+
+
+
+
+# 

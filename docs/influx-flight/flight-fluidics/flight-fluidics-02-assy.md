@@ -115,10 +115,12 @@ The InFlux sheath tank installed on the instrument with the inline filter and sc
     -   At 15psi, this can drain an entire sheath tank in less than 40 minutes.
     -   Sheath will also flow into the nozzle assembly (and therefore sample line)
     :::
-    ::: note asset “Sheath Control Buttons and valves”
-    Sheath control buttons and sheath valves on top of regulator tower. Note that:
-    -   RUN must be turned off before any other button can be activated 
-    :::
+
+[img-sheath-control-buttons]: ./assets/img-sheath/ifm-fluidics-sheathControl-anno.png
+![Sheath tank components][img-sheath-control-buttons]    
+Sheath control buttons and sheath valves on top of regulator tower. Note that:
+-   RUN must be turned off before any other button can be activated 
+
     1.  Press the RINSE button on the Regulator Tower to open the Sheath and Waste valves.
         1. **Stop the Rinse** when Sheath Fluid reaches the Y-Connector affixed to the upper right corner of the Nozzle Assembly 
         2. See figure below

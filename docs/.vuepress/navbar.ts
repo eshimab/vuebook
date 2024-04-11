@@ -38,7 +38,7 @@ export default navbar([
         // beg children.flight-begin
         children: [
           //
-          "flight-begin-oracle",
+          "flight-begin-01-oracle",
           // {
             // text: "The Oracle",
             // link: "flight-begin-oracle",
@@ -46,25 +46,25 @@ export default navbar([
           //
           //
           //
-          "flight-begin-activate",
+          "flight-begin-02-activate",
           // {
             // text: "Lab Prep",
             // link: "flight-begin-activate",
           // }, // end flight-begin-activate
           //
-          "flight-begin-boot",
+          "flight-begin-03-boot",
           // {
             // text: "System Power",
             // link: "flight-begin-boot",
           // }, // end flight-begin-boot
           //
-          "flight-begin-meters",
+          "flight-begin-04-meters",
           // {
           // text: "Software flowmeters",
           // link: "flight-begin-meters",
           // }, // end flight-begin-meters
           //
-          "flight-begin-sortware",
+          "flight-begin-05-sortware",
             // {
               // text: "Setup sortwareConnect",
               // link: "flight-begin-sortware",

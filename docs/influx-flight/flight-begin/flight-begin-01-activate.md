@@ -8,6 +8,7 @@ icon: list-check
 <!-- Reference Links -->
 <!-- Usage -->
 <!-- [img-label]: ./assets/filename.png -->
+[img-sheath-tank-2]: ./assets/img-sheath/ifm-init-sheathFluid-nacl-step2-sheathTank.png
 <!-- ![Caption Text][img-label] -->
 <!-- Assets -->
 
@@ -28,6 +29,24 @@ icon: list-check
 -   See section on Sheath Prep.
 :::
 
+::: details Cytopeia Manual 4.1.1
+## Cytopeia Manual
+
+### 4.1 Preparation
+
+#### 4.1.1 Collect Supplies
+
+1.  Gather and clean all supplies:
+    1.  Sheath and waste reservoirs
+    1.  Nozzle tip
+    1.  Nozzle back-flush reservoir (spoon)
+    1.  Sample tubes
+    1.  Cotton swabs
+    1.  Paper towels
+    1.  Microscope slides
+:::
+
+
 ## Run Day
 
 ::: tip Always check the house air valve first!
@@ -37,8 +56,12 @@ icon: list-check
 -   We are checking the compressor first because, if it is off, the instrument can't be run until UH Facilities restarts the compressor.
 :::
 
+
 ::: note asset "House Air Valve"
-The House Air valve is under the lowest shelf on the bottom right corner of the bench opposite the instrument.
+[img-house-air-open]: ./assets/img-flight-begin-01/ifm-flight-begin-01-house-air-open-colors.png
+
+![House Air Open][img-house-air-open]
+n the bottom right corner of the bench opposite the instrument.
 :::
 
 1. Open the valve on the wall opposite the InFlux Chassis to access the building's air compressor (i.e. House Air).
@@ -47,10 +70,20 @@ The House Air valve is under the lowest shelf on the bottom right corner of the 
         1. Call UH Facilities at 1-808-956-7134 and tell them that they need to restart the building compressor at C-MORE.
         2. Tell them that this is impeding work and needs to be done asap.
 
+::: details Cytopeia Manual 4.1.2
+
+#### 4.1.2 Prepare Fluidics Reservoirs
+
+1.  Fill the sheath tank with up to 6 liters of sheath fluid, preferably filtered at 0.2um.
+1.  Ensure the Waste Reservoir is clean and empty.
+1.  Attach lids and quick connect fittings from instrument fluidics lines to the reservoirs.
+    1.  Note that each port is unique. Each fitting connects to only one port.
+:::
+
 
 ### Fill Sheath Tank
 
-::: note asset "Sheath Tank Prep Picture"
+::: details asset "Sheath Tank Prep Picture"
 Picture of the graduated cylinder and/or salt and/or MilliQ.
 :::
 
@@ -58,7 +91,7 @@ Picture of the graduated cylinder and/or salt and/or MilliQ.
     1. For Non-Sorting, pure MilliQ Water is fine.
     2. For Sorting, we need a saline solution:
         1. For BioSure: Mixture is 1/8 BioSure Concentrate and 7/8 MilliQ Water in a Graduated Cylinder
-        2. For NaCl: Dissolve **32**g NaCl in **4** liters MillQ Water. *Let Sheath Fluid sit overnight to                     fully dissolve NaCl*
+        2. For NaCl: Dissolve **32**g NaCl in **4** liters MillQ Water. *Let Sheath Fluid sit overnight to fully dissolve NaCl*
     3. Fill a 60ml Syringe with Sheath Fluid for Purging the instrument and filling sort tubes.
         1. Label Syringe.
         2. Attach a 0.2um Acrodisc Syringe Filter to the syringe
