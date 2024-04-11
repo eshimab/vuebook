@@ -40,32 +40,32 @@ export default sidebar({
           // beg children.flight-begin
           children: [
             //
-            "flight-begin-00-oracle",
+            "flight-begin-00-the-oracle",
             // {
               // text: "The Oracle",
               // link: "flight-begin-oracle",
             // }, // end flight-begin-oracle
             //
             //
-            "flight-begin-01-activate",
+            "flight-begin-00-lab-preflight",
             // {
               // text: "Lab Prep",
               // link: "flight-begin-activate",
             // }, // end flight-begin-activate
             //
-            "flight-begin-02-boot",
+            "flight-begin-02-system-power",
             // {
               // text: "System Power",
               // link: "flight-begin-boot",
             // }, // end flight-begin-boot
             //
-            "flight-begin-03-meters",
+            "flight-begin-03-flowmeters",
             // {
               // text: "Software flowmeters",
               // link: "flight-begin-meters",
             // }, // end flight-begin-meters
             //
-            "flight-begin-04-sortware",
+            "flight-begin-04-sortware-part1-connect",
             // {
               // text: "Setup sortwareConnect",
               // link: "flight-begin-sortware",
@@ -84,40 +84,46 @@ export default sidebar({
           // beg children.flight-fluidics
           children: [
             //
-            "flight-fluidics-01-activate",
+            "flight-fluidics-00-preflight",
             // {
             // text: "Fluidics Pre-Flight",
             // link: "flight-fluidics-activate",
             // }, // end flight-fluidics-activate
             //
-            "flight-fluidics-02-assy",
+            "flight-fluidics-01-sheath-tanks",
+            // {
+            // text: "Fluidics Pre-Flight",
+            // link: "flight-fluidics-activate",
+            // }, // end flight-fluidics-activate
+            //
+            "flight-fluidics-02-install-and-purge-nozzle",
             // {
               // text: "Sheath and Nozzle",
               // link: "flight-fluidics-assy",
             // }, // end flight-fluidics-assy
             //
-            "flight-fluidics-03-drain",
+            "flight-fluidics-03-stream-drain",
               // {
               // text: "Stream Drain",
               // link: "flight-fluidics-drain",
               // }, // end flight-fluidics-drain
             //
             // ------- beg: flight-fluidics-pinholes
-            "flight-fluidics-04-pinholes",
+            "flight-fluidics-04-pinhole-alignment",
             // {
               // text: "Visual Alignment",
               // link: "flight-fluidics-pinholes",
             // }, // end flight-fluidics-pinholes
             //
             // flight-fluidics-samples
-            "flight-fluidics-05-samples",
+            "flight-fluidics-05-running-samples",
             // {
               // text: "Sample Basics",
               // link: "flight-fluidics-samples",
             // }, // end flight-fluidics-samples
             //
             // flight-fluidics-sortware
-            "flight-fluidics-06-sortware",
+            "flight-fluidics-06-sortware-part2-basics",
             // {
               // text: "Sortware Part 2",
               // link: "flight-fluidics-sortware",

@@ -7,7 +7,7 @@ icon: glass-water
 
 <!-- Reference Links -->
 <!-- Images -->
-[img-nozzle-zoom]: ./assets/img-nozzle/ifm-fluidics-nozzle-installed-zoom-anno.png
+[img-nozzle-zoom]: ./assets/flight-fluidics-02/ifm-fluidics-nozzle-installed-zoom-anno.png
 [img-sheath-components]: ./assets/img-sheath/ifm-fluidics-sheathTankComponents-anno.png
 <!-- End Ref Links -->
 
@@ -61,6 +61,9 @@ A picture with the nozzle installed. Note the
         1. After Nozzle has been installed, turn off **PURGE** if used.
 
 ## Hook-Up Sheath Fluid Canister to InFlux
+
+::: details Cytopeia Manual 4.2.1
+
 
 ::: tip Check sheath drain at rear of instrument
 The Waste Pipe is plumbed to the Waste Tank via a piece of tubing that runs out of the rear/center of the Sort Chamber. Always inspect that tubing visually before starting the Sheath stream to ensure it has no holes or tears.

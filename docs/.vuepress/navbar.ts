@@ -52,7 +52,7 @@ export default navbar([
             // link: "flight-begin-activate",
           // }, // end flight-begin-activate
           //
-          "flight-begin-03-boot",
+          "flight-begin-03-system-power",
           // {
             // text: "System Power",
             // link: "flight-begin-boot",

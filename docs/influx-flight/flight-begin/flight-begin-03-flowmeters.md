@@ -4,6 +4,8 @@ icon: water
 ---
 
 
+img-flight-begin-03-flowmeters
+
 
 <!-- Reference Links -->
 <!-- Usage -->
@@ -12,7 +14,7 @@ icon: water
 <!-- Assets -->
 
 <!-- URLs -->
-[sensor-viewer-running]: ./assets/img-flowmeter/ifm-startup-main-002-flowmeters-01-running.png
+[sensor-viewer-running]: ./assets/img-flight-begin-03-flowmeters/ifm-startup-main-002-flowmeters-01-running.png
 <!-- End Ref Links -->
 
 
@@ -22,7 +24,7 @@ icon: water
 ## Sensor Viewer Screenshots
 
 ::: details asset "I have most of the Sensor Viewer screenshots"
-The screenshots are located in `docs/influx-flight/flight-begin/img/img-flowmeter/` but the pictures need to be:
+The screenshots are located in `docs/influx-flight/flight-begin/img/img-flight-begin-03-flowmeters/` but the pictures need to be:
 -   Cropped
 -   Annotated
 -   Implemented in this page's Markdown file
