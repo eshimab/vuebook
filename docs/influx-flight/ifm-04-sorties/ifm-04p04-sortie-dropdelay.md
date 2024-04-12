@@ -3,7 +3,7 @@ title: The Drop (Delay)
 icon: clock
 ---
 
-
+Filename: /docs/influx-flight/ifm-04-sorties/ifm-04p04-sortie-dropdelay.md
 
 <!-- Reference Links -->
 <!-- Usage -->

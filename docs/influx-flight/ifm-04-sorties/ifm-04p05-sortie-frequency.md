@@ -3,7 +3,7 @@ title: Frequency kHz
 icon: wave-square
 ---
 
-
+Filename: /docs/influx-flight/ifm-04-sorties/ifm-04p05-sortie-frequency.md
 
 <!-- Reference Links -->
 <!-- Usage -->

@@ -3,7 +3,7 @@ title: Fluidics Pre-Flight
 icon: list-check
 ---
 
-<!-- filename: influx-flight/flight-02-fluidics/flight-02-fluidics-00-preflight.md -->
+<!-- filename: /docs/influx-flight/ifm-02-fluidics/ifm-02p00-preflight.md -->
 
 <!-- Reference Links -->
 <!-- Usage -->

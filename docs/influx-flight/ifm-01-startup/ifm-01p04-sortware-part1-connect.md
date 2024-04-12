@@ -3,7 +3,7 @@ title: Sortware 1 - Connect
 icon: computer
 ---
 
-<!-- filename: flight-begin-04-sortware-part1-connect.md -->
+<!-- filename: /docs/influx-flight/ifm-01-startup/ifm-01p04-sortware-part1-connect.md -->
 
 <!-- Reference Links -->
 <!-- Usage -->

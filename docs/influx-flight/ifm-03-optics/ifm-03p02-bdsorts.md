@@ -3,7 +3,7 @@ title: Sortware Basics
 icon: computer
 ---
 
-<!-- filename: /influx-flight/flight-03-optics/flight-03-optics-02-bdsorts.md -->
+<!-- filename: /docs/influx-flight/ifm-03-optics/ifm-03p01-activate.md -->
 
 <!-- Reference Links -->
 <!-- Usage -->

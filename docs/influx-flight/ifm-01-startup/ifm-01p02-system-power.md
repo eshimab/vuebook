@@ -3,7 +3,7 @@ title: System Power
 icon: power-off
 ---
 
-<!-- filename: flight-begin-02-system-power.md -->
+<!-- filename: /docs/influx-flight/ifm-01-startup/ifm-01p02-system-power.md -->
 
 <!-- Reference Links -->
 <!-- Usage -->

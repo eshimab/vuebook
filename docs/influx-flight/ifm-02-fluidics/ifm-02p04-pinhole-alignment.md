@@ -4,7 +4,7 @@ icon: ellipsis-vertical
 ---
 
 
-<!-- filename: influx-flight/flight-02-fluidics/flight-02-fluidics-04-pinhole-alignment.md -->
+<!-- filename: /docs/influx-flight/ifm-02-fluidics/ifm-02p04-pinhole-alignment.md -->
 
 <!-- Reference Links -->
 <!-- Usage -->
