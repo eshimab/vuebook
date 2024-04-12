@@ -49,17 +49,21 @@ done
 
 
 
-# Get out of downloads
+# Get file out of downloads
 # cp ~/Downloads/IMG_2617.HEIC /Users/eshim/vuebook/assets-new/00-final-cuts/ifm-startup-house-air-open.heic
+# 
+# Go to Asset dir
 # cd ~/vuebook/assets-new/00-final-cuts
+# 
 # Convert to PNG
 # sips -s format png ifm-startup-house-air-open.heic --out ifm-startup-house-air-open.png
-# Manual Croping via Preview etc
 # 
-# Resize image
+# Manual cropping by User
+# 
+# Resize image to 600px
 # convert ./ifm-startup-house-air-closed.png -resize 600 ./ifm-startup-house-air-closed-resized.png
 # 
-# Manually Annotate with software of choice
+# Manually Annotation by User
 # 
 # Reduce Colors
 # convert ifm-startup-house-air-closed.png -colors 256 ifm-startup-house-air-closed-color256.png 
@@ -88,13 +92,6 @@ else
 fi
 convert ./ifm-startup-house-air-closed.png -resize "$scale_factor" ./ifm-startup-house-air-closed-resized.png
 # Colors
-
-
-
-
-
-
-
 
 
 
