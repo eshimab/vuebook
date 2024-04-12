@@ -3,7 +3,7 @@ title: Sortware 2 - Basics
 icon: computer
 ---
 
-<!-- filename: influx-flight/flight-fluidics/flight-fluidics-06-sortware-part2-basics.md -->
+<!-- filename: influx-flight/flight-02-fluidics/flight-02-fluidics-06-sortware-part2-basics.md -->
 
 <!-- Reference Links -->
 <!-- Usage -->

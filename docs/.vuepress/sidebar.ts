@@ -31,49 +31,49 @@ export default sidebar({
       // ----- begin children.influx-flight
       children: [
         //
-        // beg flight-begin
+        // beg flight-man-01
         {
           text: "Lab and Instrument Startup",
-          prefix: "flight-begin/",
-          link: "flight-begin/README",
+          prefix: "flight-man-01/",
+          link: "flight-man-01/README",
           icon: "play",
-          // beg children.flight-begin
+          // beg children.flight-man-01
           children: [
             //
-            "flight-begin-00-the-oracle",
+            "flight-man-01-00-the-oracle",
             // {
               // text: "The Oracle",
-              // link: "flight-begin-oracle",
-            // }, // end flight-begin-oracle
+              // link: "flight-man-01-oracle",
+            // }, // end flight-man-01-oracle
             //
             //
-            "flight-begin-00-lab-preflight",
+            "flight-man-01-00-lab-preflight",
             // {
               // text: "Lab Prep",
-              // link: "flight-begin-activate",
-            // }, // end flight-begin-activate
+              // link: "flight-man-01-activate",
+            // }, // end flight-man-01-activate
             //
-            "flight-begin-02-system-power",
+            "flight-man-01-02-system-power",
             // {
               // text: "System Power",
-              // link: "flight-begin-boot",
-            // }, // end flight-begin-boot
+              // link: "flight-man-01-boot",
+            // }, // end flight-man-01-boot
             //
-            "flight-begin-03-flowmeters",
+            "flight-man-01-03-flowmeters",
             // {
               // text: "Software flowmeters",
-              // link: "flight-begin-meters",
-            // }, // end flight-begin-meters
+              // link: "flight-man-01-meters",
+            // }, // end flight-man-01-meters
             //
-            "flight-begin-04-sortware-part1-connect",
+            "flight-man-01-04-sortware-part1-connect",
             // {
               // text: "Setup sortwareConnect",
-              // link: "flight-begin-sortware",
-            // }, // end flight-begin-sortware
+              // link: "flight-man-01-sortware",
+            // }, // end flight-man-01-sortware
             //
-          ], // end children.flight-begin
+          ], // end children.flight-man-01
           //
-        }, // end flight-begin
+        }, // end flight-man-01
         //
         // ---- Begin flight-fluidics
         {
@@ -123,7 +123,6 @@ export default sidebar({
             // }, // end flight-fluidics-samples
             //
             // flight-fluidics-sortware
-            "flight-fluidics-06-sortware-part2-basics",
             // {
               // text: "Sortware Part 2",
               // link: "flight-fluidics-sortware",

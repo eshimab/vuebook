@@ -4,6 +4,7 @@ icon: beer-mug-empty
 ---
 
 
+<!-- filename: /influx-flight/flight-03-optics/flight-03-optics-03-coarse.md -->
 
 <!-- Reference Links -->
 <!-- Usage -->
