@@ -3,7 +3,7 @@ title: 2. Instrument Overview
 --- 
 
 
-
+<!-- filename: manual-cytopeia-02-instrument.md -->
 
 ::: note Summary
 This chapter provides the user with:

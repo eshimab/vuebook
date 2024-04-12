@@ -2,7 +2,7 @@
 title: 4. Operating Procedures
 --- 
 
-
+<!-- filename: manual-cytopeia-04-ops.md -->
 
 ::: note Summary
 This chapter contains detailed step-by-step instructions for operators new to the instrument. Information on use of the software is included.

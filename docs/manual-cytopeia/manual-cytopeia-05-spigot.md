@@ -3,6 +3,8 @@ title: 5. Spigot
 --- 
 
 
+<!-- filename: manual-cytopeia-05-spigot.md -->
+
 ---
 
 -   This chapter describes the layout of the Spigot interface and the various options available to the user within each of the various screens.
