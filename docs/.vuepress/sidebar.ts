@@ -37,25 +37,20 @@ export default sidebar({
           prefix: "ifm-01-startup/",
           link: "ifm-01-startup/README",
           icon: "play",
-          // beg children.flight-man-01
           children: [
-            //
             "ifm-01p00-the-oracle",
             "ifm-01p00-lab-preflight",
             "ifm-01p02-system-power",
             "ifm-01p03-flowmeters",
             "ifm-01p04-sortware-part1-connect",
           ], // end children.flight-man-01
-          //
         }, // end flight-man-01
-        //
         // ---- Begin ifn-02-fluidics
         {
           text: "Setup Fluidics",
           prefix: "ifm-02-fluidics/",
           link: "ifm-02-fluidics/README",
           icon: "faucet-drip",
-          // beg children.ifn-02-fluidics
           children: [
             "ifm-02p01-sheath-tanks",
              "ifm-02p00-preflight",
@@ -63,28 +58,21 @@ export default sidebar({
             "ifm-02p03-stream-drain",
             "ifm-02p04-pinhole-alignment",
             "ifm-02p05-running-samples",
-            //
-          ], // end children.ifn-02-fluidics
-        }, // end ifn-02-fluidics
-        //
-        // ---- Begin flight-optics
+          ], // end children.ifm-02-fluidics
+        }, // end ifm-02-fluidics
         {
           text: "Setup Optics",
           prefix: "ifm-03-optics/",
           link: "ifm-03-optics/README",
           icon: "burst",
-          // beg children.flight-optics
           children: [
-            //
-            // ------- beg: children
             "ifm-03p00-activate",
             "ifm-03p01-bdsorts",
             "ifm-03p02-coarse",
             "ifm-03p03-final",
-          ], // end children.flight-optics
+          ], // end children.ifm-03-optics
         }, // end flight-optics
         //
-        // ----- Begin ifm-04ps
         {
           text: "Sort Settings",
           prefix: "ifm-04-sorties/",
@@ -101,9 +89,7 @@ export default sidebar({
             "ifm-04p05-piezo",
             "ifm-04p06-slides",
           ], // end children.ifm-04ps
-          //
         }, // end ifm-04ps
-        //
       ], // end children.influx-flight-manual-manual
     }, // end /influx-flight-manual-manual/
     // --------------- END INFLUX FLIGHT MANUAL --------------
@@ -120,6 +106,9 @@ export default sidebar({
         //
         "manual-cytopeia-03-safety",
         //
+        "manual-cytopeia-04a-ops",
+        "manual-cytopeia-04b-ops",
+        "manual-cytopeia-04c-ops",
         "manual-cytopeia-04-ops",
         //
         "manual-cytopeia-05-spigot",
