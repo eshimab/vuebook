@@ -4,7 +4,7 @@ icon: filter-circle-xmark
 ---
 
 
-<!-- filename: influx-flight/flight-02-fluidics/flight-02-fluidics-03-stream-drain.md -->
+<!-- filename: /docs/influx-flight/ifm-02-fluidics/ifm-02p03-stream-drain.md -->
 
 <!-- Reference Links -->
 <!-- Usage -->

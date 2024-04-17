@@ -3,7 +3,7 @@ title: Lab Pre-Flight
 icon: list-check
 ---
 
-<!-- filename: flight-01-begin-00-lab-preflight.md -->
+<!-- filename: /docs/influx-flight/ifm-01-startup/ifm-01p00-lab-preflight.md -->
 
 
 <!-- Reference Links -->

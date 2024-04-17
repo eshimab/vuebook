@@ -3,7 +3,7 @@ title: Sortware 3
 icon: computer
 ---
 
-
+Filename: /docs/influx-flight/ifm-04-sorties/ifm-04p02-sortie-configsw.md
 
 <!-- Reference Links -->
 <!-- Page Links -->

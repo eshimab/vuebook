@@ -4,7 +4,7 @@ icon: bullseye
 ---
 
 
-<!-- filename: /influx-flight/flight-03-optics/flight-03-optics-04-final.md -->
+<!-- filename: /docs/influx-flight/ifm-03-optics/ifm-03p04-final.md -->
 
 
 <!-- Reference Links -->

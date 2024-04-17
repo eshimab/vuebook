@@ -4,7 +4,7 @@ icon: vial-circle-check
 ---
 
 
-<!-- filename: influx-flight/flight-02-fluidics/flight-02-fluidics-05-running-samples.md -->
+<!-- filename: /docs/influx-flight/ifm-02-fluidics/ifm-02p05-running-samples.md -->
 
 <!-- Reference Links -->
 <!-- Usage -->

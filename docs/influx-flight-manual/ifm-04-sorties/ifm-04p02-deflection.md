@@ -3,7 +3,7 @@ title: Drop Charge and Deflection
 icon: lines-leaning
 ---
 
-
+Filename: /docs/influx-flight/ifm-04-sorties/ifm-04p02-sortie-configsw.md
 
 <!-- Reference Links -->
 <!-- Usage -->

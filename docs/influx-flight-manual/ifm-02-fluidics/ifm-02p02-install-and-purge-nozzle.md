@@ -3,7 +3,7 @@ title: Install and Purge Nozzle
 icon: glass-water
 ---
 
-<!-- filename: influx-flight/flight-02-fluidics/flight-02-fluidics-02-install-and-purge-nozzle.md -->
+<!-- filename: /docs/influx-flight/ifm-02-fluidics/ifm-02p02-install-and-purge-nozzle.md -->
 
 <!-- Reference Links -->
 <!-- Images -->

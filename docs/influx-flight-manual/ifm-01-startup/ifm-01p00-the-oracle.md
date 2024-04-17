@@ -3,7 +3,7 @@ title: The Oracle
 icon: hat-wizard
 ---
 
-<!-- filename: flight-begin-00-the-oracle.md -->
+<!-- filename: /docs/influx-flight/ifm-01-startup/ifm-01p00-the-oracle.md -->
 
 
 <!-- Reference Links -->
