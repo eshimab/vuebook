@@ -6,7 +6,7 @@
 # ------------------ CONVERTING HEIC
 # SOURCE
 dir_prefix="ifm-startup-main-01"
-file_prefix="ifm-startup-main-t1200-030-drop156-pz4p31-sortware-bop-steady-short-flash-on"
+file_prefix="ifm-startup-main-house-air-valve"
 
 # TARGET
 dir_sec="flight-sorties"

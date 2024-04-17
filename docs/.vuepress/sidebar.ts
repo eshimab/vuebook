@@ -21,205 +21,91 @@ export default sidebar({
     // Dev Links Page
     "/dev-setup/dev-links",
     //
-    // ------- BEGIN INFLUX FLGHT MANUAL docs/influx-flight/
+    // ------- BEGIN INFLUX FLGHT MANUAL docs/influx-flight-manual-manual/
     {
       text: "InFlux Flight Manual",
-      prefix: "/influx-flight/",
-      link: "/influx-flight/README",
+      prefix: "/influx-flight-manual/",
+      link: "/influx-flight-manual/README",
       icon: "book",
       //
-      // ----- begin children.influx-flight
+      // ----- begin children.influx-flight-manual-manual
       children: [
         //
         // beg flight-man-01
         {
           text: "Lab and Instrument Startup",
-          prefix: "flight-man-01/",
-          link: "flight-man-01/README",
+          prefix: "ifm-01-startup/",
+          link: "ifm-01-startup/README",
           icon: "play",
           // beg children.flight-man-01
           children: [
             //
-            "flight-man-01-00-the-oracle",
-            // {
-              // text: "The Oracle",
-              // link: "flight-man-01-oracle",
-            // }, // end flight-man-01-oracle
-            //
-            //
-            "flight-man-01-00-lab-preflight",
-            // {
-              // text: "Lab Prep",
-              // link: "flight-man-01-activate",
-            // }, // end flight-man-01-activate
-            //
-            "flight-man-01-02-system-power",
-            // {
-              // text: "System Power",
-              // link: "flight-man-01-boot",
-            // }, // end flight-man-01-boot
-            //
-            "flight-man-01-03-flowmeters",
-            // {
-              // text: "Software flowmeters",
-              // link: "flight-man-01-meters",
-            // }, // end flight-man-01-meters
-            //
-            "flight-man-01-04-sortware-part1-connect",
-            // {
-              // text: "Setup sortwareConnect",
-              // link: "flight-man-01-sortware",
-            // }, // end flight-man-01-sortware
-            //
+            "ifm-01p00-the-oracle",
+            "ifm-01p00-lab-preflight",
+            "ifm-01p02-system-power",
+            "ifm-01p03-flowmeters",
+            "ifm-01p04-sortware-part1-connect",
           ], // end children.flight-man-01
           //
         }, // end flight-man-01
         //
-        // ---- Begin flight-fluidics
+        // ---- Begin ifn-02-fluidics
         {
           text: "Setup Fluidics",
-          prefix: "flight-fluidics/",
-          link: "flight-fluidics/README",
+          prefix: "ifm-02-fluidics/",
+          link: "ifm-02-fluidics/README",
           icon: "faucet-drip",
-          // beg children.flight-fluidics
+          // beg children.ifn-02-fluidics
           children: [
+            "ifm-02p01-sheath-tanks",
+             "ifm-02p00-preflight",
+            "ifm-02p02-install-and-purge-nozzle",
+            "ifm-02p03-stream-drain",
+            "ifm-02p04-pinhole-alignment",
+            "ifm-02p05-running-samples",
             //
-            "flight-fluidics-00-preflight",
-            // {
-            // text: "Fluidics Pre-Flight",
-            // link: "flight-fluidics-activate",
-            // }, // end flight-fluidics-activate
-            //
-            "flight-fluidics-01-sheath-tanks",
-            // {
-            // text: "Fluidics Pre-Flight",
-            // link: "flight-fluidics-activate",
-            // }, // end flight-fluidics-activate
-            //
-            "flight-fluidics-02-install-and-purge-nozzle",
-            // {
-              // text: "Sheath and Nozzle",
-              // link: "flight-fluidics-assy",
-            // }, // end flight-fluidics-assy
-            //
-            "flight-fluidics-03-stream-drain",
-              // {
-              // text: "Stream Drain",
-              // link: "flight-fluidics-drain",
-              // }, // end flight-fluidics-drain
-            //
-            // ------- beg: flight-fluidics-pinholes
-            "flight-fluidics-04-pinhole-alignment",
-            // {
-              // text: "Visual Alignment",
-              // link: "flight-fluidics-pinholes",
-            // }, // end flight-fluidics-pinholes
-            //
-            // flight-fluidics-samples
-            "flight-fluidics-05-running-samples",
-            // {
-              // text: "Sample Basics",
-              // link: "flight-fluidics-samples",
-            // }, // end flight-fluidics-samples
-            //
-            // flight-fluidics-sortware
-            // {
-              // text: "Sortware Part 2",
-              // link: "flight-fluidics-sortware",
-            // }, // end flight-fluidics-sortware
-            //
-          ], // end children.flight-fluidics
-        }, // end flight-fluidics
+          ], // end children.ifn-02-fluidics
+        }, // end ifn-02-fluidics
         //
         // ---- Begin flight-optics
         {
           text: "Setup Optics",
-          prefix: "flight-optics/",
-          link: "flight-optics/README",
+          prefix: "ifm-03-optics/",
+          link: "ifm-03-optics/README",
           icon: "burst",
           // beg children.flight-optics
           children: [
             //
-            // ------- beg: flight-optics-activate
-            "flight-optics-activate",
-            //
-            "flight-optics-bdsorts",
-            // {
-              // text: "Setup Sortware Basics",
-              // link: "flight-optics-bdsorts",
-            // }, // end flight-optics-bdsorts
-            //
-            "flight-optics-coarse",
-            // {
-              // text: "Coarse Alignment",
-              // link: "flight-optics-coarse",
-            // }, // end flight-optics-coarse
-            //
-            "flight-optics-final",
-            // {
-              // text: "Final Alignment",
-              // link: "flight-optics-final",
-            // }, // end flight-optics-final
+            // ------- beg: children
+            "ifm-03p00-activate",
+            "ifm-03p01-bdsorts",
+            "ifm-03p02-coarse",
+            "ifm-03p03-final",
           ], // end children.flight-optics
         }, // end flight-optics
         //
-        // ----- Begin flight-sorties
+        // ----- Begin ifm-04ps
         {
           text: "Sort Settings",
-          prefix: "flight-sorties/",
-          link: "flight-sorties/README",
+          prefix: "ifm-04-sorties/",
+          link: "ifm-04-sorties/README",
           icon: "droplet",
-          // beg children.flight-sorties
+          // beg children.ifm-04ps
           children: [
             //
-            "flight-sortie-activate",
-              // {
-              // text: "Sorting Prep",
-              // link: "flight-sortie-activate",
-              // }, // end flight-sortie-activate
-            //
-            "flight-sortie-configsw",
-              // {
-              // text: "Sortware Panels",
-              // link: "flight-sortie-configsw",
-              // }, // end flight-sortie-configsw
-            //
-            "flight-sortie-deflection",
-              // {
-              // text: "Align Side Streams",
-              // link: "flight-sortie-deflection",
-              // }, // end flight-sortie-deflection
-            //
-            "flight-sortie-dropdelay",
-              // {
-              // text: "Find Drop Delay",
-              // link: "flight-sortie-dropdelay",
-              // }, // end flight-sortie-dropdelay
-            //
-            "flight-sortie-frequency",
-              // {
-              // text: "Find Breakoff Point",
-              // link: "flight-sortie-frequency",
-              // }, // end flight-sortie-frequency
-            //
-            "flight-sortie-piezo",
-              // {
-              // text: "Piezo",
-              // link: "flightx-sortie-piezo",
-              // }, // end flight-sortie-piezo
-            //
-            "flight-sortie-slides",
-            // {
-              // text: "Calibration Slides",
-              // link: "flight-sortie-slides",
-            // }, // end flight-sortie-slides
+            "ifm-04p00-activate",
+            "ifm-04p01-configsw",
+            "ifm-04p02-deflection",
+            "ifm-04p03-dropdelay",
+            "ifm-04p04-frequency",
+            "ifm-04p05-piezo",
+            "ifm-04p06-slides",
+          ], // end children.ifm-04ps
           //
-          ], // end children.flight-sorties
-          //
-        }, // end flight-sorties
+        }, // end ifm-04ps
         //
-      ], // end children.influx-flight
-    }, // end /influx-flight/
+      ], // end children.influx-flight-manual-manual
+    }, // end /influx-flight-manual-manual/
     // --------------- END INFLUX FLIGHT MANUAL --------------
     //
     // ------- BEGIN INFLUX MANUALS ----------
@@ -267,37 +153,10 @@ export default sidebar({
         //
         // ------ Begin systems-pmts
         "systems-pmts",
-        // {
-          // text: "Systems PMTs",
-          // prefix: "systems-pmts/",
-          // link: "systems-pmts/README",
-          // children: [
-            
-          // ], // end children.system-pmts
-        // }, // end influx-systems/systems-pmts
         //
-        // ------ Begin systems-sorts
         "systems-sorts",
-        // {
-          // text: "Systems: Sorting",
-          // prefix: "systems-sorts/",
-          // link: "systems-sorts/README",
-          // children: [
-            
-          // ], // end children.system-sorts
-        // }, // end influx-systems/systems-sorts
         //
-        // ------ Begin systems-data
         "systems-data",
-        // {
-          // text: "Systems: Data",
-          // prefix: "systems-data/",
-          // link: "systems-data/README",
-          // children: [
-            
-            
-          // ], // end children.system-sorts
-        // }, // end influx-systems/systems-sorts
         //
       ], // end children.influx-systems
     }, // end influx-systems 

@@ -204,7 +204,7 @@ export default navbar([
         //
       }, // end flight-sorties
       //
-    ], // end children.influx-flight
+    ], // end children.influx-flight-manual
   }, // end /influx-flight/
   // --------------- END INFLUX FLIGHT MANUAL --------------
   //
