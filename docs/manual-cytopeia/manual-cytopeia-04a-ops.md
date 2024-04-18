@@ -2,15 +2,15 @@
 title: 4. Operating Procedures A
 --- 
 
-<!-- filename: manual-cytopeia-04-ops.md -->
+<!-- filename: manual-cytopeia-04a-ops.md -->
 
 ::: note Summary
 This chapter contains detailed step-by-step instructions for operators new to the instrument. Information on use of the software is included.
 :::
 
-### 4.1 Preparation
-
-#### 4.1.1 Collect Supplies
+# 4.1 Preparation
+---
+## 4.1.1 Collect Supplies
 
 1.  Gather and clean all supplies:
     1.  Sheath and waste reservoirs
@@ -21,22 +21,24 @@ This chapter contains detailed step-by-step instructions for operators new to th
     1.  Paper towels
     1.  Microscope slides
 
-#### 4.1.2 Prepare Fluidics Reservoirs
+## 4.1.2 Prepare Fluidics Reservoirs
 
 1.  Fill the sheath tank with up to 6 liters of sheath fluid, preferably filtered at 0.2um.
 1.  Ensure the Waste Reservoir is clean and empty.
 1.  Attach lids and quick connect fittings from instrument fluidics lines to the reservoirs.
     1.  Note that each port is unique. Each fitting connects to only one port.
 
-### 4.2 Power-up
 
-#### 4.2.1 Power up Fluidics
+# 4.2 Power-up
+---
 
-##### Start Fluidics Early
+## 4.2.1 Power up Fluidics
+
+### 4.2.1.1 Start Fluidics Early
 
 1.  Fluids take from 30-60 minutes to fully stabilize. It is therefore important to start the fluidics as early as possible.
 
-##### Close Valves
+### 4.2.1.2 Close Valves
 
 1.  Ensure all the valves are closed:
     1.  Sample Valve
@@ -44,33 +46,34 @@ This chapter contains detailed step-by-step instructions for operators new to th
     1.  Purge Valve
     1.  Sample Pressure Valve
 
-##### Pressurize Sheath Reservoir
+### 4.2.1.3 Pressurize Sheath Reservoir
 
 1.  Close the pressure relief valve on the sheath reservoir.
 1.  Turn on air supply by flipping up the AIR toggle switch on the Pressure Console.
 1.  Observe the gauge on the sheath reservoir to ensure that it is being pressurized.
     1.  Reseat the lid of the Sheath Res if the pressure on the Sheath Res does not increase.
 
-##### Apply Vacuum
+### 4.2.1.4 Apply Vacuum
 
 1.  Turn on the vacuum pump or other vacuum supply.
 1.  Read the gauge of the waste reservoir and ensure that it reads at least 5” Hg. If less than 5” Hg is observed after the tank has a few moments to come to pressure, tighten the lid.
     1.  It is necessary for the waste reservoir lid to be tightened as much as possible without the use of a wrench.
 
-#### 4.2.2 Start Lasers
+## 4.2.2 Start Lasers
 
 1.  Most lasers require at least 30 minutes of warm-up time.
 1.  Close all laser shutters on the instrument and start all lasers in accordance with the manufacturer’s procedures.
 1.  Typical Laser Control Units have key switches to prevent unauthorized or unintended use.
 1.  Power output of the laser may be set to the desired level, or the laser put into standby mode.
 
-#### Start Computer
+## Start Computer
 
 1.  Turn on the computer.
 
-### 4.3 Stream Generation
+# 4.3 Stream Generation
+---
 
-#### 4.3.1 Flush System
+## 4.3.1 Flush System
 
 1.  Place the flush bucket under the nozzle.
 1.  Recheck that the waste reservoir has an adequate level of vacuum applied to it.
@@ -79,7 +82,7 @@ This chapter contains detailed step-by-step instructions for operators new to th
 1.  Ensure that lines are free of air bubbles.
 1.  Close the Purge and Sheath valves.
 
-#### 4.3.2 Clean and Attach Nozzle Tip
+## 4.3.2 Clean and Attach Nozzle Tip
 
 1.  Get the nozzle tip.
 1.  Clean Nozzle tip.
@@ -97,11 +100,11 @@ This chapter contains detailed step-by-step instructions for operators new to th
         1.  Be gentle starting off. If you feel any sort of resistance, it may be that the base of the nozzle tip is pressing against the rim of the pipe the nut is being attached to.
         1.  Carefully back the nut off, and attempt to re-straighten the nozzle tip within the nozzle nut to attempt another installation. Remember to keep the nozzle tip clean of contamination.
 
-#### 4.3.3 Start a Stream
+## 4.3.3 Start a Stream
 
 1.  Open the Sheath Valve to start a stream.
 
-#### 4.3.4 Backflush and Debubble
+## 4.3.4 Backflush and Debubble
 
 1.  Backflush the sample line by opening the SAMPLE VALVE.
 1.  Close the SAMPLE VALVE after the sample line drips sheath fluid for about 30 seconds.
@@ -122,12 +125,12 @@ This chapter contains detailed step-by-step instructions for operators new to th
 1.  After testing for bubbles, reopen the SHEATH VALVE.
 
 
-#### 4.3.5 Align Stream
+## 4.3.5 Align Stream
 
 1.   Ensure that a corning tube is set in the well platform beneath the stream drain in the sort channel.
 2.   **WE NEED TO FIND OUT WHAT THAT MEANS FOR SOFTWARE**
 
-##### img "WDU Tray in PRESENT Position"
+### img "WDU Tray in PRESENT Position"
 
 1.   Remove the flush bucket so that the stream passes through the illumination chamber into the sort chamber.
 2.   Flip the ILLUM switch on the Control Panel to ON to illuminate the stream near the drain.
@@ -146,15 +149,16 @@ This chapter contains detailed step-by-step instructions for operators new to th
 3.   Iterate between **(1)** and **(2)** until the stream is focused and positioned in the pinhole monitor and also aimed at the drain in the sort stream monitor.
 4.   
 
-##### img: "Right: Stream Focused in Pinhole Camera. Left: Stream Aimed at drain"
+### img: "Right: Stream Focused in Pinhole Camera. Left: Stream Aimed at drain"
 
-### 4.4 Droplet Formation
+# 4.4 Droplet Formation
+---
 
 1.   Droplet formation is achieved by using a piezoelectric element to focus an acoustic wave into the stream at the nozzle tip.
 2.   The stream may need to run about 10 minutes before droplet formation will become stable.
 3.   
 
-#### 4.4.1 Turn on the piezoelectric
+## 4.4.1 Turn on the piezoelectric
 
 1.   Flip up the PIEZO switch on the Control Panel.
 2.   Rotate the PIEZO knob to an appropriate amplitude setting.
@@ -164,30 +168,30 @@ This chapter contains detailed step-by-step instructions for operators new to th
 3.   Fine-tuning of the piezo amplitude will be completed later when optimizing the BOP.
 4.   (Ken note) *"This switch is a locking switch: Pull out then flip up"*
 
-#### 4.4.2 View the Break-Off Point (BOP)
+## 4.4.2 View the Break-Off Point (BOP)
 
 1.   Adjust the micrometer of the drop camera so that the BOP can be seen in the drop monitor.
 2.   (Ken Note) *"Drop position indicates micrometer position"*
 3.   (Ken Note) *"Drop Position should be about 200, and piezo should be about one. 6 drops should be visible on the monitor"*
 4.   (Ken Note) *"For Counting, we want this set lower than for sorting"*
 
-##### img: Drop camera image Ken Note *"Drop Position = 200"*
+### img: Drop camera image Ken Note *"Drop Position = 200"*
 
-#### 4.4.3 Close and turn on PLATES
+## 4.4.3 Close and turn on PLATES
 
 1.   Swing the Deflection plates into their closed position.
 
-##### img Deflection Plate and Thumbscrew
+### img Deflection Plate and Thumbscrew
 
 1.   Close the Sort Cavity Door and switch on the high voltage plates by flipping the PLATES switch on the control panel up.
 2.   Note that a red LED on the control panel will illuminate to indicate the plates are on.
 
-#### 4.4.4 Turn on *STREAM DEFLECTION*
+## 4.4.4 Turn on *STREAM DEFLECTION*
 
 1.   Flip up the STREAM DEFLECTION switch on the control panel.
 2.   Set the stream deflection amplitude knob to about 1/4 of its full range for now.
 
-#### 4.4.5 Optimize Break Off Point (BOP)
+## 4.4.5 Optimize Break Off Point (BOP)
 
 1.   Creating test sort streams and tuning the piezo amplitude to optimize the BOP.
 
@@ -195,7 +199,7 @@ This chapter contains detailed step-by-step instructions for operators new to th
 2.   Sort streams should now be visible in the sort stream monitor.
 3.   Use the deflection amplitude knob to adjust the sort streams so that they clear the drain as shown below.
 
-##### img: Sort stream image with side streams
+### img: Sort stream image with side streams
 
 1.   Flip up the $$1-1\frac{1}{2}$$ switch on the control front panel.
 2.   Adjust the PIEZO AMPLITUDE knob until the sort streams are maximally deflected.
@@ -205,7 +209,7 @@ This chapter contains detailed step-by-step instructions for operators new to th
 6.   It is sometimes necessary to adjust the PIEZO AMPLITUDE while sorting to keep the waveform of the jet at the BOP constant.
 7.   Flip off TEST LEFT, TEST RIGHT, and 1-11/2.
 
-#### 4.4.6 Set STREAM DEFLECTION amplitude
+## 4.4.6 Set STREAM DEFLECTION amplitude
 
 1.   The proper setting of deflection amplitude results in a sort stream that falls into the center of a sort tube during 2-way sorting.
 2.   (Ken Notes) *"With 1-1/2 switches up, you need to see four deflections to maximize deflection distance"*
@@ -225,18 +229,19 @@ This chapter contains detailed step-by-step instructions for operators new to th
 5.   If 96-well sorting is desired, follow a similar procedure except use a 96 well tray insert and the 96-well sort mode for the WDU mode.
 
 
-###  4.5 Illumination
+#  4.5 Illumination
+---
 
 1.  Illumination consists of steering the laser paths so that they intersect the stream at proper locations.
 2.  The following steps should be repeated for each illumination laser.
 
 
-#### 4.5.1 Open Laser Shutter
+## 4.5.1 Open Laser Shutter
 
 1.  Close the laser chamber door slide and put the chamber lid in place.
 2.  Open the manual laser shutter on the left side of the sort head.
 
-##### img: Manual laser shutter in open position
+### img: Manual laser shutter in open position
 
 1.  The instrument is also equipped with an automatic laser shutter interlock system.
 2.  When the system is armed, opening the chamber door slide will cause the automatic shutter to close.
@@ -245,7 +250,7 @@ This chapter contains detailed step-by-step instructions for operators new to th
     2.  The system is reset by placing a finger in front of the reset detector.
 4.  The reset detector is behind a small hole in the upper right corner of the chamber door, as shown below.
 
-##### img: Laser Interlock system reset aperture
+### img: Laser Interlock system reset aperture
 
 ::: warning ALWAYS USE EYE PROTECTION
 1.  The laser interlock system does NOT eliminate the need for operators to wear eye protection.
@@ -253,7 +258,7 @@ This chapter contains detailed step-by-step instructions for operators new to th
 :::
 
 
-#### 4.5.2 Steer laser to stream
+## 4.5.2 Steer laser to stream
 
 1.  Note:
     1.  Most lasers will show a glow in the pinhole monitor when they strike the stream.

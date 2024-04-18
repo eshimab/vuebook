@@ -13,7 +13,8 @@ This chapter:
 1.  Operation of the instrument poses several potential hazards, including hazardous voltage and current, laser radiation, and moving parts. PLEASE read and understand this safety information and this entire manual prior to operating the instrument and follow all safety precautions.
 :::
 
-### 3.1 Hazards
+# 3.1 Hazards
+---
 
 1.  The following table lists the primary potential hazards that may be encountered during inFlux operation.
 1.  The instrument is labeled with ANSI/ISO-harmonized safety labels, alerting the user to these potential hazards.
@@ -29,16 +30,17 @@ This chapter:
 |    Heat    |    Heated air from instrument     |        |
 
 
-### 3.2 Safe Operation
+# 3.2 Safe Operation
+---
 
-#### 3.2.1 General Electric
+## 3.2.1 General Electric
 
 1.  As with all electrical equipment, protect against shock by connecting to an approved grounded power source.
 1.  Do not, under any circumstances, remove the grounding plug from the power cord.
 1.  Do not perform any servicing except as specifically stated in this manual.
 1.  Do not remove any wiring cover or panel with a warning label affixed to it. These covers and panels provide protection against potential electrical shock from components inside.
 
-#### 3.2.2 High Voltage Plates
+## 3.2.2 High Voltage Plates
 
 1.  This instrument requires the use of high voltage plates (HV Plates/Deflection Plates) to deflect desired droplets from the stream for collection. 
 1.  Whenever the plates are in use, the potential for electrical shock exists.
@@ -48,9 +50,9 @@ This chapter:
 2.  Switch **PLATES** off prior to opening the door and reaching into Workspace (Sort Chamber).
 :::
 
-#### 3.2.3 Light Hazards
+## 3.2.3 Light Hazards
 
-##### Laser Radiation
+### 3.2.3.1 Laser Radiation
 
 1.  This instrument utilizes both Class 2 and Class 3b laser radiation during operation. Follow all laser safety precautions.
 
@@ -64,9 +66,9 @@ This chapter:
     1.  Suitable eye protection must still be worn.
     1.  Do not intentionally defeat this system.
 
-##### Ultra Violet Light
+### 3.2.3.2 Ultra Violet Light
 
-#### 3.2.4 Mechanical
+## 3.2.4 Mechanical
 
 Mechanical pinch or crush hazard due to:
 1.  Do not remove guards or covers with labels alerting to mechanical hazards.
@@ -76,7 +78,7 @@ Well Deposition Unit
 1.  Moving parts alert.
 1.  Don’t reach into the “workspace” while the unit is operating.
 
-#### 3.2.5 Pneumatic
+## 3.2.5 Pneumatic
 
 Pressurized air and vacuum hazards:
 1.  Safely connected.
@@ -87,7 +89,7 @@ Pressurized air and vacuum hazards:
 The sheath reservoir, sheath lines, and sample lines are pressurized during operation. **Do not operate the instrument at more than 100 PSI.** Use caution when handling Sheath reservoir connections and when relieving reservoir pressure with the pressure relief valve.
 :::
 
-#### 3.2.6 Biohazard
+## 3.2.6 Biohazard
 
 ::: warning 
 Do not introduce any toxic, biohazardous, or other potentially dangerous substances into the instrument.

@@ -64,45 +64,6 @@ icon: power-off
 ## Start Computer
 
 
-1.  Turn on the computer.
-
-<!--  -->
-
-## System Power TLDR:
-
-1. Turn On InFlux Instrument
-2. Check Cameras with Marshal Monitor
-3. Turn on Lasers
-4. Turn On Computers and start Sortware
-
-## Turn On InFlux
-
-::: note asset “Workstation Power Switches”
-Power switches are on the Workstation cart and instrument chassis. Note:
--   the *Eliminator E 107* power strip.
--   The Sort Chamber Control Buttons 
-:::
-
-1. Turn On Primary Power “Power Strip 1” Computer Table
-2. Turn On Instrument Power using Rocker Switch on Instrument Chassis
-3. The Vacuum Pump and Lasers are plugged into the Front Panel Power Switches on the unit labeled *Eliminator E-107*
-3. Turn On Power for the Vacuum Pump.
-    ::: note asset “Vacuum pump in a box”
-    The vacuum pump is behind the instrument chassis in a sound isolation bin. Note:
-    -   Exhaust Location
-    -   Power Toggle
-    :::
-    1.  Vacuum pump power is on switch 1 (labeled Vac) by default.
-    5.  The Vacuum pump is in a plastic bin behind the instrument. 
-    5.  The bin is for sound isolation.
-    6.  The pump exhaust fan should be facing out of the corner with the *exquisitly* carved port. To keep the pump from overheating.
-    7.  The Vacuum pump toggle switch should be on. We normally leave this toggled and power the vacuum pump 
-4. Lasers are powered with the Rocker Switches on the *E 107* Unit. We will turn them on later. For reference:
-    1. The  Switches are numbered:
-        1. **2** 488 - 488nm *Coherent* Laser
-        1. **3** 457 - 457nm *Melles Griot* Laser
-        1. **4** 671 - 671nm *Opto Engine* Laser
-4. Turn On Tektronix TDS 2014C Oscilliscope using the Power Switch on the Top Left Corner.
 
 ## Check the Cameras using the Marshall Monitor
 

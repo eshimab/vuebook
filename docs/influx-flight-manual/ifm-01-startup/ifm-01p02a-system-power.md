@@ -18,55 +18,6 @@ icon: power-off
 
 [[toc]]
 
-<!-- ::: details OG Manual  -->
-# 4.2 Power-up
----
-
-## 4.2.1 Power up Fluidics
-
-### 4.2.1.1 Start Fluidics Early
-- [ ] **Done**
-
-1.  Fluids take from 30-60 minutes to fully stabilize. It is therefore important to start the fluidics as early as possible.
-
-### 4.2.1.2 Close Valves
-- [ ] **Done**
-
-1.  Ensure all the valves are closed:
-    1.  Sample Valve
-    1.  Sheath Valve
-    1.  Purge Valve
-    1.  Sample Pressure Valve
-
-### 4.2.1.3 Pressurize Sheath Reservoir
-- [ ] **Done**
-
-1.  Close the pressure relief valve on the sheath reservoir.
-2.  Turn on air supply by flipping up the AIR toggle switch on the Pressure Console.
-3.  Observe the gauge on the sheath reservoir to ensure that it is being pressurized.
-    1.  Reseat the lid of the Sheath Res if the pressure on the Sheath Res does not increase.
-
-### 4.2.1.4 Apply Vacuum
-- [ ] **Done**
-
-1.  Turn on the vacuum pump or other vacuum supply.
-2.  Read the gauge of the waste reservoir and ensure that it reads at least 5” Hg. If less than 5” Hg is observed after the tank has a few moments to come to pressure, tighten the lid.
-    1.  It is necessary for the waste reservoir lid to be tightened as much as possible without the use of a wrench.
-
-## 4.2.2 Start Lasers
-- [ ] **Done**
-
-1.  Most lasers require at least 30 minutes of warm-up time.
-1.  Close all laser shutters on the instrument and start all lasers in accordance with the manufacturer’s procedures.
-1.  Typical Laser Control Units have key switches to prevent unauthorized or unintended use.
-1.  Power output of the laser may be set to the desired level, or the laser put into standby mode.
-
-## Start Computer
-
-
-1.  Turn on the computer.
-
-<!--  -->
 
 ## System Power TLDR:
 

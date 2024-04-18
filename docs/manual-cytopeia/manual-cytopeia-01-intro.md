@@ -7,9 +7,10 @@ title: 1. Introduction
 Overview of this manual and its use in conjunction with the inFlux platform
 
 
-### 1.1 Intended Use
+# 1.1 Intended Use
+---
 
-#### 1.1.1 Investigation Device Caution
+## 1.1.1 Investigation Device Caution
 
 ::: warning CAUTION - INVESTIGATIONAL DEVICE
 LIMITED BY FEDERAL (OR UNITED STATES) LAW TO INVESTIGATIONAL USE
@@ -21,11 +22,12 @@ LIMITED BY FEDERAL (OR UNITED STATES) LAW TO INVESTIGATIONAL USE
 -   All devices (e.g., lasers) that are part of the inFlux instrument platform should be used in accordance with the specifications of the original manufacturer.
 :::
 
-#### 1.1.2 Spigot software
+## 1.1.2 Spigot software
 
 -   No longer relevant.
 
-### 1.2 About the *inFlux&reg; Cell Sorter Operator Manual v2.1*
+# 1.2 About the *inFlux&reg; Cell Sorter Operator Manual v2.1*
+---
 
 -   A resource for inFlux operators
 -   Intended to be an introduction to the inFlux platform and the basic operations
@@ -37,12 +39,14 @@ LIMITED BY FEDERAL (OR UNITED STATES) LAW TO INVESTIGATIONAL USE
     -   Maintenance information
     -   ~~Spigot Interface~~ No longer relevant
 
-### 1.3 Using this manual
+# 1.3 Using this manual
+---
 
 -   Users should read through the guide before first using the instrument.
 -   Be aware of the text style conventions
 
-### 1.4 Chapter Descriptions
+# 1.4 Chapter Descriptions
+---
 
 There are six chapters
 
@@ -72,7 +76,8 @@ There are six chapters
     -   Periodic Maintenance
     -   Inspection
 
-### 1.5 Document Conventions
+# 1.5 Document Conventions
+---
 
 ::: danger DANGER/WARNING
 Hazards that, if not avoided, will result in death or serious injury.
@@ -86,7 +91,7 @@ Hazards that, if not avoided, might result in minor to moderate injury and/or ph
 Indicates important information
 :::
 
-#### 1.5.2 Instrument Description Conventions
+## 1.5.2 Instrument Description Conventions
 
 | **Text Style**     | **Meaning**                | **Example**      |
 | :----------------- | :------------------------- | :--------------- |

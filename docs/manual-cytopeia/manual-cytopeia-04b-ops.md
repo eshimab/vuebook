@@ -2,7 +2,7 @@
 title: 4. Operating Procedures B
 --- 
 
-<!-- filename: manual-cytopeia-04b
+<!-- filename: manual-cytopeia-04b-ops.md
 -ops.md -->
 
 ::: note Summary
@@ -10,10 +10,10 @@ This chapter contains detailed step-by-step instructions for operators new to th
 :::
 
 
-### 4.6 Sample Introduction
+# 4.6 Sample Introduction
+---
 
-
-#### 4.6.1 Load Sample Tube
+## 4.6.1 Load Sample Tube
 
 1.  Use only Falcon 35-2063 5mL sample tubes.
 2.  Cytopie recommends all samples be filtered to 40um to prevent nozzle clogs.
@@ -22,7 +22,7 @@ This chapter contains detailed step-by-step instructions for operators new to th
 2.  Load tube into sample tube holder and lock the tube in place over the stopper using the lever.
 3.  Take care not to damage the sample tube.
 
-##### img: Locking sample tube in place
+# img: Locking sample tube in place
 
 ::: warn
 1.  Use care when removing the sample tube.
@@ -33,12 +33,12 @@ This chapter contains detailed step-by-step instructions for operators new to th
 :::
 
 
-#### 4.6.2 Open SAMPLE VALVE
+## 4.6.2 Open SAMPLE VALVE
 
 1.  Check that the sample pressure is set about 1 PSI over the sheath pressure.
 2.  Open the SAMPLE VALVE.
 
-#### 4.6.3 Run sample at a low rate
+## 4.6.3 Run sample at a low rate
 
 1.  Aim the laser so that it is just above the center pinhole, in between pinholes for multi-laser systems.
 2.  When running bright calibration beads or cells at a low flow rate, a narrow sample core can be viewed in the pinhole monitor.
@@ -46,7 +46,7 @@ This chapter contains detailed step-by-step instructions for operators new to th
 4.  If no beads are observed flashing in the stream, then the flow rate is too low.
 5.  (Ken Note) *"We use spheriotech ultra rainbow beads at one drop to one ml sheath (approx).*
 
-##### img: Pinhole camera image, with beads showing in stream
+# img: Pinhole camera image, with beads showing in stream
 
 1.  The flow rate of the sample is determined by the sample pressure setting.
 2.  A sample pressure of 1 PSI over sheath pressure at low flow rate is usually achieved; however, this setting depends on the concentration of the sample.
@@ -59,7 +59,9 @@ This chapter contains detailed step-by-step instructions for operators new to th
 7.  Use the z- and y-axes of the nozzle stage to place the sample core in the center of the pinhole.
 8.  The SAMPLE VALVE may be closed if desired at this point to preserve the sample until data acquisition parameters are set up.
 
-### 4.7 Data Acquisition
+
+# 4.7 Data Acquisition
+---
 
 1.  Spigot software is used for most all data acquisition controls.
 2.  Spigot allows control of PMTS and allows custom gating schemes to be developed and saved in configuration files.
@@ -67,24 +69,24 @@ This chapter contains detailed step-by-step instructions for operators new to th
 4.  See the chapter on the Spigot Interface for detailed descriptions of the spigot functions.
 5.  This chapter will refer to fluorescence channels as FL1-FL7 and forward and side scatter as FSC and SSC.
 
-#### 4.7.1 Open a Spigot Configuration File (*.sco)
+## 4.7.1 Open a Spigot Configuration File (*.sco)
 
 1.  If a spigot configuration file has already been saved for alignment particles, open that file and skip the steps outlined below for configuring Spigot.
 2.  Otherwise, follow the directions below and set up a new configuration and save the settings in a new *.sco file by selecting FILE > SAVE CONFIGURATION FILE in Spigot.
 
-#### 4.7.2 Activate PMTs
+## 4.7.2 Activate PMTs
 
 1.  Activate all PMTs that will be used during alignment.
 2.  It is crucial that the FSC PMT is activated since it is the signal that is used for the system trigger.
     1.  No data will be acquired unless the FSC PMT is activated.
 
-#### 4.7.3 Choose parameters to plot
+## 4.7.3 Choose parameters to plot
 
 1.  Choose parameters to plot in Spigot's Left display as described in the Spigot Interface chapter.
 2.  Typically FL1 is plotted vs FSC and these instructions will detail how to set-up and align those two parameters.
 3.  Use a similar method for plotting other or more parameters.
 
-#### 4.7.4 Set initial PMT gains
+## 4.7.4 Set initial PMT gains
 
 1.  The inFlux system is shipped pre-configured for linear (lin) or logarithmic (log) amplification for fluorescent channels.
 2.  These settings can be changed on the Patch Panel on the front of the electronics console.
@@ -97,7 +99,7 @@ This chapter contains detailed step-by-step instructions for operators new to th
 9.  Since the range for pulse height measurements in Spigot is 0-10 V, pulse heights of about 5V should correspond to data that is acquired in about the middle of a FL1 vs FSC plot in the left display.
 10. Make sure that data are being acquired by Spigot and adjust the PMT gains so that the data are not off-scale.
 
-#### 4.7.5 Set trigger level and event trigger delay
+## 4.7.5 Set trigger level and event trigger delay
 
 1.  [Trigger Level] sets the threshold for the lowest detectable signals and is set off the system trigger (usually FSC).
 2.  Its intended use is to eliminate noise.
@@ -108,13 +110,12 @@ This chapter contains detailed step-by-step instructions for operators new to th
 7.  Finally, make sure that additional laser channels are set to the appropriate levels (1, 2, or 3) in the [SIMPLE CONFIG] screen. Typically, [EVENT DELAY] will only need to be changed if the sheath pressure of the system is changed.
 
 
-
-### 4.8 Alignment
-
+# 4.8 Alignment
+---
 1.  Fine-tuning of the inFlux involves positioning the sample core at the focal point of the objective lens in the pinhole, illuminating the sample core optimally, and aligning the FSC.
 2.  PMT gains may need to be adjusted as the system is to keep data on scale.
 
-#### 4.8.1 Focus light emission from the sample in the stream
+## 4.8.1 Focus light emission from the sample in the stream
 
 1.  Open sample valve and ensure that the sample flow is flowing at a low rate.
 2.  As described earlier in this chapter, ensure that the sample core is:
@@ -125,7 +126,7 @@ This chapter contains detailed step-by-step instructions for operators new to th
         2.  Nozzle Stages
         3.  Illumination Stage
 
-#### 4.8.2 Optimize Fluorescence Channel
+## 4.8.2 Optimize Fluorescence Channel
 
 1.  While a FSC signal must be detected first (if it is the system trigger), it is important to first align to a FL or SSC channel since the objective lens is fixed while the FSC detector stage allows adjustment.
 2.  Some flow cytometer operators prefer to align the FL signals using linear amplification.
@@ -135,16 +136,17 @@ This chapter contains detailed step-by-step instructions for operators new to th
 4.  The pulse should be as high as possible and the signal in Spigot should be maximized.
 5.  Remember to ignore the FSC signal while tuning the FL channel.
 
-#### 4.8.3 Optimize forward scatter signal
+## 4.8.3 Optimize forward scatter signal
 
 1.  Once the FL signal is optimized, the FSC signal can be optimized.
 2.  Use the y- and z-axes of the forward scatter stage to maximize the signal from the FSC detector.
 
-#### 4.8.4 Optimize additional laser paths
+## 4.8.4 Optimize additional laser paths
 
 1.  After the first laser path is aligned for fluorescence and FSDC, additional laser paths can be aligned for fluorescence using their respective illumination stages as described in this section.
 
-### 4.9 Sort Gating
+# 4.9 Sort Gating
+---
 
 1.  Sort gates can be defined via the Spigot interface.
 2.  Up to 12 (6 left and 6 right) 2-parameter sort windows can be defined at the same time.
@@ -153,7 +155,7 @@ This chapter contains detailed step-by-step instructions for operators new to th
 5.  These instructions will describe how to set up a basic sort window as well as a few advanced features.
 6.  The Spigot Interface chapter also contains reference information.
 
-#### 4.9.1 Draw Sort Windows in Spigot
+## 4.9.1 Draw Sort Windows in Spigot
 
 1.  To draw a sort window (SW) in Spigot, first click on the SORT.
 2.  The right display will contain six squares corresponding to the instrument's six Look-up Tables ("LUTs").
@@ -190,7 +192,7 @@ This chapter contains detailed step-by-step instructions for operators new to th
 2.  All LUT SWs can be reset by clicking the Reset All button in the sort window function area.
 3.  SWs may be moved or stretched by clicking on the modify button.
 
-#### 4.9.2 LUT/Classifier Filters
+## 4.9.2 LUT/Classifier Filters
 
 1.  Spigot allows data filtering based on SWs for easy identification of populations and subpopulations across many parameters.
 2.  Two types of filtering are possible: LUT filtering and classifier filtering.

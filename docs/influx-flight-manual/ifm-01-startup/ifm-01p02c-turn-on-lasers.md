@@ -1,5 +1,5 @@
 ---
-title: Alignment Pre-Flight
+title: Turn on lasers
 icon: list-check
 ---
 

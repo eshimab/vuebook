@@ -41,6 +41,7 @@ export default sidebar({
             "ifm-01p00-the-oracle",
             "ifm-01p00-lab-preflight",
             "ifm-01p02-system-power",
+            "ifm-01p02b-turn-on-lasers.md",
             "ifm-01p03-flowmeters",
             "ifm-01p04-sortware-part1-connect",
           ], // end children.flight-man-01
@@ -53,7 +54,7 @@ export default sidebar({
           icon: "faucet-drip",
           children: [
             "ifm-02p01-sheath-tanks",
-             "ifm-02p00-preflight",
+            "ifm-02p00-preflight",
             "ifm-02p02-install-and-purge-nozzle",
             "ifm-02p03-stream-drain",
             "ifm-02p04-pinhole-alignment",
@@ -66,7 +67,7 @@ export default sidebar({
           link: "ifm-03-optics/README",
           icon: "burst",
           children: [
-            "ifm-03p00-activate",
+            // "ifm-03p00-activate",
             "ifm-03p01-bdsorts",
             "ifm-03p02-coarse",
             "ifm-03p03-final",

@@ -14,7 +14,8 @@ This chapter provides the user with:
 -   Brief description of each functional subsystem
 :::
 
-### 2.1 Functional Description
+# 2.1 Functional Description
+---
 
 -   The inFlux brings together several technologies to provide:
     -   High-speed detection
@@ -31,7 +32,8 @@ This chapter provides the user with:
 -   High voltage plates then deflect the individual droplets from the stream for separate collection.
 :::
 
-### 2.2 Pictorial Tour
+# 2.2 Pictorial Tour
+---
 
 -   Front View
     -   Nozzle Assembly
@@ -73,11 +75,13 @@ This chapter provides the user with:
         -   Stream
     -   Oscilloscope
 
-### 2.3 Functional Subsystems
+# 2.3 Functional Subsystems
+---
+
 
 A brief description of each functional subsystem
 
-#### 2.3.1 Fluidics
+## 2.3.1 Fluidics
 
 The Fluidics system includes components necessary for:
 -   Sample introduction
@@ -116,7 +120,7 @@ The Fluidics system includes components necessary for:
         -   Waste Reservoir (tank)
         -   Vacuum pump
 
-#### 2.3.2 Illumination
+## 2.3.2 Illumination
 
 The Illumination subsystem includes all the components necessary to apply a focused beam of laser-emitted light to the jet of sheath and sample fluid exiting the nozzle tip.
 
@@ -129,7 +133,7 @@ Illumination subsystem main components:
 -   Iris diaphragms
 -   Focusing lenses mounted on adjustable stages
 
-#### 2.3.3 Detection
+## 2.3.3 Detection
 
 -   The Detection subsystem is modular and open.
 -   The purpose is to spectrally separate and quantify the intensity of light fluoresced or scattered by particles passing through the laser beam.
@@ -143,7 +147,7 @@ Illumination subsystem main components:
         -   Dichroic mirrors
         -   Photo Multiplier Tubes (PMTs)
 
-#### 2.3.4 Signal Processing
+## 2.3.4 Signal Processing
 
 Signal Processing encompasses all the electrical components necessary to:
 -   Control PMTs.
@@ -152,7 +156,7 @@ Signal Processing encompasses all the electrical components necessary to:
     -   Logarithmic (log) and Linear (lin) Pre-amplifiers (preamps).
     -   Analog-to-Digital Converters (ADCs).
 
-#### 2.3.5 Sort Electronics
+## 2.3.5 Sort Electronics
 
 The Sort Electronics Subsystem comprises all the electronic components necessary for sorting particles, including:
 -   Transferring sort gating information from Sortware into the hardware look-up tables.
@@ -170,7 +174,7 @@ The Sort Electronics Subsystem comprises all the electronic components necessary
     -   Control circuitry.
     -   Note: Many of these components are housed in the Electronics Console.
 
-#### 2.3.6 Sample Collection
+## 2.3.6 Sample Collection
 
 After droplets are formed and deflected from the sample stream, the Sample Collection Subsystem is responsible for collecting the droplets.
 
@@ -184,7 +188,7 @@ Sample Collection Subsystem Main Components:
     -   Two-Axis movable tray powered by stepper motors and controlled by the User via the Sortware interface.
     -   The tray can hold a well plate or use attachments for test tubes or microscope slides.
 
-#### 2.3.7 Monitoring
+## 2.3.7 Monitoring
 
 The Monitoring Subsystem enables the User to observe in real-time:
 -   Data acquired by the inFlux.
