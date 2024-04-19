@@ -58,7 +58,8 @@ export default sidebar({
           icon: "faucet-drip",
           children: [
             "ifm-02p01-preflight",
-            "ifm-02p02-sheath-tanks",
+            "ifm-02p02a-waste-tank",
+            "ifm-02p02b-sheath-tank",
             "ifm-02p03-install-and-purge-nozzle",
             "ifm-02p04-stream-drain",
             "ifm-02p05-pinhole-alignment",
