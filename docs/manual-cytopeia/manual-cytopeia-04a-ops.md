@@ -40,7 +40,7 @@ This chapter contains detailed step-by-step instructions for operators new to th
 
 ### 4.2.1.2 Close Valves
 
-1.  Ensure all the valves are closed:
+1.  **Ensure all the valves are closed :**
     1.  Sample Valve
     1.  Sheath Valve
     1.  Purge Valve
