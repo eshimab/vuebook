@@ -1,5 +1,5 @@
 ---
-title: Setup Fluidics
+title: 2. Setup Fluidics
 ---
 
 

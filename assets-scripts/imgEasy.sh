@@ -11,14 +11,14 @@
 # Resize
 
 # --------------- Convert to PNG  ------------
-echo "Converting img to png with: sips\n"
-filepath_src="/Users/eshim/vuebook/docs/influx-flight-manual/ifm-01-startup/assets/img-01p02-system-power/IMG_2631.HEIC"
-filepath_out="/Users/eshim/vuebook/docs/influx-flight-manual/ifm-01-startup/assets/img-01p02-system-power/img-01p02-vacuum-in-box.png"
-echo "converting $filepath_src"
-echo "sending output to $filepath_out"
-sips -s format png "$filepath_src" --out "$filepath_out"
+# echo "Converting img to png with: sips\n"
+# filepath_src="/Users/eshim/vuebook/docs/influx-flight-manual/ifm-02-fluidics/assets/img-02p01-sheath-tanks/img-startup-lab-sheath-vacuum-plumbed-overhead.png"
+# filepath_out="/Users/eshim/vuebook/docs/influx-flight-manual/ifm-02-fluidics/assets/img-02p01-sheath-tanks/img-startup-lab-sheath-vacuum-plumbed-overhead.png"
+# echo "converting $filepath_src"
+# echo "sending output to $filepath_out"
+# sips -s format png "$filepath_src" --out "$filepath_out"
 # --------------- Update filepath_src  ------------
-filepath_src="/Users/eshim/vuebook/docs/influx-flight-manual/ifm-01-startup/assets/img-01p02-system-power/img-01p02-vacuum-in-box.png"
+filepath_src="/Users/eshim/vuebook/docs/influx-flight-manual/ifm-02-fluidics/assets/img-02p01-sheath-tanks/img-startup-lab-sheath-vacuum-plumbed-overhead.pngg"
 
 # --------------- Adjust Dims  ------------
 echo "Adjust Dimentions with: convert\n"

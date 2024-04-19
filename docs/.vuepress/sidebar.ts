@@ -33,13 +33,13 @@ export default sidebar({
         //
         // beg flight-man-01
         {
-          text: "Lab and Instrument Startup",
+          text: "1.0 Lab and Instrument Startup",
           prefix: "ifm-01-startup/",
           link: "ifm-01-startup/README",
           icon: "play",
           children: [
-            "ifm-01p00-the-oracle",
-            "ifm-01p00-lab-preflight",
+            "ifm-01p01a-the-oracle",
+            "ifm-01p01b-lab-preflight",
             // "ifm-01p02-system-power",
             "ifm-01p02a-turn-on-influx",
             "ifm-01p02b-computers",
@@ -52,21 +52,21 @@ export default sidebar({
         }, // end flight-man-01
         // ---- Begin ifn-02-fluidics
         {
-          text: "Setup Fluidics",
+          text: "2.0 Setup Fluidics",
           prefix: "ifm-02-fluidics/",
           link: "ifm-02-fluidics/README",
           icon: "faucet-drip",
           children: [
-            "ifm-02p01-sheath-tanks",
-            "ifm-02p00-preflight",
-            "ifm-02p02-install-and-purge-nozzle",
-            "ifm-02p03-stream-drain",
-            "ifm-02p04-pinhole-alignment",
-            "ifm-02p05-running-samples",
+            "ifm-02p01-preflight",
+            "ifm-02p02-sheath-tanks",
+            "ifm-02p03-install-and-purge-nozzle",
+            "ifm-02p04-stream-drain",
+            "ifm-02p05-pinhole-alignment",
+            "ifm-02p06-running-samples",
           ], // end children.ifm-02-fluidics
         }, // end ifm-02-fluidics
         {
-          text: "Setup Optics",
+          text: "3.0 Setup Optics",
           prefix: "ifm-03-optics/",
           link: "ifm-03-optics/README",
           icon: "burst",
@@ -79,20 +79,20 @@ export default sidebar({
         }, // end flight-optics
         //
         {
-          text: "Sort Settings",
+          text: "4.0 Sort Settings",
           prefix: "ifm-04-sorties/",
           link: "ifm-04-sorties/README",
           icon: "droplet",
           // beg children.ifm-04ps
           children: [
             //
-            "ifm-04p00-activate",
-            "ifm-04p01-configsw",
-            "ifm-04p02-deflection",
-            "ifm-04p03-dropdelay",
-            "ifm-04p04-frequency",
-            "ifm-04p05-piezo",
-            "ifm-04p06-slides",
+            "ifm-04p01-activate",
+            "ifm-04p02-configsw",
+            "ifm-04p03-deflection",
+            "ifm-04p04-dropdelay",
+            "ifm-04p05-frequency",
+            "ifm-04p06-piezo",
+            "ifm-04p07-slides",
           ], // end children.ifm-04ps
         }, // end ifm-04ps
       ], // end children.influx-flight-manual-manual
