@@ -30,25 +30,27 @@ A picture with the nozzle installed. Note the
 
 1.  Use the Nozzle Nut to install the Nozzle 
 2.  Make sure there is an undamaged O-Ring neslted in the Nozzle Nut orifice
-    ::: note asset Nozzle Nut O-ring
-    Undamaged Oring installed in the nozzle lock ring. The oring part number is ???
-    :::
+::: note asset Nozzle Nut O-ring
+Undamaged Oring installed in the nozzle lock ring. The oring part number is ???
+:::
 3.  Make sure the Nozzle is not obviously clogged:
     1.  Use a 60ml Syringe filled with MilliQ water and fitted with an Acrodisc 0.2um Syringe Filter
     2.  Place the Nozzle so that the wider end is around the outflow of the Acrodisc filter, and press lightly on the Syringe.
     3.  Water should be ejected from the Nozzle Tip in a straight stream.
         -   If you cannot get a clear stream, try multiple light pressses on the Syringe plunger
-        ::: note asset “Unclogged Nozzle”
-        The stream should look like this when using the 60ml syringe to check for clogs
-        :::
-        ::: note asset Clogged Nozzle
-        Our analysts are too ~~dishonest~~ *skilled* to have photographic evidence of instrument malfunctions.
-        :::
+  
+::: note asset “Unclogged Nozzle”
+The stream should look like this when using the 60ml syringe to check for clogs
+:::
+
+::: note asset Clogged Nozzle
+Our analysts are too ~~dishonest~~ *skilled* to have photographic evidence of instrument malfunctions.
+:::
         1. If the Stream comes out at an angle, attempt this flushing by reversing the Nozzle so that the tip is fitted into the outflow of the Acrodisc Filter. **BE CAREFULE**
         2. If Flushing in reverse does not work, Sonicate the *Nozzle*.
-            ::: note asset Sonnication Procedure
-            For stubborn clogs, try sonication. The nozzle inside the protective plastic lid, inside of the sonicator.
-            :::
+::: note asset Sonnication Procedure
+For stubborn clogs, try sonication. The nozzle inside the protective plastic lid, inside of the sonicator.
+:::
             1. Place the nozzle in a plastic lid (see example) to protect it from the bare metal of the sonicator
             2. Sonicate in MilliQ water for 15 minutes
             3. Attempt Syringe purges again
