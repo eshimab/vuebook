@@ -1,5 +1,5 @@
 ---
-title: Sheath Tanks
+title: 2.1 Sheath Tanks
 icon: list-check
 ---
 

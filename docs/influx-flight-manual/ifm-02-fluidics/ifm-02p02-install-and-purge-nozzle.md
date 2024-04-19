@@ -1,5 +1,5 @@
 ---
-title: Install and Purge Nozzle
+title: 2.3 Install and Purge Nozzle
 icon: glass-water
 ---
 
