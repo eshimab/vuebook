@@ -7,7 +7,7 @@ icon: glass-water
 
 <!-- Reference Links -->
 <!-- Images -->
-[img-nozzle-zoom]: ./assets/flight-fluidics-02/ifm-fluidics-nozzle-installed-zoom-anno.png
+
 [img-sheath-components]: ./assets/img-sheath/ifm-fluidics-sheathTankComponents-anno.png
 <!-- End Ref Links -->
 
@@ -19,6 +19,7 @@ icon: glass-water
 ## 2.3.0 Install Nozzle on Nozzle Assembly
 
 ::: note 
+[img-nozzle-zoom]: ./assets/flight-fluidics-02/ifm-fluidics-nozzle-installed-zoom-anno.png
 ![Nozzle installed][img-nozzle-zoom]
 
 A picture with the nozzle installed. Note the 
