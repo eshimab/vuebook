@@ -1,5 +1,5 @@
 ---
-title: Turn on lasers
+title: 1.3 Turn on lasers
 icon: list-check
 ---
 
@@ -11,18 +11,23 @@ icon: list-check
 <!-- [img-label]: ./assets/filename.png -->
 <!-- ![Caption Text][img-label] -->
 <!-- Assets -->
-[power-e107-on]: ./assets/img-lasers/ifm-optics-lasers-e107-on-anno.png
-[laser-488-psu-on]: ./assets/img-lasers/ifm-optics--lasers-488-psuOn-standby.png
-[laser-457-psu-on]: ./assets/img-lasers/ifm-optics-lasers-457-psuOff.png
+[power-e107-on]: ./assets/img-01p02-system-power/img-01p02-optics-lasers-e107-on-anno.png
+[laser-488-psu-on]: ./assets/img-01p02-system-power/img-01.02-lasers-488-psuOn-standby.png
+[laser-457-psu-on]: ./assets/img-01p02-system-power/img-01.02-lasers-457-psuOff.png
+[laser-671-psu-on]: ./assets/
 <!-- End Ref Links -->
 
 
 
 
+### 1.3 Table of Contents
 
 [[toc]]
 
-## Laser Power
+---
+
+# 1.3 Laser Power
+
 
 ::: danger Close the Physical Laser Shutters before turning on lasers!
 -   As a general safety procedure. But also...
@@ -31,11 +36,12 @@ icon: list-check
 -   Push the shutter in so that the red tape is **not** showing to **close** the shutter.
 :::
 
-::: note asset "Laser Chamber Door Shut"
-Laser Chamber Door is closed. Notice the finger switch and the Drop Camera Mirror is facing the correct direction.
+::: note asset "Physical Stops"
+
 :::
 
-### Laser Power: 488
+## 1.3.0 Laser Power: 488
+
 
 Turn On 488nm *Coherent* Laser Power Supply Unit with the following sequence:
 
@@ -62,7 +68,7 @@ Laser power supply units (PSU) and E 107 Power Switches when all lasers are powe
 
 
 
-### Laser Power: 457
+## 1.3.1 Laser Power: 457
 
 Turn On 457nm *Melles Griot* Laser  Power Supply Unit with the following sequence:
 1.  Turn On 457 Rocker switch (*E-107* Plug 3)
@@ -80,7 +86,7 @@ Turn On 457nm *Melles Griot* Laser  Power Supply Unit with the following sequenc
     2.  Turn Key counter clockwise to `Laser Disable` (key is vertical)
     3.  Turn off 457 Rocker switch on (*E-107* Plug 3)
 
-### Laser Power: 671
+## 1.3.2 Laser Power: 671
 
 *(Optional)* Turn On 671nm *Opto Engine* Laser Power Supply Unit
 ::: note asset "Laser PSU 671"
@@ -97,13 +103,13 @@ Laser PSU for the 671 is located on the rear/right corner of the Instrument tabl
     3.  Turn Off the 671 Rocker Switch (*E 107* Plug 4) 
 
 
-## Laser Systems Reference
 
-::: note asset "Like... a million...."
-Maybe wait and see what pictures the protocol requires before doing these.
+
+## 1.3.3 Laser Chamber
+
+::: note asset "Laser Chamber"
+
 :::
-
-### Laser Chamber
 
 1.  Where the Lasers pass through the Sample Stream.
 2.  Laser Chamber Components
@@ -135,7 +141,11 @@ Maybe wait and see what pictures the protocol requires before doing these.
         4.  Empty
         5.  Bottom: 671nm
 
-### Laser Intake Paths
+## 1.3.4 Intake Paths
+
+::: note asset "Intake Paths"
+
+:::
 
 1.  Located on Left of Instrument
 2.  Physical Laser Shutters are located on the far left of the instrument, at the rear of the Laser Intake Path Panel.

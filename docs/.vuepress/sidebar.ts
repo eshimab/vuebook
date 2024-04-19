@@ -40,8 +40,12 @@ export default sidebar({
           children: [
             "ifm-01p00-the-oracle",
             "ifm-01p00-lab-preflight",
-            "ifm-01p02-system-power",
-            "ifm-01p02b-turn-on-lasers.md",
+            // "ifm-01p02-system-power",
+            "ifm-01p02a-turn-on-influx",
+            "ifm-01p02b-computers",
+            "ifm-01p02c-networking",
+            "ifm-01p02d-turn-on-lasers",
+            // "ifm-01p20-system-power",
             "ifm-01p03-flowmeters",
             "ifm-01p04-sortware-part1-connect",
           ], // end children.flight-man-01

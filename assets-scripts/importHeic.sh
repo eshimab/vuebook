@@ -68,12 +68,22 @@ done
 # Reduce Colors
 # convert ifm-startup-house-air-closed.png -colors 256 ifm-startup-house-air-closed-color256.png 
 
+filepath_src="/Users/eshim/vuebook/docs/influx-flight-manual/ifm-01-startup/assets/img-01p02-system-power/IMG_2631.HEIC"
+filepath_out="/Users/eshim/vuebook/docs/influx-flight-manual/ifm-01-startup/assets/img-01p02-system-power/img-01p02-vacuum-in-box.png"
+echo "converting $filepath_src"
+echo "sending output to $filepath_out"
+sips -s format png "$filepath_src" --out "$filepath_out"
+# done
+filepath_src="/Users/eshim/vuebook/docs/influx-flight-manual/ifm-01-startup/assets/img-01p02-system-power/img-01p02-vacuum-in-box.png"
+
+
 
 
 # Extra
 max_tall=600
 max_wide=600
-filepath_src="/Users/eshim/vuebook/assets-new/00-final-cuts/ifm-startup-house-air-closed.png"
+filepath_src="/Users/eshim/vuebook/docs/influx-flight-manual/ifm-01-startup/assets/img-01p02-system-power/img-01p02-vacuum-in-box.png"
+filepath_out="/Users/eshim/vuebook/docs/influx-flight-manual/ifm-01-startup/assets/img-01p02-system-power/img-01p02-vacuum-in-box.png"
 src_wide=$(identify -format "%w" $filepath_src)
 src_tall=$(identify -format "%h" $filepath_src)
 echo "src_wide = $src_wide    and    src_tall = $src_tall"
@@ -90,9 +100,7 @@ elif (( src_wide > src_tall )) && (( src_wide > max_wide )); then
 else
     scale_factor=""
 fi
-convert ./ifm-startup-house-air-closed.png -resize "$scale_factor" ./ifm-startup-house-air-closed-resized.png
-# Colors
-
+convert "$filepath_src" -resize "$scale_factor" "$filepath_out"
 
 
 # 

@@ -1,5 +1,5 @@
 ---
-title: System Power
+title: 1.1 Start Computers
 icon: power-off
 ---
 
@@ -10,7 +10,8 @@ icon: power-off
 <!-- [img-label]: ./assets/filename.png -->
 <!-- ![Caption Text][img-label] -->
 <!-- Assets -->
-
+[img-macNetworkConfig]: ./assets/img-01p04-sortware-part1-connect/img-01p04-setupMacNetworkFlowRouter.png  
+[img-macConnect]: ./assets/img-01p04-sortware-part1-connect/img-01p04-setupMacFinderConnectToServer.png
 <!-- URLs -->
 
 <!-- End Ref Links -->
@@ -19,81 +20,18 @@ icon: power-off
 [[toc]]
 
 <!-- ::: details OG Manual  -->
-# 4.2 Power-up
----
 
-## 4.2.1 Power up Fluidics
+## 1.1.0 Start Computer
 
-### 4.2.1.1 Start Fluidics Early
-- [ ] **Done**
-
-1.  Fluids take from 30-60 minutes to fully stabilize. It is therefore important to start the fluidics as early as possible.
-
-### 4.2.1.2 Close Valves
-- [ ] **Done**
-
-1.  Ensure all the valves are closed:
-    1.  Sample Valve
-    1.  Sheath Valve
-    1.  Purge Valve
-    1.  Sample Pressure Valve
-
-### 4.2.1.3 Pressurize Sheath Reservoir
-- [ ] **Done**
-
-1.  Close the pressure relief valve on the sheath reservoir.
-2.  Turn on air supply by flipping up the AIR toggle switch on the Pressure Console.
-3.  Observe the gauge on the sheath reservoir to ensure that it is being pressurized.
-    1.  Reseat the lid of the Sheath Res if the pressure on the Sheath Res does not increase.
-
-### 4.2.1.4 Apply Vacuum
-- [ ] **Done**
-
-1.  Turn on the vacuum pump or other vacuum supply.
-2.  Read the gauge of the waste reservoir and ensure that it reads at least 5” Hg. If less than 5” Hg is observed after the tank has a few moments to come to pressure, tighten the lid.
-    1.  It is necessary for the waste reservoir lid to be tightened as much as possible without the use of a wrench.
-
-## 4.2.2 Start Lasers
-- [ ] **Done**
-
-1.  Most lasers require at least 30 minutes of warm-up time.
-1.  Close all laser shutters on the instrument and start all lasers in accordance with the manufacturer’s procedures.
-1.  Typical Laser Control Units have key switches to prevent unauthorized or unintended use.
-1.  Power output of the laser may be set to the desired level, or the laser put into standby mode.
-
-## Start Computer
-
-
-
-## Check the Cameras using the Marshall Monitor
-
-1. Monitor is located on Computer Table.
-3. Left Monitor “PIN HOLE”
-    1. VIDEO 1 - Pinhole Camera of the Stream and the Laser Pinholes
-    2. VIDEO 2 - None
-4. Center Monitor  “DROP”
-    1. VIDEO 1 - FSC Pinhole Camera 
-        1. Camera is located on the FSC optical path
-    2. VIDEO 2 - Drop Camera: For finding Break-off Point for Flow Sorting
-        1. The Drop Camera is moved with the Drop Camera Z Knob located near the Sheath Valve on the top of the Instrument
-        2. If the Drop Camera seems dark, be sure that the Drop Camera Mirror is installed outside the Laser Chamber with the Flat Side facing towards the corner between the FSC and Side/Fluorescence lenses. There is an opening in the wall of the Laser Chamber, allowing light from the Drop Camera Mirror to illuminate the stream viewed by the Drop Camera.
-5. Right Monitor “STREAM”
-    1. VIDEO 1 - Stream Camera (Shows Sort Chamber for Sorting and Coarse Alignment)
-        1. If this Camera is dark, make sure to activate the yellow ILLUM Button located on the Front Right side of the Instrument Chassis
-
-
-
-## Turn On Computers & Start Software
+## 1.1.2 Turn On Computers & Start Software
 
 The Workstation is comprised of two computers connected via a router. 
 
-### Shutdown Procedure
+### 1.1.2.0 Check Router
 
-::: warning When shutting down the PCs
-**Always** shutdown the computers gracefully using the Windows operating system. Failure to do so may cause latent performance issues that are difficult to explain.
+::: note asset Router
+
 :::
-
-### Check Router
 
 1. The router should be plugged in and on.
 2. The first and second ports on the rear of the router should be connected to:
@@ -101,11 +39,14 @@ The Workstation is comprised of two computers connected via a router.
     2. HP PC
     3. User's laptop (Optional)
 
-### Start Dell PC (CytoServer)
+### 1.1.2.1 Start Dell PC (CytoServer)
 
-::: note asset “Workstatiom cart front”
+
+[img-pcFront]: ./assets/img-01p02-system-power/img-01p02-power-workstation-pcsOn.png
+![Workstatiom cart front][img-pcFront]
+
 Front of the workstation cart where the PCs, Marshal Monitors, Oscilliscope, Main system power, and router are stored.
-:::
+
 
 1.  Ensure that the InFlux Instrument is powered On.
 2.  Ensure the device and it's peripherals are plugged in:
@@ -116,6 +57,10 @@ Front of the workstation cart where the PCs, Marshal Monitors, Oscilliscope, Mai
     5.  Dell PC Keyboard (in front of the Monitor) to Dell PC
     6.  *Note:* This PC does not have a mouse plugged in by default. If you want to use one, it must be a *wired* USB mouse.
 3.  Power On the PC and Monitors using front panel button.
+
+[img-dellPeriph]: ./assets/img-01p02-system-power/img-01p02-power-workstation-dellPeriph-anno.png
+![Del Peripherals][img-dellPeriph]
+
 4.  During the initial boot, you will get a Warning about the System Battery being Low
     ```sh
     Alert! System Battery voltage is low.
@@ -127,10 +72,10 @@ Front of the workstation cart where the PCs, Marshal Monitors, Oscilliscope, Mai
 
     ::: note Dell PC Error Beeps
     If the Dell PC begins to beep an error code of 3 long beeps in quick succession, then it is not connected to the InFlux Instrument.
-    1.  Is the InFlux Powered on?
-    2.  Is the router powered on?
-    3.  Is the Dell PC connected to the router?
-    4.  Is it still beeping?
+    3.  Is the InFlux Powered on?
+    4.  Is the router powered on?
+    5.  Is the Dell PC connected to the router?
+    6.  Is it still beeping?
         1.  Go to network troubleshooting, you lucky dog.
     :::
 
@@ -143,7 +88,7 @@ Front of the workstation cart where the PCs, Marshal Monitors, Oscilliscope, Mai
 6. Wait for this PC to boot up and login to Desktop before proceeding
 
 
-### Start HP PC 
+### 1.1.2.2 Start HP PC 
 
 1. Ensure the InFlux Instrument, Router, and Dell PC are all On.
 2. Ensure the HP PC and its peripherals are plugged in:
@@ -157,7 +102,7 @@ Front of the workstation cart where the PCs, Marshal Monitors, Oscilliscope, Mai
 4. Power On LG Monitor using button on bottom/center of monitor.
 5. Use the login info recorded locally
 
-### Start Sortware
+### 1.1.2.3 Start Sortware
 
 ::: tip Start Sortware and Connect to Cytometer
 It’s best to make sure that Sortware can connect to the instrument before doing any more setup. If Sortware cannot Connect to Cytometer, you may need to power cycle the Instrument, potentially impeding alignment.
@@ -193,15 +138,20 @@ To start Sortware and Connect to Cytometer:
     :::
     ::::
 
-### (Optional) User computer to HP PC
 
-#### Using MacOS
+# 1.2 (Optional) User computer to HP PC
+---
+
+## 1.2.0 Connect with MacOS
+
 
 -   If this is the first time you are connecting your Mac to the network and HP PC, you will need to create a Network Service.
 -   Once (or if) you have created the Network Service, you can skip to Connect to Server.
 
-##### Create a Network Service
+### 1.1.1.0 Create a Network Service
 
+
+![Configure Mac Connection](./assets/img-01p04-sortware-part1-connect/img-01p04-setupMacNetworkFlowRouterConfigure.png "Configure Mac Connection")
 
 1.  Ensure that the user’s computer is plugged in to the router with an ethernet cable, and that the lights on the port on the router on are and blinking.
 2.  Turn off the WiFi using the drop-down in the menu bar.
@@ -245,7 +195,7 @@ To start Sortware and Connect to Cytometer:
         9.  Speed and Duplex should be greyed out
     1.  Be sure click OK to save changes for this Network Service.
 
-##### Set Service Order
+### 1.1.1.1 Set Service Order
 
 2.  Go back to the `...` dropdown in the Network tab of System Settings
     3.  Select Set Service Order
@@ -256,7 +206,10 @@ To start Sortware and Connect to Cytometer:
             7.  Drag-and-drop the top (first) Network Service (usually WiFi) into the second position, making the new Network Service first.
             8.  Once connection to the HP PC is established, and the drive mounted, you will want the WiFi Network Service to be above the Flow Lab Network Service so that you can connect to the HP PC and the WiFi network simultaneously.
 
-##### Connect to Server
+### 1.1.1.2 Connect to Server
+
+[img-macConnect]: ./assets/img-01p04-sortware-part1-connect/img-01p04-setupMacFinderConnectToServer.png
+![Mac Network Connection][img-macConnect]
 
 1.  Open Finder and use the keyboard shortcut `CMD`+`K` (Or the dropdown menu `Go > Connect to server`)
 2.  In the connection field at the top, enter the following:
@@ -268,127 +221,15 @@ To start Sortware and Connect to Cytometer:
             -   macOS may complain about the `smb` protocol because it is outdated and insecure.
         -   We are connecting `://` to the IPv4 Address `192.168.111.2` (the HP PC)
 3.  It may require you to enter login credentials.
-    4.  Use the locally recorded login information.
-5.  If connection is successful, a window will open allowing you to select which folder you would like to connect to (“mount”)
-6.  If the mount is successful, the drive will be accessible:
-    7.  In Finder under Network
+    1.  Use the locally recorded login information.
+4.  If connection is successful, a window will open allowing you to select which folder you would like to connect to (“mount”)
+5.  If the mount is successful, the drive will be accessible:
+    1.  In Finder under Network
         1.  Finder window Sidebar: `Network`
         2.  Keybind: `cmd + shift + K`
-        2.  Menubar drop-down: `Window > Network`
-        3.  Menubar drop-down: `Go > Network`  
-    4.  In Terminal under 
-        5.  `/Volumes/FolderYouChose`
-        6.  Maybe `/Volumes/192.168.111.2/FolderYouChose`
+        3.  Menubar drop-down: `Window > Network`
+        4.  Menubar drop-down: `Go > Network`  
+    2.  In Terminal under 
+        1.  `/Volumes/FolderYouChose`
+        2.  Maybe `/Volumes/192.168.111.2/FolderYouChose`
     
-#### Using a PC
-
-1. Buy a mac.
-2. See previous section.
-
-
-## Network Nonsense
- 
-::: tip Get a wired USB mouse for the Dell PC
-Using the Dell PC is step three.
-:::
- 
-### Dell PC Error code
- 
-1.  The Dell PC is beeping an error code of three long beeps.
-    2.  The Dell PC cannot connect to the instrument
-        1.  The order for turning on the system must be:
-            1.  instrument 
-            5.   Dell
-            6.   HP
-        4.  Whenever possible, Shut the PCs down gracefully using the operating system UI.
-             5.  Hard shutdowns increase the likelihood of disk fragmentation.
-         6.  Shut down the Dell and HP PCs.
-         7.  Turn the instrument on using both power switches.
-         8.  Ensure that the USB cable connecting the instrument to the Dell PC is secure. 
-             9.  Use the USB ports on the rear of the machine
-             10.  It shouldnt matter which one
-         1.  Turn on the Dell PC
-             2.  Two Beeps is connection established
-             3.  Three beep error code?
-                 4.  Repeat the process, this time power cycling the inFlux. Use both power switches, and give the instrument ~30 seconds of off-time.
-         5.  Turn on the HP PC.
-
-### Sortware cannot Connect to Cytometer
-
-
-1.  Is the router on?
-    3.  Power cycle router
-1.  Are the Dell and HP PCs connected to the router with ethernet cables?
-    1.  Check connections and reseat ethernet cables if appropriate
-1.  Can the computers see each other?
-    1.  Give the router about two minutes after the power cycle to boot up.
-        1.  The power light should be solid, and some of the data ones blinking
-        1.  The ethernet ports on the HP and Dell PCs should be lit up.
-    1.  Use `ping` to check if computers are connected
-            1.  Open the command (`cmd`) terminal on either PC by going to `Start > Run` and entering `cmd` in the box 
-            1.  In the terminal window that pops up, enter the following commands depending on which PC you’re using.
-                1.  The `ping` command sends data to the target IP address and waits for the target to return those data. 
-                3.  If the computers are connected you should see something like:
-                     ```
-                     ping 192.168.1.1 returned 32bits
-                     ping 192.168.1.1 returned 32bits
-                     ping 192.168.1.1 returned 32bits
-                     ```
-                2.  HP PC
-                    1.  Check connection to router
-                         ```
-                         ping 192.168.1.10
-                         ``` 
-                    1.  Check connection to Dell
-                         ```
-                         ping 192.168.1.1
-                         ``` 
-                1.  Dell PC
-                    1.  Check connection to router
-                         ```
-                         ping 192.168.1.10
-                         ``` 
-                    1.  Check connection to HP
-                         ```
-                         ping 192.168.1.2
-                         ``` 
-             1. If the `ping`s don’t work, check the *`Network Settings`* to ensure that the *`IPV 4`* addresses of both computers are correct.
-                1.  Apple Router: *`192.168.1.10`*
-                    1.  Use a Mac with with *`Airport Utility`* to check the router’s `IPV 4` IP address.
-                 2. Dell PC: *`192.168.1.1`* 
-                 3. HP PC: *`192.168.1.2`*
-                 4. To check the IP address for either PC:
-                     5. Open the *`Control Panel`* and open *Network Settings*
-                     6. At the bottom of the Network Settings window, click Configure
-                     6. Select the  **????** tab to at the top of the Configure Window that opens.
-                     7. If the IPV 4 Address is incorrect, enter the correct one into the IPV 4 Address field
-                     8. Ensure that Use Static IP is enabled
-                         9. We want a Static IP for each computer because Sortware is designed to target a specific IP address when you Connect to Cytomter
-                     9. Ensure that Use DHCP is *disabled*
-                         10. Dynamic Host Configuration Protocol (DHCP) frees the router to assign (potentially different) IP addresses every time a device connects to the network.
-
-### User cannot connect to HP PC
-
-Many of the operations in this section are the same as the previous section. Refer back to those steps for a more detailed explanation.
-
-1.  Ensure that the folder on the HP PC has sharing enabled
-    1.  Right Click the folder and open `Network Settings`
-    3.  Click the Sharing tab
-    4.  To maximize the chance we can connect to the HP PC, just set read/write permissions to Everyone.
-    5.  Sharing is recursive by default
-        6.  ie all folders within the Shared folder are included
-2.  Ensure that User computer is physically connected to the router with an ethernet
-    1.  The ethernet port lights are on and blinking
-2.  Power cycle the router, HP PC, and User Computer as detailed previously
-3.  Ensure that HP network settings (detailed in the previous section) are correct.
-4.  Ensure the User Computer can see the router and HP PC on the network
-    3.  In MacOS Terminal (Applications) or Windows Command Prompt (`Start > Run` and type in `cmd`), `ping` the router and HP PC:
-        1.  Ping the router
-        ```
-        ping 192.168.1.10
-        ```
-        1.  Ping the HP PC
-        ```
-        ping 192.168.1.2
-        ```
-1.  

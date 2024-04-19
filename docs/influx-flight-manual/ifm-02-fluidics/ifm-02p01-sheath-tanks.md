@@ -19,18 +19,6 @@ icon: list-check
 [[toc]]
 
 
-
-::: details Cytopeia Manual 4.1.2
-
-#### 4.1.2 Prepare Fluidics Reservoirs
-
-1.  Fill the sheath tank with up to 6 liters of sheath fluid, preferably filtered at 0.2um.
-1.  Ensure the Waste Reservoir is clean and empty.
-1.  Attach lids and quick connect fittings from instrument fluidics lines to the reservoirs.
-    1.  Note that each port is unique. Each fitting connects to only one port.
-:::
-
-
 ## Hook-Up Waste Canister
 
 1.  Connect InFlux Waste Lines Intake

@@ -1,5 +1,5 @@
 ---
-title: Lab and Instrument Startup
+title: OG Lab and Instrument Startup
 icon: flask
 ---
 
